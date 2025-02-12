@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Behr Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+          <div class="menu-left">
+            <div class="hamburger-container">
+              <span class="hamburger-icon">&#9776;</span>
+              <div class="dropdown-menu">
+                <a href="index.html">Home</a>
+                <a href="photography.html">Photography</a>
+                <a href="videography.html">Videography</a>
+              </div>
+            </div>
+          </div>
+          <div class="title"><a href="index.html">Max Behr</a></div>
+          <div class="menu-right">
+            <a href="mailto:maxbehrbusiness@gmail.com" class="contact-button">Contact</a>
+          </div>
+        </div>
+    </nav>
+
+
+
+    <section>
+        <h1><br>Photo Gallery<br><br><br></h1>
+        <div class="gallery">
+            <img src="pictures/img1-1.jpeg" alt="Image 1">
+            <img src="pictures/Img1-2.jpeg" alt="Image 1">
+            <img src="pictures/Img1-3.jpeg" alt="Image 1">
+        </div>
+    </section> 
+
+    <section>
+        <h1><br><br><br></h1>
+        <div class="gallery">
+            <img src="pictures/img2-1.jpeg" alt="Image 1">
+            <img src="pictures/Img2-2.jpeg" alt="Image 1">
+            <img src="pictures/Img2-3.jpeg" alt="Image 1">
+        </div>
+    </section>
+
+    <section>
+        <h1><br><br><br></h1>
+        <div class="gallery">
+            <img src="pictures/img3-1.jpeg" alt="Image 1">
+            <img src="pictures/Img3-2.jpeg" alt="Image 1">
+            <img src="pictures/Img3-3.jpeg" alt="Image 1">
+        </div>
+    </section>
+
+    <section>
+        <h1><br><br><br></h1>
+        <div class="gallery">
+            <img src="pictures/img4-1.jpeg" alt="Image 1">
+            <img src="pictures/Img4-2.jpeg" alt="Image 1">
+            <img src="pictures/Img4-3.jpeg" alt="Image 1">
+        </div>
+    </section>
+
+
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightboxImg" src="" alt="">
+    </div>
+    <script>
+        const gallery = document.querySelectorAll('.gallery img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+
+        gallery.forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.classList.add('active');
+                lightboxImg.src = img.src;
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer">
+            <div class="socials">
+                <div><a target="_blank" href="https://www.linkedin.com/in/max-behr-267695304/"><img src="assets/used/LinkedInLogo.png"></a></div>
+                <div><a target="_blank" href="https://www.instagram.com/maxbehrfoto/"><img src="assets/used/InstagramLogo.svg"></a></div>
+            </div>        
+            <div class="legal">&copy; Max Behr</div>
+        </div>
+    </footer>   
+</body>
+</html>
