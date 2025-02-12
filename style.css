@@ -15,16 +15,19 @@ body {
     padding-top: 80px;
 }
 
-h2, h1 {
+h2 {
     font-family: "Bebas Neue";
     font-size: 50px;
     font-weight: lighter;
-    padding: 10px;
+    padding: 40px 10px;  /* Weniger Padding oben und unten */
+    margin-bottom: 5px; /* Weniger Abstand zu h3 */
 }
 
-h2 {
-    padding-top: 100px;
-    padding-bottom: 50px;
+h3 {
+    font-family: "Bebas Neue";
+    font-size: 40px;
+    font-weight: lighter;
+    padding: 40px 10px; /* Weniger Padding oben und unten */
 }
 
 
@@ -265,8 +268,37 @@ h2 {
     padding-top: 100px;
     padding-bottom: 100px;
     font-size: 14px;
+    
+    
 }
 
+footer .impressum {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #a1a1a1;
+    max-width: 800px;
+    margin: 20px auto; /* Zentriert das Impressum */
+}
+
+footer .impressum h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+footer .impressum p {
+    margin-bottom: 10px;
+}
+
+footer .impressum a {
+    color: #a1a1a1; /* Blau für Links */
+    text-decoration: none;
+}
+
+footer .impressum a:hover {
+    text-decoration: underline;
+}
 .socials {
     display: flex;
     justify-content: center;
@@ -297,7 +329,55 @@ blockquote.instagram-media {
 
 
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Standardmäßig 3 Spalten */
+    gap: 50px;
+    padding: 10px;
+    align-items: center;
+    justify-items: center; /* Zentriert Bilder innerhalb der Zellen */
+}
 
+.gallery img {
+    max-width: 100%;
+    max-height: 500px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Für kleinere Bildschirme (z. B. Smartphones) auf 1 oder 2 Spalten reduzieren */
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 Spalten für mittlere Bildschirme */
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr); /* 1 Spalte für kleine Bildschirme */
+    }
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    position: relative
+}
+
+figcaption {
+    font-size: 12px;  /* Kleine Schrift */
+    font-style: italic;  /* Optional: Kursiv für den Text */
+    margin-top: 10px;  /* Abstände nach oben */
+    color: #fff;  /* Dunkler Grauton für den Text */
+}
+/*
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
@@ -316,6 +396,7 @@ blockquote.instagram-media {
 .gallery img:hover {
     transform: scale(1.05);
 }
+*/
 .lightbox {
     position: fixed;
     top: 0;
@@ -414,4 +495,48 @@ blockquote.instagram-media {
 
 
 
+}
+
+/* Cookie Banner */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cookie-banner .cookie-content p {
+    margin: 10px;
+    padding-right: 20px;
+}
+
+.cookie-banner button {
+    background: #023164;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Cookie Settings Popup */
+.cookie-settings-popup {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    color: black;
+    padding: 20px;
+    z-index: 1001;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }

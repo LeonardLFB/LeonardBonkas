@@ -69,6 +69,46 @@
     </div>
 
 
+    <!-- Deine anderen HTML-Inhalte -->
+
+<!-- Cookie Banner und Popup -->
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-content">
+      <p>Wir verwenden Cookies, um die Nutzung der Webseite zu analysieren und Ihnen personalisierte Inhalte bereitzustellen. Weitere Informationen finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+      <button id="accept-cookies">Akzeptieren</button>
+      <button id="decline-cookies">Ablehnen</button>
+      <button id="cookie-settings">Einstellungen</button>
+  </div>
+</div>
+
+<div id="cookie-settings-popup" class="cookie-settings-popup">
+  <h3>Cookie-Einstellungen</h3>
+  <form id="cookie-settings-form">
+      <label>
+          <input type="checkbox" id="cookie-essential" checked disabled>
+          Notwendige Cookies (erforderlich)
+      </label><br>
+      <label>
+          <input type="checkbox" id="cookie-analytics">
+          Analyse-Cookies
+      </label><br>
+      <label>
+          <input type="checkbox" id="cookie-marketing">
+          Marketing-Cookies
+      </label><br><br>
+      <button type="submit">Speichern</button>
+  </form>
+  <button id="close-settings">Schließen</button>
+</div>
+
+<!-- Footer und andere Inhalte -->
+
+<!-- Einbinden der JavaScript-Datei -->
+<script src="cookie-banner.js"></script>
+</body>
+</html>
+
+
     
     <footer>
         <div class="footer">
@@ -79,6 +119,27 @@
             </div>        
             <div class="legal">&copy; Leonard LFB</div>
         </div>
+          <section class="impressum">
+              <h4>Impressum</h4>
+              <p><strong>Angaben gemäß § 5 TMG:</strong></p>
+              <p><strong>Leonard Bonkas</strong><br>
+              Im Ärmchen 3<br>
+              61273 Wehrheim<br>
+              Deutschland</p>
+      
+              <p><strong>Vertreten durch:</strong><br>
+              Leonard Bonkas</p>
+      
+              <p><strong>Kontakt:</strong><br>
+              Telefon: 0152 05344311<br>
+              E-Mail: <a href="mailto:leonard.bonkas@gmail.com">leonard.bonkas@gmail.com</a></p>
+      
+              <p><strong>Haftungsausschluss:</strong><br>
+              Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Dennoch übernehmen wir keine Haftung für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten verantwortlich. Für fremde Inhalte, die über Links auf diese Seite gelangen, sind wir gemäß §§ 8 bis 10 TMG nicht verantwortlich.</p>
+      
+              <p><strong>Urheberrecht:</strong><br>
+              Alle Inhalte auf dieser Website, einschließlich Texte, Bilder, Grafiken und Logos, sind urheberrechtlich geschützt und dürfen ohne ausdrückliche Genehmigung nicht verwendet werden.</p>
+          </section>
     </footer>   
 </body>
 </html>
