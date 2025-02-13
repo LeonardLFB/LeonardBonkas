@@ -1,150 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max Behr Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leonard Bonkas Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/Favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/Favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/Favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/Favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/Favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-    <nav>
-        <div class="navbar">
-          <div class="menu-left">
-            <div class="hamburger-container">
-              <span class="hamburger-icon">&#9776;</span>
-              <div class="dropdown-menu">
-                <a href="index.html">Home</a>
-                <a href="photography.html">Photography</a>
-                <a href="videography.html">Videography</a>
-              </div>
-            </div>
-          </div>
-          <div class="title"><a href="index.html">Leonard Bonkas</a></div>
-          <div class="menu-right">
-            <a href="mailto:leonard.bonkas@gmail.com?subject=Shoot%20Enquiry" class="contact-button">Contact</a>
+  <nav>
+    <div class="navbar">
+      <!-- Linke Seite: Dropdown-Menü & Contact -->
+      <div class="menu-left">
+        <div class="hamburger-container">
+          <span class="hamburger-icon">&#9776;</span>
+          <div class="dropdown-menu">
+            <a href="index.html">Home</a>
+            <a href="Übermich.html">About Me</a>
+            <a href="photography.html">Photography</a>
+            <a href="videography.html">Videography</a>
           </div>
         </div>
-    </nav>
+        <a href="mailto:leonard.bonkas@gmail.com?subject=Shoot%20Enquiry" class="contact-button">Contact</a>
+      </div>
 
+      <!-- Mitte: Titel -->
+      <div class="title">
+        <a href="index.html">Leonard Bonkas</a>
+      </div>
 
-    <section>
-        <h2>Photo Gallery</h2>
-        <h3>2019</h3>
-        <div class="gallery">
-            <figure>
-                <img src="pictures/2019/2019_01_01.png" alt="Image 1">
-                <figcaption>London Eye</figcaption>
-            </figure>
-            <figure>
-                <img src="pictures/2019/2019_01_02.png" alt="Image 2">
-                <figcaption>Goodwood FoS 2019</figcaption>
-            </figure>
-            <figure>
-                <img src="pictures/2019/2019_01_03.png" alt="Image 3">
-                <figcaption>Goodwood FoS 2019</figcaption>
-            </figure>
-        </div>
-    </section> 
-
-    <section>
-        <h1><br><br><br></h1>
-        <div class="gallery">
-            <img src="pictures/img2-1.jpeg" alt="Image 1">
-            <img src="pictures/Img2-2.jpeg" alt="Image 1">
-            <img src="pictures/Img2-3.jpeg" alt="Image 1">
-        </div>
-    </section>
-
-    <section>
-        <h1><br><br><br></h1>
-        <div class="gallery">
-            <img src="pictures/img3-1.jpeg" alt="Image 1">
-            <img src="pictures/Img3-2.jpeg" alt="Image 1">
-            <img src="pictures/Img3-3.jpeg" alt="Image 1">
-        </div>
-    </section>
-
-    <section>
-        <h1><br><br><br></h1>
-        <div class="gallery">
-            <img src="pictures/img4-1.jpeg" alt="Image 1">
-            <img src="pictures/Img4-2.jpeg" alt="Image 1">
-            <img src="pictures/Img4-3.jpeg" alt="Image 1">
-        </div>
-    </section>
-
-
-    <div class="lightbox" id="lightbox">
-        <span class="close" onclick="closeLightbox()">&times;</span>
-        <img id="lightboxImg" src="" alt="">
+      <!-- Rechte Seite: Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/used/LFBLogo.png" alt="Logo" />
+        </a>
+      </div>
     </div>
-    <script>
-        const gallery = document.querySelectorAll('.gallery img');
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightboxImg');
+  </nav>
 
-        gallery.forEach(img => {
-            img.addEventListener('click', () => {
-                lightbox.classList.add('active');
-                lightboxImg.src = img.src;
-            });
-        });
+  <!-- Banner-Bild -->
+  <div class="hero-banner">
+    <img src="assets/Banner/Banner2.jpg" alt="Panorama Banner" style="object-fit: cover; object-position: 50% 59%;">
+  </div>
 
-        function closeLightbox() {
-            lightbox.classList.remove('active');
-        }
+  <!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+  <section>
+    <h2>Photo Gallery</h2>
+    <h3>2019</h3>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2019/_Komprimiert/2019_01_01.webp" alt="Image 1">
+        <figcaption>London Eye</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2019/_Komprimiert/2019_01_02.webp" alt="Image 2">
+        <figcaption>Goodwood FoS 2019</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2019/_Komprimiert/2019_01_03.webp" alt="Image 3">
+        <figcaption>Goodwood FoS 2019</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
 
+  <!-- Zweiter Gallery-Abschnitt (Beispiel: 3 Bilder pro Zeile) -->
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2019/_Komprimiert/2019_02_01.webp" alt="Image 1">
+        <figcaption>Balmoral Castle</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2019/_Komprimiert/2019_02_02.webp" alt="Image 2">
+        <figcaption>Supercar Oweners Circle Andermatt</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2019/_Komprimiert/2019_02_03.webp" alt="Image 3">
+        <figcaption>Supercar Oweners Circle Andermatt</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
 
+  <!-- Dritter Gallery-Abschnitt -->
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2019/_Komprimiert/2019_03_01.webp" alt="Image 1">
+        <figcaption>Supercar Oweners Circle Andermatt</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2019/_Komprimiert/2019_03_02.webp" alt="Image 2">
+        <figcaption>IAA Frankfurt</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2019/_Komprimiert/2019_03_03.webp" alt="Image 3">
+        <figcaption>Morocco</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
 
+  <!-- Vierter Gallery-Abschnitt -->
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2019/_Komprimiert/2019_04_01.webp" alt="Image 1">
+        <figcaption>Morocco</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2019/_Komprimiert/2019_04_02.webp" alt="Image 2">
+        <figcaption>Morocoo</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2019/_Komprimiert/2019_04_03.webp" alt="Image 3">
+        <figcaption>Morocco</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
 
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2019/_Komprimiert/2019_04_03.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Morocco</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+  
+  <!-- Lightbox mit Navigationspfeilen -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-content">
+      <div class="arrow left-arrow" onclick="prevImage()">&#10094;</div>
+      <img id="lightboxImg" src="" alt="">
+      <div class="arrow right-arrow" onclick="nextImage()">&#10095;</div>
+    </div>
+  </div>
 
-
-
-
-    </script>
-
-
-
-
-
-
-
-
-<footer>
+  <!-- Footer -->
+  <footer>
+    <!-- Schwarzer Bereich mit Social Media Icons -->
     <div class="footer">
-        <div class="socials">
-            <div><a target="_blank" href="https://www.instagram.com/leonard_lfb/"><img src="assets/used/InstagramLogo.svg"></a></div>
-            <div><a target="_blank" href="https://www.youtube.com/@LeonardLFB/"><img src="assets/used/YouTubeLogo.png"></a></div>
-            <div><a target="_blank" href="https://www.tiktok.com/@leonard_lfb/"><img src="assets/used/TikTokLogo.png"></a></div>
-        </div>        
-        <div class="legal">&copy; Leonard LFB</div>
+      <div class="socials">
+        <div><a target="_blank" href="https://www.instagram.com/leonard_lfb/"><img src="assets/used/InstagramLogo.svg" alt="Instagram"></a></div>
+        <div><a target="_blank" href="https://www.youtube.com/@LeonardLFB/"><img src="assets/used/YouTubeLogo.png" alt="YouTube"></a></div>
+        <div><a target="_blank" href="https://www.tiktok.com/@leonard_lfb/"><img src="assets/used/TikTokLogo.png" alt="TikTok"></a></div>
+      </div>        
     </div>
-      <section class="impressum">
-          <h4>Impressum</h4>
-          <p><strong>Angaben gemäß § 5 TMG:</strong></p>
-          <p><strong>Leonard Bonkas</strong><br>
-          Im Ärmchen 3<br>
-          61273 Wehrheim<br>
-          Deutschland</p>
   
-          <p><strong>Vertreten durch:</strong><br>
-          Leonard Bonkas</p>
-  
-          <p><strong>Kontakt:</strong><br>
-          Telefon: 0152 05344311<br>
-          E-Mail: <a href="mailto:leonard.bonkas@gmail.com">leonard.bonkas@gmail.com</a></p>
-  
-          <p><strong>Haftungsausschluss:</strong><br>
-          Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Dennoch übernehmen wir keine Haftung für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten verantwortlich. Für fremde Inhalte, die über Links auf diese Seite gelangen, sind wir gemäß §§ 8 bis 10 TMG nicht verantwortlich.</p>
-  
-          <p><strong>Urheberrecht:</strong><br>
-          Alle Inhalte auf dieser Website, einschließlich Texte, Bilder, Grafiken und Logos, sind urheberrechtlich geschützt und dürfen ohne ausdrückliche Genehmigung nicht verwendet werden.</p>
-      </section>
-</footer>   
+    <!-- Abgerundete Kontakt-Box -->
+    <div class="contact-box">
+      <a href="Übermich.html"><img src="assets/used/Profilbild.png" alt="Leonard Bonkas" class="profile-pic"></a>
+      <div class="contact-info">
+        <h4>Contact</h4>
+        <p><strong>E-Mail:</strong> <a href="mailto:leonard.bonkas@gmail.com">leonard.bonkas@gmail.com</a></p>
+        <p><strong>Telephone:</strong> 0152 05344311</p>
+        <p><a href="impressum.html" class="impressum-link">Impressum</a></p>
+      </div>
+    </div>
+    <div class="legal">&copy; Leonard LFB</div>
+  </footer>
+
+  <!-- JavaScript für Lightbox & Navigation -->
+  <script>
+    const gallery = document.querySelectorAll('.gallery img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    let currentImageIndex = 0;
+
+    const lightboxCaption = document.createElement("figcaption");
+    lightboxCaption.classList.add("lightbox-caption");
+    document.querySelector(".lightbox-content").appendChild(lightboxCaption);
+
+    gallery.forEach((img, index) => {
+      img.addEventListener('click', () => {
+        currentImageIndex = index;
+        openLightbox();
+      });
+    });
+
+    function openLightbox() {
+      lightbox.classList.add('active');
+      updateLightbox();
+    }
+
+    function updateLightbox() {
+      const currentImg = gallery[currentImageIndex];
+      lightboxImg.src = currentImg.src;
+      lightboxCaption.textContent = currentImg.nextElementSibling.textContent;
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+    }
+
+    function nextImage() {
+      currentImageIndex = (currentImageIndex + 1) % gallery.length;
+      updateLightbox();
+    }
+
+    function prevImage() {
+      currentImageIndex = (currentImageIndex - 1 + gallery.length) % gallery.length;
+      updateLightbox();
+    }
+
+    // Optionaler Parallax-Effekt für das Bannerbild
+    window.addEventListener("scroll", function () {
+      let scrollPos = window.scrollY * 0.5;
+      document.querySelector(".hero-banner img").style.transform = `translateY(${scrollPos}px)`;
+    });
+
+    // Event-Listener für Tastatursteuerung
+    document.addEventListener("keydown", function (event) {
+      if (lightbox.classList.contains("active")) {
+        if (event.key === "ArrowRight") {
+          nextImage();
+        } else if (event.key === "ArrowLeft") {
+          prevImage();
+        } else if (event.key === "Escape") {
+          closeLightbox();
+        }
+      }
+    });
+  </script>
 </body>
 </html>

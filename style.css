@@ -1,22 +1,21 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inspiration&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 body {
-    background-color: #0e0e0e;
+    background-color: #040425;
     color: white;
     text-align: center;
     padding-top: 80px;
 }
 
 h2 {
-    font-family: "Bebas Neue";
+    font-family: "Barlow Condensed";
     font-size: 50px;
     font-weight: lighter;
     padding: 40px 10px;  /* Weniger Padding oben und unten */
@@ -24,7 +23,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Bebas Neue";
+    font-family: "Barlow Condensed";
     font-size: 40px;
     font-weight: lighter;
     padding: 40px 10px; /* Weniger Padding oben und unten */
@@ -101,13 +100,13 @@ h3 {
     transition: opacity 0.3s ease;
 }
 
-/* Navbar */
+/* Navbar */ /*
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
     height: 80px;
-    background: black;
+    background: #000000;
     padding: 15px;
     font-size: 40px;
     font-weight: bold;
@@ -133,6 +132,59 @@ h3 {
     right: 10px;
     top: 35px;
 }
+*/
+
+/* Navbar-Container */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: #000000;
+    padding: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Barlow Condensed";
+    z-index: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Linke Seite (Dropdown + Contact) */
+.menu-left {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Abstand zwischen Dropdown und Contact */
+    position: absolute;
+    left: 20px;
+}
+
+/* Dropdown-Menü */
+.hamburger-container {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Mittiger Titel */
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Rechte Seite (Logo) */
+.logo {
+    position: absolute;
+    right: 20px;
+}
+
+.logo img {
+    height: 45px; /* Größe anpassen */
+}
+
 
 .hamburger-container {
     position: relative;
@@ -168,10 +220,10 @@ h3 {
 
 .dropdown-menu a {
     color: white;
-    font-family: "Bebas Neue", serif;
+    font-family: "Barlow Condensed";
     font-weight: 100;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     padding: 5px 0;
     white-space: nowrap;
 }
@@ -183,11 +235,11 @@ h3 {
 
 .contact-button {
     color: white;
-    font-family: "Bebas Neue", serif;
+    font-family: "Barlow Condensed";
     font-size: 25px;
     text-decoration: none;
     padding: 5px 10px;
-    border: 1px solid white;
+    border: 0px solid white;
     border-radius: 10px;
     transition: background 0.3s ease, color 0.3s ease;
 }
@@ -208,7 +260,7 @@ h3 {
 }
 
 @font-face {
-    font-family: "Dancing Script";
+    font-family: "GreatVibes";
     src: url("assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
@@ -216,13 +268,50 @@ h3 {
 
 .title a{
     font-size: 60px;
-    font-family: "Dancing Script";
+    font-family: "GreatVibes";
     font-weight: 400;
     font-style: normal;
     padding: 10px;
     color: white;
     text-decoration: none;
 }
+
+/* Hero-Banner */
+.hero-banner {
+    width: 100vw; /* Volle Breite des Viewports */
+    height: 40vh; /* Höhe: 40% der Bildschirmhöhe */
+    position: relative;
+    overflow: hidden; /* Überflüssige Bildbereiche ausblenden */
+}
+
+/* Banner-Bild */
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Beschneidet das Bild, anstatt es zu verzerren */
+    object-position: center; /* Zentriert das Bild */
+}
+
+/* Hero-Banner mit Parallax-Effekt */
+.hero-banner {
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    background: url("assets/used/banner.jpg") center/cover no-repeat fixed;
+}
+
+/* Weicher Übergang nach unten */
+.hero-banner::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #040425 100%);
+}
+
 
 .projects img {
     margin-bottom: 50px;
@@ -239,7 +328,7 @@ h3 {
 }
 
 .dark-section {
-    background: #0e0e0e;
+    background: #040425;
     color: white;
 }
 
@@ -262,23 +351,22 @@ h3 {
         transform: translateY(0);
     }
 }
-
+/* Footer bleibt schwarz */
 .footer {
     background: #000000;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     font-size: 14px;
-    
-    
 }
 
+/* Impressum Styling */
 footer .impressum {
     padding: 20px;
     font-size: 14px;
     line-height: 1.6;
     color: #a1a1a1;
     max-width: 800px;
-    margin: 20px auto; /* Zentriert das Impressum */
+    margin: 50px auto; /* Zentriert das Impressum */
 }
 
 footer .impressum h4 {
@@ -288,67 +376,154 @@ footer .impressum h4 {
 }
 
 footer .impressum p {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 footer .impressum a {
-    color: #a1a1a1; /* Blau für Links */
+    color: #a1a1a1;
     text-decoration: none;
 }
 
 footer .impressum a:hover {
     text-decoration: underline;
 }
+
+/* Abgerundete Box für Kontakt */
+.contact-box {
+    background-color: #e6e6e6;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Elemente von links nach rechts anordnen */
+    gap: 40px; /* Mehr Abstand zwischen Bild und Text */
+    margin: 40px auto;
+    max-width: 600px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profilbild weiter links */
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px; /* Mehr Abstand zum linken Rand */
+}
+
+/* Kontaktinformationen */
+.contact-info {
+    text-align: left;
+    flex-grow: 1; /* Nimmt den restlichen Platz ein */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Überschrift "Kontakt" weiter oben */
+.contact-info h4 {
+    font-family: "Barlow Condensed";
+    color: #01048f;
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 5px; /* Kleinerer Abstand nach unten */
+}
+
+/* Text unter der Überschrift */
+.contact-info p {
+    color: #01048f;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Impressum-Link weiter unten platzieren */
+.contact-info p:last-child {
+    margin-top: 10px; /* Mehr Abstand nach oben */
+}
+
+/* Link-Styling */
+.contact-info a {
+    text-decoration: none;
+    color: #01048f;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    color: #7779e0;
+}
+
+/* Social Media Icons */
 .socials {
     display: flex;
     justify-content: center;
 }
 
 .socials img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
     margin: 0 10px;
 }
 
-.instagrambox{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-
-blockquote.instagram-media {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-
 .legal {
     text-align: right;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 
-
+/* Galerie Container */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Standardmäßig 3 Spalten */
-    gap: 50px;
+    grid-template-columns: repeat(3, 1fr); /* 3 Spalten */
+    gap: 50px; /* Abstand zwischen den Bildern */
     padding: 10px;
     align-items: center;
     justify-items: center; /* Zentriert Bilder innerhalb der Zellen */
 }
 
+/* Standardbild-Stil */
 .gallery img {
     max-width: 100%;
     max-height: 500px;
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease;
+    border-radius: 10px;  /* Abgerundete Ecken */
 }
 
+/* Hover-Effekt */
 .gallery img:hover {
     transform: scale(1.05);
 }
+
+/* Für Einzelbilder, wenn nur ein Bild angezeigt wird */
+.gallery.single-image {
+    display: block; /* Zeigt das Einzelbild als Block an */
+    text-align: center; /* Zentriert den Inhalt des Divs */
+}
+
+.gallery.single-image figure {
+    margin: 0; /* Entfernt Standardabstände */
+}
+
+.gallery.single-image img {
+    width: 80%; /* Bildgröße auf 80% der Containerbreite setzen */
+    max-width: 1200px; /* Maximale Breite auf 1200px begrenzen, damit das Bild nicht zu riesig wird */
+    height: auto;
+    object-fit: contain; /* Bild bleibt im richtigen Verhältnis */
+    display: block; /* Macht das Bild block-level */
+    margin: 0 auto; /* Zentriert das Bild */
+}
+  /* CSS für die Lightbox Caption */
+  .lightbox-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+  }
 
 /* Für kleinere Bildschirme (z. B. Smartphones) auf 1 oder 2 Spalten reduzieren */
 @media (max-width: 1024px) {
@@ -377,6 +552,23 @@ figcaption {
     margin-top: 10px;  /* Abstände nach oben */
     color: #fff;  /* Dunkler Grauton für den Text */
 }
+
+
+/* Lightbox Caption Styling */
+.lightbox .lightbox-caption {
+    font-size: 12px;  /* Schriftgröße */
+    font-style: italic;  /* Kursivstil */
+    color: #fff;  /* Textfarbe */
+    margin-top: 20px;  /* Abstand zum Bild */
+    text-align: center;  /* Text mittig ausrichten */
+    position: absolute;  /* Position relativ zur Lightbox */
+    bottom: 10px;  /* Abstand zum unteren Rand der Lightbox */
+    left: 50%;  /* Horizontal zentrieren */
+    transform: translateX(-50%);  /* Mittig ausrichten */
+    max-width: 90%;  /* Maximale Breite */
+    line-height: 1.5;  /* Zeilenhöhe */
+}
+
 /*
 .gallery {
     display: grid;
@@ -416,12 +608,67 @@ figcaption {
     opacity: 1;
     pointer-events: auto;
 }
+
 .lightbox img {
-    max-width: 90%;
-    max-height: 90%;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    animation: fadeIn 0.5s ease;
-}
+    max-width: 90vw; /* Begrenzung auf 90% der Bildschirmbreite */
+    max-height: 90vh; /* Begrenzung auf 90% der Bildschirmhöhe */
+    border-radius: 15px; /* Abgerundete Ecken */
+    object-fit: contain; /* Verhindert Verzerrung */
+  }
+  .lightbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+  
+  .lightbox-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 15px;
+    object-fit: contain;
+  }
+  
+ 
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem; /* Größe der Pfeile */
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+  }
+  
+  .arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .left-arrow {
+    left: -80px; /* Abstand links vom Bild */
+  }
+  
+  .right-arrow {
+    right: -80px; /* Abstand rechts vom Bild */
+  }
+  
 @keyframes fadeIn {
     from { transform: scale(0.8); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
@@ -497,6 +744,53 @@ figcaption {
 
 }
 
+/* Über mich - Sektion */
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Container für Profilbild & Bio */
+.profile-container {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Profilbild */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Bio-Box */
+.bio-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+}
+
+.bio-box h2 {
+    margin-bottom: 10px;
+}
+
+.bio-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
 /* Cookie Banner */
 .cookie-banner {
     position: fixed;
@@ -518,7 +812,7 @@ figcaption {
 }
 
 .cookie-banner button {
-    background: #023164;
+    background: #010584;
     color: white;
     border: none;
     padding: 10px;
