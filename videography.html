@@ -125,5 +125,23 @@
     <div class="legal">&copy; Leonard LFB</div>
   </footer>
   
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburgerIcon = document.querySelector(".hamburger-icon");
+      const dropdownMenu = document.querySelector(".dropdown-menu");
+  
+      hamburgerIcon.addEventListener("click", function (event) {
+          event.stopPropagation(); // Verhindert das Schließen, wenn das Icon erneut geklickt wird
+          dropdownMenu.classList.toggle("active");
+      });
+  
+      // Schließen des Menüs, wenn man irgendwo anders klickt/toucht
+      document.addEventListener("click", function (event) {
+          if (!hamburgerIcon.contains(event.target) && !dropdownMenu.contains(event.target)) {
+              dropdownMenu.classList.remove("active");
+          }
+      });
+  });
+  </script>
 </body>
 </html>

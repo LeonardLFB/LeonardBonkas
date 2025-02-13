@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: #040425;
+    background-color: #0c0c24;
     color: white;
     text-align: center;
     padding-top: 80px;
@@ -179,6 +179,66 @@ h3 {
     font-weight: bold;
 }
 
+@media (max-width: 768px) {  /* Anpassung für mobile Geräte */
+    .contact-button {
+        display: none; /* Versteckt den Button */
+    }
+    .dropdown-menu .contact-item {
+        display: block; /* Zeigt den Contact-Link im Dropdown */
+    }
+}
+
+@media (min-width: 769px) {  /* Anpassung für größere Displays */
+    .contact-button {
+        display: block; /* Zeigt den Button normal an */
+    }
+    .dropdown-menu .contact-item {
+        display: none; /* Versteckt den Contact-Link im Dropdown */
+    }
+}
+
+
+/* Standard Dropdown (versteckt) */
+.dropdown-menu {
+    position: absolute;
+    top: 50px; /* Abstand von der Navbar */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Dunkler Hintergrund */
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+/* Standardmäßig nicht fullscreen */
+@media screen and (max-width: 768px) {
+    .dropdown-menu {
+        height: 0; /* Unsichtbar bei Start */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Wenn aktiv, dann Fullscreen */
+    .dropdown-menu.active {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: s0;
+        z-index: 100;
+    }
+
+    /* Links im Dropdown */
+    .dropdown-menu a {
+        color: white;
+        font-size: 24px;
+        padding: 15px;
+        text-decoration: none;
+    }
+}
+
+
+
 /* Rechte Seite (Logo) */
 .logo {
     position: absolute;
@@ -235,6 +295,25 @@ h3 {
 .dropdown-menu a:hover {
     color: rgba(255, 255, 255, 0.282);
     transition: 700ms;
+}
+
+.dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+    flex-direction: column;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.dropdown-menu.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .contact-button {
@@ -332,7 +411,7 @@ h3 {
 }
 
 .dark-section {
-    background: #040425;
+    background: #0c0c24;
     color: white;
 }
 
