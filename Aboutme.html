@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboutme - Leonard Bonkas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="navbar">
+            <div class="menu-left">
+                <div class="hamburger-container">
+                    <span class="hamburger-icon">&#9776;</span>
+                    <div class="dropdown-menu">
+                        <a href="index.html">Home</a>
+                        <a href="Aboutme.html">About Me</a>
+                        <a href="photography.html">Photography</a>
+                        <a href="videography.html">Videography</a>
+                    </div>
+                </div>
+                <a href="mailto:leonard.bonkas@gmail.com?subject=Shoot%20Enquiry" class="contact-button">Contact</a>
+            </div>
+
+            <div class="title">
+                <a href="index.html">Leonard Bonkas</a>
+            </div>
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/used/LFBLogo.png" alt="Logo" />
+                </a>
+            </div>
+        </div>
+    </nav>
+
+<!-- Banner-Bild -->
+<div class="hero-banner">
+    <img src="assets/Banner/Banner1.jpg" alt="Panorama Banner" style="object-fit: cover; object-position: 50% 56%;">
+</div>
+
+
+    <!-- Über mich Sektion -->
+    <section class="about-me">
+        <div class="profile-container">
+            <a href="index.html">
+                <img src="assets/used/Profilbild.png" alt="Leonard Bonkas" class="profile-pic">
+            </a>
+            
+            <div class="bio-box">
+                <h2>About me</h2>
+                <p>
+                    Hi, I'm Leonard Bonkas, also known as <a href="https://www.instagram.com/leonard_lfb/" style="color: white; text-decoration: underline;">@leonard_lfb</a>! 
+                    I love to welcome you to automotive heaven 🙌🏻 <br></br>Combining my passion
+                    Combining my passion for photography, great cars & traveling the world. I've been a photographer for quite a few years now and my passion to create memorable content has expanded. 
+                    <br><br> Luckily, I've been able to cover many events, private collections and showrooms in the past </br></br>
+                    
+                    
+                    
+                </p>
+                <p>
+                    I hope to be able to continue on with my passion and be able to create extraordinary content. 
+                    If you're interest, be sure to <a href="mailto:leonard.bonkas@gmail.com?subject=Shoot%20Enquiry" style="color: white; text-decoration: underline;">
+                        Contact me</a>!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    
+    <footer>
+        <!-- Social Media Icons bleiben im schwarzen Bereich -->
+        <div class="footer">
+            <div class="socials">
+                <div><a target="_blank" href="https://www.instagram.com/leonard_lfb/"><img src="assets/used/InstagramLogo.svg"></a></div>
+                <div><a target="_blank" href="https://www.youtube.com/@LeonardLFB/"><img src="assets/used/YouTubeLogo.png"></a></div>
+                <div><a target="_blank" href="https://www.tiktok.com/@leonard_lfb/"><img src="assets/used/TikTokLogo.png"></a></div>
+            </div>        
+        </div>
+      
+        <!-- Neue abgerundete Box mit Kontaktinformationen -->
+        <div class="contact-box">
+            <a href="Aboutme.html"><img src="assets/used/Profilbild.png" alt="Leonard Bonkas" class="profile-pic"></a>
+            <div class="contact-info">
+                <h4>Contact</h4>
+                <p><strong>E-Mail:</strong> <a href="mailto:leonard.bonkas@gmail.com">leonard.bonkas@gmail.com</a></p>
+                <p><strong>Telephone:</strong> 0152 05344311</p>
+                <p><a href="impressum.html" class="impressum-link">Impressum</a></p>
+            </div>
+        </div>
+        <div class="legal">&copy; Leonard LFB</div>
+      </footer>
+
+
+      <script>
+        window.addEventListener("scroll", function () {
+            let scrollPos = window.scrollY * 0.5; // Geschwindigkeit des Effekts
+            document.querySelector(".hero-banner img").style.transform = `translateY(${scrollPos}px)`;
+        });
+
+        
+  document.addEventListener("DOMContentLoaded", function () {
+    const hamburgerIcon = document.querySelector(".hamburger-icon");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
+
+    hamburgerIcon.addEventListener("click", function (event) {
+        event.stopPropagation(); // Verhindert das Schließen, wenn das Icon erneut geklickt wird
+        dropdownMenu.classList.toggle("active");
+    });
+
+    // Schließen des Menüs, wenn man irgendwo anders klickt/toucht
+    document.addEventListener("click", function (event) {
+        if (!hamburgerIcon.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.classList.remove("active");
+        }
+    });
+});
+
+    </script>
+    </body>
+</html>
