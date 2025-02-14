@@ -501,6 +501,32 @@ footer .impressum a:hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.Video-Caption {
+    background-color: #e6e6e6;
+    border-radius: 15px;
+    padding: 20px;  /* Innenabstand verringert */
+    margin-top: 20px;
+    margin-bottom: 40px;;
+    max-width: 600px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: auto;  /* Für die horizontale Zentrierung */
+    margin-right: auto; /* Für die horizontale Zentrierung */
+    text-align: center; /* Text ebenfalls zentrieren */
+}
+
+.Video-Caption h3 {
+    color: #002366; /* Dunkelblau */
+    margin-bottom: 0px; /* Etwas weniger Abstand nach unten */
+}
+
+.Video-Caption p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+
 /* Profilbild weiter links */
 .profile-pic {
     width: 80px;
@@ -888,6 +914,7 @@ figcaption {
     font-size: 1rem;
     line-height: 1.5;
 }
+
 
 
 /* Cookie Banner */
