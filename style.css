@@ -152,7 +152,6 @@ h3 {
     top: 35px;
 }
 */
-
 /* Navbar-Container */
 .navbar {
     position: fixed;
@@ -212,13 +211,13 @@ h3 {
     }
 }
 
-
 /* Standard Dropdown (versteckt) */
 .dropdown-menu {
     position: absolute;
     top: 50px; /* Abstand von der Navbar */
     left: 0;
-    width: 100%;
+    width: auto;
+    max-width: 100vw; /* Verhindert, dass es außerhalb des Viewports geht */
     background-color: rgba(0, 0, 0, 0.9); /* Dunkler Hintergrund */
     overflow: hidden;
     transition: height 0.3s ease-in-out;
@@ -239,7 +238,8 @@ h3 {
         height: 100vh;
         position: fixed;
         top: 0;
-        left: s0;
+        left: 0;  /* Verhindert horizontales Abschneiden */
+        right: 0; /* Sicherstellen, dass es sich an der rechten Seite des Bildschirms ausrichtet */
         z-index: 100;
     }
 
@@ -252,8 +252,6 @@ h3 {
     }
 }
 
-
-
 /* Rechte Seite (Logo) */
 .logo {
     position: absolute;
@@ -263,7 +261,6 @@ h3 {
 .logo img {
     height: 45px; /* Größe anpassen */
 }
-
 
 .hamburger-container {
     position: relative;
@@ -276,13 +273,15 @@ h3 {
     user-select: none;
 }
 
+/* Desktop-Ansicht: Verhindern, dass Dropdown-Menü nach rechts abgeschnitten wird */
 .dropdown-menu {
     opacity: 0;
     visibility: hidden;
     position: absolute;
     top: 100%;
     left: 0;
-    background: #00000082;
+    right: auto; /* Entfernt die vorherige Verschiebung nach rechts */
+    background: rgba(0, 0, 0, 0.8);
     padding: 20px;
     text-align: left;
     border-radius: 10px;
@@ -290,13 +289,17 @@ h3 {
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-.hamburger-container:hover .dropdown-menu {
+/* Dynamische Berechnung für die Position des Dropdowns */
+.hamburger-container:hover .dropdown-menu,
+.hamburger-container:focus-within .dropdown-menu {
     opacity: 1;
     visibility: visible;
+    left: 0; /* Setzt die Position relativ zum Hamburger-Menü */
+    right: auto; /* Verhindert Verschiebung nach rechts */
+    max-width: 100vw; /* Verhindert, dass das Dropdown nach rechts über den Bildschirm hinausgeht */
 }
 
-
-
+/* Links im Dropdown */
 .dropdown-menu a {
     color: white;
     font-family: "Barlow Condensed";
@@ -310,20 +313,6 @@ h3 {
 .dropdown-menu a:hover {
     color: rgba(255, 255, 255, 0.282);
     transition: 700ms;
-}
-
-.dropdown-menu {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    text-align: left;
-    border-radius: 10px;
-    flex-direction: column;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .dropdown-menu.active {
@@ -465,26 +454,104 @@ footer .impressum {
     color: #a1a1a1;
     max-width: 800px;
     margin: 50px auto; /* Zentriert das Impressum */
+    overflow: hidden; /* Damit Text abgeschnitten wird, falls er zu lang ist */
 }
 
+/* Überschrift für Impressum */
 footer .impressum h4 {
     font-size: 18px;
     margin-bottom: 10px;
     color: #ffffff;
 }
 
+/* Für den Paragraph im Impressum */
 footer .impressum p {
     margin-bottom: 30px;
 }
 
+/* Stil für den Link im Impressum */
 footer .impressum a {
     color: #a1a1a1;
     text-decoration: none;
+    font-weight: bold; /* Macht das Wort "Impressum" fett */
+    text-decoration: underline; /* Macht den Link unterstrichen */
 }
 
+/* Hover-Effekt für den Link */
 footer .impressum a:hover {
     text-decoration: underline;
 }
+.Impressum {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #25253b;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 40px); /* Immer mindestens 20px Abstand links & rechts */
+}
+
+/* Titel im Impressum */
+.Impressum h4 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Flexbox für Desktop */
+.impressum-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Inhalte nebeneinander auf großen Bildschirmen */
+.impressum-left,
+.impressum-right {
+    width: 48%;
+}
+
+/* Paragraph-Styling */
+.impressum-left p,
+.impressum-right p {
+    margin: 5px 0;
+}
+
+/* Links im Impressum */
+.Impressum a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.Impressum a:hover {
+    text-decoration: underline;
+}
+
+/* Abstand für den restlichen Text */
+.Impressum p:not(:first-of-type) {
+    margin-top: 20px;
+}
+
+/* Anpassung für mobile Ansicht */
+@media (max-width: 768px) {
+    .impressum-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .impressum-left,
+    .impressum-right {
+        width: 100%;
+    }
+
+    .Impressum {
+        width: calc(100% - 40px); /* Immer 20px Abstand links & rechts */
+        margin: 40px auto;
+    }
+}
+
+
 
 /* Abgerundete Box für Kontakt */
 .contact-box {
@@ -498,6 +565,33 @@ footer .impressum a:hover {
     margin: 40px auto;
     max-width: 600px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Ansicht */
+@media (max-width: 768px) {
+    footer .impressum {
+        padding-left: 15px; /* Etwas mehr Abstand links */
+        padding-right: 15px; /* Etwas mehr Abstand rechts */
+    }
+
+    .contact-box {
+        margin: 20px; /* Weniger Abstand für Kontaktbox */
+        max-width: 100%; /* Kontaktbox nimmt volle Breite */
+        padding: 15px; /* Weniger Padding für Kontaktbox */
+    }
+
+    .contact-box .profile-pic {
+        width: 70px; /* Etwas größere Profilbildgröße */
+        height: 70px; /* Profilbild quadratisch */
+    }
+
+    .contact-box .contact-info {
+        font-size: 14px; /* Etwas größere Schriftgröße für Kontaktinformationen */
+    }
+
+    .contact-box a {
+        font-size: 14px; /* Etwas größere Schriftgröße für Links */
+    }
 }
 
 .Video-Caption {
@@ -959,3 +1053,4 @@ figcaption {
     width: 300px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+
