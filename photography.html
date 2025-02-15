@@ -12,35 +12,39 @@
   <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-  <nav>
-    <div class="navbar">
-      <!-- Linke Seite: Dropdown-Menü & Contact -->
-      <div class="menu-left">
-        <div class="hamburger-container">
-          <span class="hamburger-icon">&#9776;</span>
-          <div class="dropdown-menu">
-            <a href="index.html">Home</a>
-            <a href="Aboutme.html">About Me</a>
-            <a href="photography.html">Photography</a>
-            <a href="videography.html">Videography</a>
-          </div>
+    
+    <nav>
+        <div class="navbar">
+            <!-- Linke Seite: Dropdown-Menü & Contact -->
+            <div class="menu-left">
+                <div class="hamburger-container">
+                    <span class="hamburger-icon">&#9776;</span>
+                    <div class="dropdown-menu">
+                        <a href="index.html">Home</a>
+                        <a href="Aboutme.html">About Me</a>
+                        <a href="photography.html">Photography</a>
+                        <a href="videography.html">Videography</a>
+                        <a href="mailto:leonard.bonkas@gmail.com?subject=Shoot%20Enquiry" class="contact-item">Contact</a> 
+                    </div>
+                </div>
+                <a href="mailto:leonard.bonkas@gmail.com?subject=Shoot%20Enquiry" class="contact-button">Contact</a>
+            </div>
+    
+            <!-- Mitte: Titel (Bild) -->
+            <div class="title">
+                <a href="index.html">
+                    <img src="assets/Banner/TitleLeonardBonkas.png" alt="Leonard Bonkas" />
+                </a>
+            </div>
+    
+            <!-- Rechte Seite: Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/used/LFBLogo.png" alt="Logo" />
+                </a>
+            </div>
         </div>
-        <a href="mailto:leonard.bonkas@gmail.com?subject=Shoot%20Enquiry" class="contact-button">Contact</a>
-      </div>
-
-      <!-- Mitte: Titel -->
-      <div class="title">
-        <a href="index.html">Leonard Bonkas</a>
-      </div>
-
-      <!-- Rechte Seite: Logo -->
-      <div class="logo">
-        <a href="index.html">
-          <img src="assets/used/LFBLogo.png" alt="Logo" />
-        </a>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
   <!-- Banner-Bild -->
   <div class="hero-banner">
@@ -2027,7 +2031,7 @@
         <h4>Contact</h4>
         <p><strong>E-Mail:</strong> <a href="mailto:leonard.bonkas@gmail.com">leonard.bonkas@gmail.com</a></p>
         <p><strong>Telephone:</strong> 0152 05344311</p>
-        <p><a href="Impressum.html" class="Impressum-link" style="font-family: 'Barlow Condensed', sans-serif; font-weight: normal; font-size: 18px;">Impressum</a></p>
+        <p><a href="Impressum.html" class="Impressum-link" style="font-family: 'Barlow Condensed', sans-serif; font-weight: bold; font-size: 18px;">Impressum</a></p>
       </div>
     </div>
     <div class="legal">&copy; Leonard LFB</div>
@@ -2111,6 +2115,25 @@
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger-container");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
+
+    hamburger.addEventListener("click", function (event) {
+        event.stopPropagation(); // Verhindert, dass das Klicken auf das Menü es sofort wieder schließt
+        dropdownMenu.classList.toggle("active");
+    });
+
+    // Schließt das Menü, wenn irgendwo außerhalb geklickt wird
+    document.addEventListener("click", function (event) {
+        if (!hamburger.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.classList.remove("active");
+        }
+    });
+});
+
+
 
   </script>
 </body>
