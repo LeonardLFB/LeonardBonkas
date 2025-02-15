@@ -372,7 +372,7 @@ h3 {
     left: 0;
     width: 100%;
     height: 5vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #040425 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #0c0c24 100%);
 }
 
 
@@ -996,7 +996,7 @@ h3 {
     left: 0;
     width: 100%;
     height: 5vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #040425 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #0c0c24 100%);
 }
 
 
@@ -1450,31 +1450,47 @@ figcaption {
   
  
   .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 3rem; /* Größe der Pfeile */
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    user-select: none;
-    transition: 0.3s;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    font-size: 3rem !important; /* Größe der Pfeile */
+    color: white !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    padding: 10px 20px !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    user-select: none !important;
+    transition: 0.3s !important;
   }
   
   .arrow:hover {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.8) !important;
   }
   
   .left-arrow {
-    left: -80px; /* Abstand links vom Bild */
+    left: -80px !important; /* Abstand links vom Bild */
   }
   
   .right-arrow {
-    right: -80px; /* Abstand rechts vom Bild */
+    right: -80px !important; /* Abstand rechts vom Bild */
   }
   
+/* Anpassung der Pfeilposition und Größe für mobile Ansicht */
+@media (max-width: 768px) {
+    .arrow {
+        font-size: 1.5rem !important; /* Noch kleinere Größe für mobile Ansicht */
+        padding: 6px 9px !important; /* Noch kleineres Padding für mobile Ansicht */
+    }
+
+    .left-arrow {
+        left: 4px !important; /* Noch näher am Bild für mobile Ansicht */
+    }
+
+    .right-arrow {
+        right: 4px !important; /* Noch näher am Bild für mobile Ansicht */
+    }
+}
+
 @keyframes fadeIn {
     from { transform: scale(0.8); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
