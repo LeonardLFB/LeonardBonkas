@@ -33,70 +33,107 @@ h3 {
     padding: 40px 10px; /* Weniger Padding oben und unten */
 }
 
-
-
 .videoprojlink {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    transition: color 0.3s ease, letter-spacing 0.3s ease;
-    letter-spacing: 0px;            
+    color: white !important;
+    text-decoration: none !important;
+    padding: 10px !important;
+    transition: color 0.3s ease, letter-spacing 0.3s ease !important;
+    letter-spacing: 0px !important;            
 }
 
 .videoprojlink:hover {
-    letter-spacing: 2px;
-    color: rgb(255, 255, 255); 
+    letter-spacing: 2px !important;
+    color: rgb(255, 255, 255) !important; 
 }
 
 .video-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+    position: relative !important;
+    width: 100% !important;
+    overflow: hidden !important;
 }
 
 .bgVideo {
-    width: 100%;
-    transition: filter 0.3s ease;
+    width: 100% !important;
+    transition: filter 0.3s ease !important;
 }
 
 .video-container {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 2.35 / 1; /* Kino-Seitenverhältnis */
-    overflow: hidden; /* Verhindert, dass überschüssige Teile sichtbar sind */
+    position: relative !important;
+    width: 100% !important;
+    aspect-ratio: 2.35 / 1 !important; /* Kino-Seitenverhältnis */
+    overflow: hidden !important; /* Verhindert, dass überschüssige Teile sichtbar sind */
 }
 
 .bgVideo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Sorgt dafür, dass das Video die Box ausfüllt */
-    object-position: center; /* Zentriert den Videoausschnitt */
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Sorgt dafür, dass das Video die Box ausfüllt */
+    object-position: center !important; /* Zentriert den Videoausschnitt */
 }
 
-
-
+/* Hover-Effekt für das Video */
 .video-container:hover .bgVideo {
-    filter: brightness(80%);
-    filter:blur(2px);
+    filter: brightness(80%) !important;
+    filter: blur(2px) !important;
 }
 
 .video-container:hover .bgVideoNonClickable {
-    filter: brightness(80%);
+    filter: brightness(80%) !important;
 }
 
 .bgVideoNonClickable {
-    width: 80%;
-    transition: filter 0.3s ease;
-    margin: auto;
-    filter: brightness(100%);
+    width: 80% !important;
+    transition: filter 0.3s ease !important;
+    margin: auto !important;
+    filter: brightness(100%) !important;
 }
 
 @media screen and (max-width: 800px) {
     .bgVideoNonClickable {
-        width: 100%;
+        width: 100% !important;
     }
-    
+
+    /* Overlay Text */
+    .overlay-text {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        color: white !important;
+        font-size: 2rem !important;
+        z-index: 100 !important; /* Ensure text is on top */
+        display: block !important;
+        text-align: center !important;
+        opacity: 1 !important;
+    }
+
+    .overlay-text a {
+        color: white !important;
+        text-decoration: none !important;
+    }
+
+    /* Neue Regel für die mobile Ansicht: Textgröße verringern */
+    .overlay-text {
+        font-size: 1.5rem !important; /* Kleinere Schriftgröße für mobile Ansicht */
+        display: flex !important;  /* Flexbox für nebeneinander */
+        justify-content: center !important; /* Text zentriert */
+        gap: 20px !important; /* Abstand zwischen den Texten */
+        width: 100% !important; /* Textcontainer füllt die Breite */
+        text-align: center !important; /* Text zentrieren */
+    }
+
+    /* Video-Container bleibt gleich */
+    .video-container {
+        position: relative !important;
+    }
+
+    .bgVideo {
+        object-position: center !important; /* Centering the video */
+    }
 }
+
+
+    /* Video-Contain
 
 
 
@@ -2131,4 +2168,3 @@ figcaption {
     width: 300px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
-
