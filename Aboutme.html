@@ -1,10 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aboutme - Leonard Bonkas</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        /* Container für die unteren Boxen */
+        .profile-container {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            justify-content: space-between !important;
+        }
+
+        /* Boxen nebeneinander in der Desktop-Ansicht */
+        .bio-box {
+            flex: 1 1 calc(45% - 20px) !important; /* Zwei Boxen nebeneinander mit Abstand */
+            margin: 10px !important;
+        }
+
+        /* Anpassungen für mobile Geräte */
+        @media (max-width: 768px) {
+            .profile-container {
+                flex-direction: column !important;
+            }
+            .bio-box {
+                flex: 1 1 100% !important; /* Volle Breite in der mobilen Ansicht */
+                margin: 10px 0 !important;
+            }
+        }
+
+        h5 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 1.25em !important; /* Etwas größer als der restliche Text */
+            font-weight: bold !important;
+            margin-top: 20px !important;
+            margin-bottom: 10px !important;
+        }
+    </style>
 </head>
 <body>
 
@@ -49,30 +84,49 @@
     </a>
     </div>
 
-    <!-- Über mich Sektion -->
     <section class="about-me">
         <div class="profile-container">
             <a href="index.html">
                 <img src="assets/used/Profilbild.png" alt="Leonard Bonkas" class="profile-pic">
             </a>
-            
-            <div class="bio-box">
+            <div class="bio-box bio-box-top">
                 <h2>About me</h2>
-                <p>
-                    Hi, I'm Leonard Bonkas, also known as <a href="https://www.instagram.com/leonard_lfb/" style="color: white; text-decoration: underline;">@leonard_lfb</a>! 
-                    I love to welcome you to automotive heaven 🙌🏻 <br></br>Combining my passion
-                    Combining my passion for photography, great cars & traveling the world. I've been a photographer for quite a few years now and my passion to create memorable content has expanded. 
-                    <br><br> Luckily, I've been able to cover many events, private collections and showrooms in the past </br></br>
+                <p> Welcome to Automotive Heaven – where my passion for photography, incredible cars, and exploring the world come together.
+                    <br> 
+                    <h5>So, who am I?</h5>
+                    Hey, I’m Leonard Bonkas– a photographer, storyteller, and car enthusiast. Capturing moments that would otherwise slip away is what drives me. Photography isn’t just about taking pictures; it’s about creating something unforgettable!</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about-me">
+        <div class="profile-container">
+            <div class="bio-box bio-box-bottom">
+                <h5>When I think about what fuels my passion, a few things come to mind:</h5>
+                <ul>
+                    <li>Freezing time – turning fleeting moments into lasting memories</li>
+                    <li>Pushing creative boundaries – experimenting with new styles and perspectives</li>
+                    <li>Seeing the world through frames – some I capture, some get away, but all inspire me</li>
+                    <li>Meeting extraordinary people – from Bali’s scooter riders to Switzerland’s hypercar owners, every encounter adds a new story to my journey</li>
+                    <br>
+                </ul>   
+                    Over the years, I’ve had the privilege of covering high-end events, private collections, and exclusive showrooms. Each project fuels my drive to create extraordinary content and share unique perspectives.
                 </p>
+            </div>
+            <div class="bio-box bio-box-bottom">
+                <h5>Ready to see the world through my lens?</h5>
                 <p>
-                    I hope to be able to continue on with my passion and be able to create extraordinary content. 
-                    If you're interest, be sure to <a href="mailto:leonard.bonkas@gmail.com?subject=Shoot%20Enquiry" style="color: white; text-decoration: underline;">
-                        Contact me</a>!
+                    Join me in discovering breathtaking landscapes, the rarest and most exclusive cars, and the events that bring passionate people together. This is more than photography – it’s about the experience, the thrill, and the stories behind every shot.
+                    <br>
+                    <br>
+                    Let’s connect! Whether you’re looking for stunning visuals, event coverage, or a creative collaboration – reach out and let’s make something amazing together. And stay tuned – there’s much more to come! 
+                    <br>
+                    <br>
+                    <a href="mailto:leonard.bonkas@gmail.com" style="color: white; text-decoration: underline;">Contact me here</a> or follow my journey on Instagram <a href="https://www.instagram.com/leonard_lfb/" style="color: white; text-decoration: underline;">@Leonard_lfb</a>.
                 </p>
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
         <!-- Social Media Icons bleiben im schwarzen Bereich -->

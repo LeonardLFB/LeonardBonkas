@@ -33,6 +33,14 @@ h3 {
     padding: 40px 10px; /* Weniger Padding oben und unten */
 }
 
+h5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.5em; /* Etwas größer als der restliche Text */
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .videoprojlink {
     color: white !important;
     text-decoration: none !important;
@@ -254,6 +262,12 @@ h3 {
     .logo img {
         height: 35px; /* Etwas kleineres Logo für mobile Ansicht */
     }
+    .title {
+        left: 50%;
+        transform: translate(-50%, 0); /* Nur horizontal zentrieren */
+        top: 10%; /* Vertikale Positionierung für mobile Ansicht anpassen */
+    }
+    
 }
 
 @media (min-width: 769px) {  /* Desktop-Ansicht bleibt unverändert */
@@ -1626,23 +1640,28 @@ figcaption {
     position: relative;
 }
 
-/* Container für Profilbild & Bio */
+/* Container für die unteren Boxen */
 .profile-container {
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
 }
 
-/* Bio-Box */
+/* Boxen nebeneinander in der Desktop-Ansicht */
 .bio-box {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 700px;
-    position: relative;
+    flex: 1 1 calc(45% - 20px) !important; /* Zwei Boxen nebeneinander mit Abstand */
+    margin: 10px !important;
+}
+
+/* Anpassungen für mobile Geräte */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column !important;
+    }
+    .bio-box {
+        flex: 1 1 100% !important; /* Volle Breite in der mobilen Ansicht */
+        margin: 10px 0 !important;
+    }
 }
 
 /* Profilbild */
@@ -1700,7 +1719,7 @@ figcaption {
     font-size: 20px;
     cursor: pointer;
     position: absolute;
-    bottom: 65px; /* Button unten im Container */
+    bottom: 135px; /* Button unten im Container */
     left: 50%;
     transform: translateX(-50%);
     padding: 12px 24px; /* Größe des Buttons */
@@ -2171,53 +2190,61 @@ figcaption {
 
 }
 
-/* Über mich - Sektion */
-.about-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 50px 20px;
-}
-
 /* Container für Profilbild & Bio */
 .profile-container {
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+    max-width: 1200px !important; /* Erhöhen Sie die maximale Breite, um Platz für zwei Boxen nebeneinander zu schaffen */
+    display: flex !important;
+    flex-wrap: wrap !important; /* Ermöglicht das Umfließen der Boxen */
+    justify-content: center !important; /* Zentriert die Boxen */
+    gap: 40px !important;
+    align-items: center !important; /* Zentriert die Boxen */
+    flex-direction: column !important; /* Stellt sicher, dass das Profilbild über der ersten Box bleibt */
 }
 
 /* Profilbild */
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 0px solid #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 0px solid #fff !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    margin-bottom: 20px !important; /* Fügt Abstand unter dem Profilbild hinzu */
 }
 
 /* Bio-Box */
 .bio-box {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 700px;
+    background: rgba(255, 255, 255, 0.1) !important;
+    padding: 40px !important;
+    border-radius: 15px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    margin: 10px !important;
+    max-width: 700px !important; /* Begrenzung der maximalen Breite */
 }
 
-.bio-box h2 {
-    margin-bottom: 10px;
+/* Spezielle Klasse für die obere Box */
+.bio-box-top {
+    flex: 1 1 100% !important; /* Volle Breite für die obere Box */
+    max-width: 700px !important; /* Begrenzung der maximalen Breite */
+    text-align: center !important; /* Zentriert den Text */
 }
 
-.bio-box p {
-    font-size: 1rem;
-    line-height: 1.5;
+/* Spezielle Klasse für die unteren Boxen */
+.bio-box-bottom {
+    flex: 1 1 calc(45% - 20px) !important; /* Zwei Boxen nebeneinander mit Abstand */
 }
 
-
+/* Anpassungen für mobile Geräte */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column !important; /* Boxen untereinander in der mobilen Ansicht */
+        align-items: center !important; /* Zentriert die Boxen in der mobilen Ansicht */
+    }
+    .bio-box, .bio-box-top, .bio-box-bottom {
+        flex: 1 1 100% !important; /* Volle Breite in der mobilen Ansicht */
+        margin: 10px 0 !important;
+    }
+}
 
 /* Cookie Banner */
 .cookie-banner {
