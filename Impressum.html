@@ -47,16 +47,16 @@
         </div>
     </nav>
   
-    
-<!-- Banner-Bild -->
-<div class="hero-banner">
-    <img src="assets/Banner/Banner3.webp" alt="Panorama Banner" style="object-fit: cover; object-position: 50% 56%;">
-</div>
-
-
-    
+    <!-- Banner-Bild -->
+    <div class="hero-banner" style="width: 100vw !important; height: auto !important; max-height: 50vh !important; overflow: hidden !important;">
+        <a href="photography.html">
+            <img src="assets/Banner/Banner3.webp" 
+                 alt="Panorama Banner" 
+                 style="width: 100vw !important; height: auto !important; object-fit: cover !important; object-position: 50% 30% !important;"> <!-- object-position angepasst -->
+        </a>
+    </div>
+  
     <footer>
-        
         <section class="Impressum">
             <h3>Impressum</h3>
             <div class="impressum-container">
@@ -84,9 +84,24 @@
             <p><strong>Urheberrecht:</strong><br>
             Alle Inhalte auf dieser Website, einschließlich Texte, Bilder, Grafiken und Logos, sind urheberrechtlich geschützt und dürfen ohne ausdrückliche Genehmigung nicht verwendet werden.</p>
         </div>
+        <div style="margin: 30px 20px; padding: 15px;">     
+        <h4>Umsatzsteuer-ID</h4>
+        <p>Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect; 27 a Umsatzsteuergesetz:<br />
+        DE999999999</p>
         
+        <br>
+        <h4>EU-Streitschlichtung</h4>
+        <p>Die Europ&auml;ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" style="color: white;">https://ec.europa.eu/consumers/odr/</a>.<br /> Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
         
-          <div class="footer">
+        <h4>Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h4>
+        <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+        
+        <p>Quelle: <a href="https://www.e-recht24.de" style="color: white;">https://www.e-recht24.de</a></p>
+        </div>
+<br>
+<br>
+
+        <div class="footer">
             <div class="socials">
                 <div><a target="_blank" href="https://www.instagram.com/leonard_lfb/"><img src="assets/used/InstagramLogo.svg"></a></div>
                 <div><a target="_blank" href="https://www.youtube.com/@LeonardLFB/"><img src="assets/used/YouTubeLogo.png"></a></div>
@@ -95,47 +110,52 @@
             <div class="legal">&copy; Leonard LFB</div>
         </div>
     </footer>   
+
     <script>
         window.addEventListener("scroll", function () {
             let scrollPos = window.scrollY * 0.5; // Geschwindigkeit des Effekts
             document.querySelector(".hero-banner img").style.transform = `translateY(${scrollPos}px)`;
         });
         
-  document.addEventListener("DOMContentLoaded", function () {
-    const hamburgerIcon = document.querySelector(".hamburger-icon");
-    const dropdownMenu = document.querySelector(".dropdown-menu");
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburgerIcon = document.querySelector(".hamburger-icon");
+            const dropdownMenu = document.querySelector(".dropdown-menu");
+            const closeBtn = document.querySelector(".close-btn");
 
-    hamburgerIcon.addEventListener("click", function (event) {
-        event.stopPropagation(); // Verhindert das Schließen, wenn das Icon erneut geklickt wird
-        dropdownMenu.classList.toggle("active");
-    });
+            hamburgerIcon.addEventListener("click", function (event) {
+                event.stopPropagation(); // Verhindert das Schließen, wenn das Icon erneut geklickt wird
+                dropdownMenu.classList.toggle("active");
+            });
 
-    // Schließen des Menüs, wenn man irgendwo anders klickt/toucht
-    document.addEventListener("click", function (event) {
-        if (!hamburgerIcon.contains(event.target) && !dropdownMenu.contains(event.target)) {
-            dropdownMenu.classList.remove("active");
-        }
-    });
-});
+            closeBtn.addEventListener("click", function (event) {
+                event.stopPropagation(); // Verhindert das Schließen des Menüs durch das Klicken auf das "X"
+                dropdownMenu.classList.remove("active");
+            });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.querySelector(".hamburger-container");
-    const dropdownMenu = document.querySelector(".dropdown-menu");
+            // Schließen des Menüs, wenn man irgendwo anders klickt/toucht
+            document.addEventListener("click", function (event) {
+                if (!hamburgerIcon.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.remove("active");
+                }
+            });
+        });
 
-    hamburger.addEventListener("click", function (event) {
-        event.stopPropagation(); // Verhindert, dass das Klicken auf das Menü es sofort wieder schließt
-        dropdownMenu.classList.toggle("active");
-    });
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger-container");
+            const dropdownMenu = document.querySelector(".dropdown-menu");
 
-    // Schließt das Menü, wenn irgendwo außerhalb geklickt wird
-    document.addEventListener("click", function (event) {
-        if (!hamburger.contains(event.target) && !dropdownMenu.contains(event.target)) {
-            dropdownMenu.classList.remove("active");
-        }
-    });
-});
+            hamburger.addEventListener("click", function (event) {
+                event.stopPropagation(); // Verhindert, dass das Klicken auf das Menü es sofort wieder schließt
+                dropdownMenu.classList.toggle("active");
+            });
 
-
+            // Schließt das Menü, wenn irgendwo außerhalb geklickt wird
+            document.addEventListener("click", function (event) {
+                if (!hamburger.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.remove("active");
+                }
+            });
+        });
     </script>
 </body>
 </html>

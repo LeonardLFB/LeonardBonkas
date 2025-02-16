@@ -1716,52 +1716,79 @@ figcaption {
 }
 
 
-
-/* Cookie Banner */
 .cookie-banner {
     position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
+    padding: 10px;
     z-index: 1000;
 }
 
-.cookie-banner .cookie-content p {
-    margin: 10px;
-    padding-right: 20px;
+.cookie-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.cookie-banner button {
-    background: #010584;
+.cookie-content p {
+    margin: 10px 0;
+}
+
+.cookie-content button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #444;
     color: white;
     border: none;
-    padding: 10px;
     cursor: pointer;
-    margin-left: 10px;
 }
 
-/* Cookie Settings Popup */
+.cookie-content button:hover {
+    background-color: #555;
+}
+
 .cookie-settings-popup {
     display: none;
     position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: white;
-    color: black;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
     padding: 20px;
     z-index: 1001;
-    width: 300px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+.cookie-settings-popup h3 {
+    margin-top: 0;
+}
 
+.cookie-settings-popup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cookie-settings-popup form label {
+    margin: 10px 0;
+}
+
+.cookie-settings-popup button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cookie-settings-popup button:hover {
+    background-color: #555;
+}
 
 .Video-Caption {
     background-color: #e6e6e6;
@@ -2212,26 +2239,61 @@ figcaption {
     padding-right: 20px;
 }
 
+
 .cookie-banner button {
-    background: #010584;
+    background: #201882;
+    border-radius: 5px;;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
-    margin-left: 10px;
+    margin-bottom: 15px;
 }
 
 /* Cookie Settings Popup */
 .cookie-settings-popup {
     display: none;
     position: fixed;
-    top: 20%;
+    top: 20%; /* Mittig oben anzeigen */
     left: 50%;
     transform: translateX(-50%);
     background: white;
     color: black;
-    padding: 20px;
+    padding: 5px; /* Innenabstände verringert */
     z-index: 1001;
-    width: 300px;
+    width: 80%; /* Kleinere Breite */
+    max-width: 350px; /* Maximale Breite leicht erhöht */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    text-align: center; /* Text zentrieren */
+    max-height: 53vh; /* Maximale Höhe auf 50% der Viewport-Höhe begrenzen */
+}
+
+.cookie-settings-popup h3 {
+    margin-top: 0;
+    margin-bottom: 10px; /* Abstand nach unten verringert */
+}
+
+.cookie-settings-popup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cookie-settings-popup form label {
+    margin: 0px 0; /* Innenabstände verringert */
+}
+
+.cookie-settings-popup button {
+    margin: 5px; /* Innenabstände verringert */
+    padding: 7px 10px; /* Innenabstände verringert */
+    border-radius: 5px;;
+    background-color: #201882;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cookie-settings-popup button:hover {
+    background-color: #555555;
 }
