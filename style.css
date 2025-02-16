@@ -622,8 +622,8 @@ footer .impressum a:hover {
     }
 
     .contact-box .profile-pic {
-        width: 70px; /* Etwas größere Profilbildgröße */
-        height: 70px; /* Profilbild quadratisch */
+        width: 80px !important; /* Etwas größere Profilbildgröße */
+        height: 80px !important; /* Profilbild quadratisch */
     }
 
     .contact-box .contact-info {
