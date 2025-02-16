@@ -20,6 +20,7 @@
                 <div class="hamburger-container">
                     <span class="hamburger-icon">&#9776;</span>
                     <div class="dropdown-menu">
+                        <span class="close-btn">&times;</span> <!-- Schließen-Button -->
                         <a href="index.html">Home</a>
                         <a href="Aboutme.html">About Me</a>
                         <a href="photography.html">Photography</a>
@@ -2007,11 +2008,11 @@
   <div class="lightbox" id="lightbox">
     <span class="close" onclick="closeLightbox()">&times;</span>
     <div class="lightbox-content">
-      <div class="arrow left-arrow" onclick="prevImage()">&#10094;</div>
-      <img id="lightboxImg" src="" alt="">
-      <div class="arrow right-arrow" onclick="nextImage()">&#10095;</div>
+        <div class="arrow left-arrow" onclick="prevImage()">&#10094;</div>
+        <img id="lightboxImg" src="" alt="">
+        <div class="arrow right-arrow" onclick="nextImage()">&#10095;</div>
     </div>
-  </div>
+</div>
 
   <!-- Footer -->
   <footer>
@@ -2039,93 +2040,121 @@
 
   <!-- JavaScript für Lightbox & Navigation -->
   <script>
-    gallery = document.querySelectorAll('.gallery img');
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightboxImg');
-let currentImageIndex = 0;
+    document.addEventListener("DOMContentLoaded", function () {
+        // Dropdown-Menü
+        const hamburgerIcon = document.querySelector(".hamburger-icon");
+        const dropdownMenu = document.querySelector(".dropdown-menu");
+        const closeBtn = document.querySelector(".close-btn");
 
-const lightboxCaption = document.createElement("figcaption");
-lightboxCaption.classList.add("lightbox-caption");
-document.querySelector(".lightbox-content").appendChild(lightboxCaption);
+        hamburgerIcon.addEventListener("click", function (event) {
+            event.stopPropagation(); // Verhindert das Schließen, wenn das Icon erneut geklickt wird
+            dropdownMenu.classList.toggle("active");
+        });
 
-gallery.forEach((img, index) => {
-  img.addEventListener('click', () => {
-    currentImageIndex = index;
-    openLightbox();
-  });
-});
+        closeBtn.addEventListener("click", function (event) {
+            event.stopPropagation(); // Verhindert das Schließen des Menüs durch das Klicken auf das "X"
+            dropdownMenu.classList.remove("active");
+        });
 
-function openLightbox() {
-  lightbox.classList.add('active');
-  updateLightbox();
-}
+        // Schließen des Menüs, wenn man irgendwo anders klickt/toucht
+        document.addEventListener("click", function (event) {
+            if (!hamburgerIcon.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.remove("active");
+            }
+        });
 
-function updateLightbox() {
-  const currentImg = gallery[currentImageIndex];
-  lightboxImg.src = currentImg.src;
-  lightboxCaption.textContent = currentImg.nextElementSibling.textContent;
-}
+        // Optionaler Parallax-Effekt für das Bannerbild
+        window.addEventListener("scroll", function () {
+            let scrollPos = window.scrollY * 0.5;
+            document.querySelector(".hero-banner img").style.transform = `translateY(${scrollPos}px)`;
+        });
 
-function closeLightbox() {
-  lightbox.classList.remove('active');
-}
+        // Lightbox-Funktionen
+        const gallery = document.querySelectorAll('.gallery img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        let currentImageIndex = 0;
 
-function nextImage() {
-  currentImageIndex = (currentImageIndex + 1) % gallery.length;
-  updateLightbox();
-}
+        const lightboxCaption = document.createElement("figcaption");
+        lightboxCaption.classList.add("lightbox-caption");
+        document.querySelector(".lightbox-content").appendChild(lightboxCaption);
 
-function prevImage() {
-  currentImageIndex = (currentImageIndex - 1 + gallery.length) % gallery.length;
-  updateLightbox();
-}
+        gallery.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                currentImageIndex = index;
+                openLightbox();
+            });
+        });
 
-// Optionaler Parallax-Effekt für das Bannerbild
-window.addEventListener("scroll", function () {
-  let scrollPos = window.scrollY * 0.5;
-  document.querySelector(".hero-banner img").style.transform = `translateY(${scrollPos}px)`;
-});
+        function openLightbox() {
+            lightbox.classList.add('active');
+            updateLightbox();
+        }
 
-// Event-Listener für Tastatursteuerung
-document.addEventListener("keydown", function (event) {
-  if (lightbox.classList.contains("active")) {
-    if (event.key === "ArrowRight") {
-      nextImage();
-    } else if (event.key === "ArrowLeft") {
-      prevImage();
-    } else if (event.key === "Escape") {
-      closeLightbox();
+        function updateLightbox() {
+            const currentImg = gallery[currentImageIndex];
+            lightboxImg.src = currentImg.src;
+            lightboxCaption.textContent = currentImg.nextElementSibling.textContent;
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % gallery.length;
+            updateLightbox();
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + gallery.length) % gallery.length;
+            updateLightbox();
+        }
+
+        // Event-Listener für Tastatursteuerung
+        document.addEventListener("keydown", function (event) {
+            if (lightbox.classList.contains("active")) {
+                if (event.key === "ArrowRight") {
+                    nextImage();
+                } else if (event.key === "ArrowLeft") {
+                    prevImage();
+                } else if (event.key === "Escape") {
+                    closeLightbox();
+                }
+            }
+        });
+
+        // Event-Listener für die mobilen Pfeiltasten
+        document.querySelector('.lightbox .left-arrow').addEventListener('click', prevImage);
+        document.querySelector('.lightbox .right-arrow').addEventListener('click', nextImage);
+
+        // Hinzufügen der Swipe-Funktionalität auf mobilen Geräten
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        lightboxImg.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        lightboxImg.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            if (touchEndX < touchStartX) {
+                // Swipe nach links -> Nächstes Bild
+                nextImage();
+            } else if (touchEndX > touchStartX) {
+                // Swipe nach rechts -> Vorheriges Bild
+                prevImage();
+            }
+        }
+    });
+
+    function closeLightbox() {
+        document.getElementById('lightbox').classList.remove('active');
     }
-  }
-});
-
-// Event-Listener für die mobilen Pfeiltasten
-document.querySelector('.gallery .prev').addEventListener('click', prevImage);
-document.querySelector('.gallery .next').addEventListener('click', nextImage);
-
-// Hinzufügen der Swipe-Funktionalität auf mobilen Geräten
-let touchStartX = 0;
-let touchEndX = 0;
-
-lightboxImg.addEventListener('touchstart', (e) => {
-  touchStartX = e.changedTouches[0].screenX;
-});
-
-lightboxImg.addEventListener('touchend', (e) => {
-  touchEndX = e.changedTouches[0].screenX;
-  handleSwipe();
-});
-
-function handleSwipe() {
-  if (touchEndX < touchStartX) {
-    // Swipe nach links -> Nächstes Bild
-    nextImage();
-  } else if (touchEndX > touchStartX) {
-    // Swipe nach rechts -> Vorheriges Bild
-    prevImage();
-  }
-}
-
-  </script>
+</script>
 </body>
 </html>

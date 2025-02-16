@@ -267,35 +267,86 @@ h3 {
 
 /* Standard Dropdown (versteckt) */
 .dropdown-menu {
-    position: absolute;
-    top: 50px; /* Abstand von der Navbar */
-    left: 0;
-    width: auto;
-    max-width: 100vw; /* Verhindert, dass es außerhalb des Viewports geht */
-    background-color: rgba(0, 0, 0, 0.9); /* Dunkler Hintergrund */
-    overflow: hidden;
-    transition: height 0.3s ease-in-out;
+    position: absolute !important;
+    top: 50px !important; /* Abstand von der Navbar */
+    left: 0 !important;
+    width: auto !important;
+    max-width: 100vw !important; /* Verhindert, dass es außerhalb des Viewports geht */
+    background-color: rgba(0, 0, 0, 0.9) !important; /* Dunkler Hintergrund */
+    overflow: hidden !important;
+    transition: height 0.3s ease-in-out !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Standardmäßig nicht fullscreen */
+@media screen and (max-width: 768px) {
+    .dropdown-menu {
+        height: 0 !important; /* Unsichtbar bei Start */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    /* Wenn aktiv, dann Fullscreen */
+    .dropdown-menu.active {
+        height: 100vh !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;  /* Verhindert horizontales Abschneiden */
+        right: 0 !important; /* Sicherstellen, dass es sich an der rechten Seite des Bildschirms ausrichtet */
+        z-index: 100 !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    /* Links im Dropdown */
+    .dropdown-menu a {
+        color: white !important;
+        font-size: 24px !important;
+        padding: 15px !important;
+        text-decoration: none !important;
+    }
+
+    /* Schließen-Button */
+    .dropdown-menu .close-btn {
+        position: absolute !important;
+        top: 20px !important;
+        left: 30px !important; /* Links oben positioniert */
+        font-size: 30px !important;
+        color: white !important;
+        cursor: pointer !important;
+        display: block !important; /* Sichtbar in der mobilen Ansicht */
+    }
 }
 
 /* Links im Dropdown */
 .dropdown-menu a {
-    color: white;
-    font-family: "Barlow Condensed";
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 25px;
-    padding: 5px 0;
-    white-space: nowrap;
+    color: white !important;
+    font-family: "Barlow Condensed" !important;
+    font-weight: bold !important;
+    text-decoration: none !important; 
+    font-size: 25px !important;
+    padding: 5px 0 !important;
+    white-space: nowrap !important;
 }
 
 .dropdown-menu a:hover {
-    color: rgba(255, 255, 255, 0.282);
-    transition: 700ms;
+    color: rgba(255, 255, 255, 0.282) !important;
+    transition: 700ms !important;
 }
 
 .dropdown-menu.active {
-    opacity: 1;
-    visibility: visible;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Schließen-Button in der Desktop-Ansicht ausblenden */
+@media screen and (min-width: 769px) {
+    .dropdown-menu .close-btn {
+        display: none !important; /* Versteckt in der Desktop-Ansicht */
+    }
 }
 
 /* Contact-Button */

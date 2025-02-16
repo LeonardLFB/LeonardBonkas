@@ -39,6 +39,7 @@
               <div class="hamburger-container">
                   <span class="hamburger-icon">&#9776;</span>
                   <div class="dropdown-menu">
+                      <span class="close-btn">&times;</span> <!-- Schließen-Button -->
                       <a href="index.html">Home</a>
                       <a href="Aboutme.html">About Me</a>
                       <a href="photography.html">Photography</a>
@@ -204,13 +205,19 @@
 </footer>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const hamburgerIcon = document.querySelector(".hamburger-icon");
     const dropdownMenu = document.querySelector(".dropdown-menu");
+    const closeBtn = document.querySelector(".close-btn");
 
     hamburgerIcon.addEventListener("click", function (event) {
         event.stopPropagation(); // Verhindert das Schließen, wenn das Icon erneut geklickt wird
         dropdownMenu.classList.toggle("active");
+    });
+
+    closeBtn.addEventListener("click", function (event) {
+        event.stopPropagation(); // Verhindert das Schließen des Menüs durch das Klicken auf das "X"
+        dropdownMenu.classList.remove("active");
     });
 
     // Schließen des Menüs, wenn man irgendwo anders klickt/toucht
@@ -221,39 +228,10 @@
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.querySelector(".hamburger-container");
-    const dropdownMenu = document.querySelector(".dropdown-menu");
-
-    hamburger.addEventListener("click", function (event) {
-        event.stopPropagation(); // Verhindert, dass das Klicken auf das Menü es sofort wieder schließt
-        dropdownMenu.classList.toggle("active");
-    });
-
-    // Schließt das Menü, wenn irgendwo außerhalb geklickt wird
-    document.addEventListener("click", function (event) {
-        if (!hamburger.contains(event.target) && !dropdownMenu.contains(event.target)) {
-            dropdownMenu.classList.remove("active");
-        }
-    });
-});
-
-
 window.addEventListener("scroll", function () {
-            let scrollPos = window.scrollY * 0.5; // Geschwindigkeit des Effekts
-            document.querySelector(".hero-banner img").style.transform = `translateY(${scrollPos}px)`;
-        });
-        document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger-container');
-    const dropdownMenu = document.querySelector('.dropdown-menu');
-
-    hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('active');
-        dropdownMenu.classList.toggle('active');
-    });
+    let scrollPos = window.scrollY * 0.5; // Geschwindigkeit des Effekts
+    document.querySelector(".hero-banner img").style.transform = `translateY(${scrollPos}px)`;
 });
-       
-
 </script>
 
 </body>
