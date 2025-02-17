@@ -25,10 +25,38 @@
         @media (max-width: 768px) {
             .profile-container {
                 flex-direction: column !important;
+                padding: 0 20px; /* Außenabstand zum Bildschirmrand */
             }
             .bio-box {
                 flex: 1 1 100% !important; /* Volle Breite in der mobilen Ansicht */
                 margin: 10px 0 !important;
+                padding: 0 20px; /* Außenabstand zum Bildschirmrand */
+            }
+            .gallery.single-image {
+                padding: 0 5px; /* Außenabstand zum Bildschirmrand */
+            }
+            .gallery.single-image img {
+                width: 100% !important; /* Bilder in der mobilen Ansicht größer machen */
+                height: auto !important;
+            }
+            .grid-container {
+                grid-template-columns: 1fr;
+                padding: 0 20px; /* Außenabstand zum Bildschirmrand */
+            }
+            .bio-box-top {
+                padding: 0 20px; /* Außenabstand zum Bildschirmrand für die About me Box */
+            }
+            .grid-item:nth-child(2) {
+                order: 1; /* Bild 2023_07_01 nach oben rücken */
+            }
+            .grid-item:nth-child(1) {
+                order: 2; /* "When I think about what fuels my passion" Box */
+            }
+            .grid-item:nth-child(3) {
+                order: 3; /* Bild 2022_20_01 */
+            }
+            .grid-item:nth-child(4) {
+                order: 4; /* "Ready to see the world through my lens" Box */
             }
         }
 
@@ -39,7 +67,65 @@
             margin-top: 20px !important;
             margin-bottom: 10px !important;
         }
+/* Grid-Container für die Desktop-Ansicht */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    margin: 20px; /* Außenabstand auf mindestens 20px gesetzt */
+    max-width: 1200px; /* Maximale Breite des Grids */
+    margin-left: auto;
+    margin-right: auto;
+}
 
+/* Grid-Items */
+.grid-item {
+    position: relative;
+    max-width: 100%; /* Maximale Breite der Grid-Items */
+}
+
+/* Anpassungen für mobile Geräte */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Innenabstand über den Überschriften verkleinern */
+.bio-box h5 {
+    margin-top: 10px !important; /* Innenabstand über den Überschriften verkleinert */
+}
+
+/* Grid-Container für die Desktop-Ansicht */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    margin: 20px; /* Außenabstand auf mindestens 20px gesetzt */
+    max-width: 1200px; /* Maximale Breite des Grids */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Grid-Items */
+.grid-item {
+    position: relative;
+    max-width: 100%; /* Maximale Breite der Grid-Items */
+}
+
+/* Anpassungen für mobile Geräte */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Innenabstand über den Überschriften verkleinern */
+.bio-box h5 {
+    margin-top: 10px !important; /* Innenabstand über den Überschriften verkleinert */
+}
     </style>
 </head>
 <body>
@@ -85,75 +171,71 @@
     </a>
     </div>
 
-    <section class="about-me">
-        <div class="profile-container">
-            <a href="index.html">
-                <img src="assets/used/Profilbild.png" alt="Leonard Bonkas" class="profile-pic">
-            </a>
-            <div class="bio-box bio-box-top">
-                <h2>About me</h2>
-                <p> Welcome to Automotive Heaven – where my passion for photography, incredible cars, and exploring the world come together.
-                    <br> 
-                    <h5>So, who am I?</h5>
-                    Hey, I’m Leonard Bonkas– a photographer, storyteller, and car enthusiast. Capturing moments that would otherwise slip away is what drives me. Photography isn’t just about taking pictures; it’s about creating something unforgettable!</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
-    <section>
-        <div class="gallery single-image">
-          <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-            <a href="photography.html">
-            <img src="pictures/2023/Komprimiert/2023_07_01.webp" alt="Large Image" style="width: 90%; height: auto; object-fit: cover; display: block;">
+<!-- Profilbild und About Me Section -->
+<section class="about-me">
+    <div class="profile-container">
+        <a href="index.html">
+            <img src="assets/used/Profilbild.png" alt="Leonard Bonkas" class="profile-pic">
         </a>
-        </figure>
+        <div class="bio-box bio-box-top">
+            <h2>About me</h2>
+            <p> Welcome to Automotive Heaven – where my passion for photography, incredible cars, and exploring the world come together.
+                <br> 
+                <h5>So, who am I?</h5>
+                Hey, I’m Leonard Bonkas– a photographer, storyteller, and car enthusiast. Capturing moments that would otherwise slip away is what drives me. Photography isn’t just about taking pictures; it’s about creating something unforgettable!</p>
         </div>
-      </section>
+    </div>
+</section>
 
-
-    <section class="about-me">
-        <div class="profile-container">
-            <div class="bio-box bio-box-bottom">
-                <h5>When I think about what fuels my passion, a few things come to mind:</h5>
-                <ul>
-                    <li>Freezing time – turning fleeting moments into lasting memories</li>
-                    <li>Pushing creative boundaries – experimenting with new styles and perspectives</li>
-                    <li>Seeing the world through frames – some I capture, some get away, but all inspire me</li>
-                    <li>Meeting extraordinary people – from Bali’s scooter riders to Switzerland’s hypercar owners, every encounter adds a new story to my journey</li>
-                    <br>
-                </ul>   
-                    Over the years, I’ve had the privilege of covering high-end events, private collections, and exclusive showrooms. Each project fuels my drive to create extraordinary content and share unique perspectives.
-                </p>
-            </div>
-
-                <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
-    <section>
+<!-- Vierer Grid für Desktop-Ansicht -->
+<section class="grid-container">
+    <div class="grid-item">
+        <div class="bio-box bio-box-bottom">
+            <h5>When I think about what fuels my passion, a few things come to mind:</h5>
+            <ul>
+                <li>Freezing time – turning fleeting moments into lasting memories</li>
+                <li>Pushing creative boundaries – experimenting with new styles and perspectives</li>
+                <li>Seeing the world through frames – some I capture, some get away, but all inspire me</li>
+                <li>Meeting extraordinary people – from Bali’s scooter riders to Switzerland’s hypercar owners, every encounter adds a new story to my journey</li>
+                <br>
+            </ul>   
+            Over the years, I’ve had the privilege of covering high-end events, private collections, and exclusive showrooms. Each project fuels my drive to create extraordinary content and share unique perspectives.
+            </p>
+        </div>
+    </div>
+    <div class="grid-item">
         <div class="gallery single-image">
-          <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-            <a href="photography.html">
-            <img src="pictures/2022/Komprimiert/2022_20_01.webp" alt="Large Image" style="width: 90%; height: auto; object-fit: cover; display: block;">
-        </a>
-        </figure>
+            <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+                <a href="photography.html">
+                    <img src="pictures/2023/Komprimiert/2023_07_01.webp" alt="Large Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </a>
+            </figure>
         </div>
-      </section>
-
-            <div class="bio-box bio-box-bottom">
-                <h5>Ready to see the world through my lens?</h5>
-                <p>
-                    Join me in discovering breathtaking landscapes, the rarest and most exclusive cars, and the events that bring passionate people together. This is more than photography – it’s about the experience, the thrill, and the stories behind every shot.
-                    <br>
-                    <br>
-                    Let’s connect! Whether you’re looking for stunning visuals, event coverage, or a creative collaboration – reach out and let’s make something amazing together. And stay tuned – there’s much more to come! 
-                    <br>
-                    <br>
-                    <a href="mailto:leonard.bonkas@gmail.com" style="color: white; text-decoration: underline;">Contact me here</a> or follow my journey on Instagram <a href="https://www.instagram.com/leonard_lfb/" style="color: white; text-decoration: underline;">@Leonard_lfb</a>.
-                </p>
-            </div>
+    </div>
+    <div class="grid-item">
+        <div class="gallery single-image">
+            <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+                <a href="photography.html">
+                    <img src="pictures/2022/Komprimiert/2022_20_01.webp" alt="Large Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </a>
+            </figure>
         </div>
-    </section>
-    <!-- Footer -->
-    <footer>
+    </div>
+    <div class="grid-item">
+        <div class="bio-box bio-box-bottom">
+            <h5>Ready to see the world through my lens?</h5>
+            <p>
+                Join me in discovering breathtaking landscapes, the rarest and most exclusive cars, and the events that bring passionate people together. This is more than photography – it’s about the experience, the thrill, and the stories behind every shot.
+                <br>
+                <br>
+                Let’s connect! Whether you’re looking for stunning visuals, event coverage, or a creative collaboration – reach out and let’s make something amazing together. And stay tuned – there’s much more to come! 
+                <br>
+                <br>
+                <a href="mailto:leonard.bonkas@gmail.com" style="color: white; text-decoration: underline;">Contact me here</a> or follow my journey on Instagram <a href="https://www.instagram.com/leonard_lfb/" style="color: white; text-decoration: underline;">@Leonard_lfb</a>.
+            </p>
+        </div>
+    </div>
+</section>    <footer>
         <!-- Social Media Icons bleiben im schwarzen Bereich -->
         <div class="footer">
             <div class="socials">
