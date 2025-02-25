@@ -1,5 +1,42 @@
+/* Lato */
+@font-face {
+    font-family: 'Lato';
+    src: url('assets/Fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Lato';
+    src: url('assets/Fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
+/* Barlow Condensed */
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('assets/Fonts/BarlowCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('assets/Fonts/BarlowCondensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Italianno */
+@font-face {
+    font-family: 'Italianno';
+    src: url('assets/Fonts/Italianno-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Anwendung der Schriftarten */
 * {
     margin: 0;
     padding: 0;
@@ -630,6 +667,8 @@ footer .impressum a:hover {
         font-size: 14px; /* Etwas größere Schriftgröße für Links */
     }
 }
+
+
 
 
 
