@@ -2774,6 +2774,7 @@
       } else {
         filterGallery(selectedFilter);
         filterDropdown.style.display = 'none'; // Schließt das Dropdown-Menü nach Auswahl
+        scrollToFirstVisibleElement(); // Scrollt zum ersten sichtbaren Element
       }
     });
 
@@ -2799,6 +2800,19 @@
       filteredFigures.forEach(figure => {
         figure.parentElement.appendChild(figure);
       });
+    }
+
+    function scrollToFirstVisibleElement() {
+      const firstVisibleElement = document.querySelector('.gallery figure[style*="display: block;"]');
+      if (firstVisibleElement) {
+        const offset = 150; // Platz nach oben
+        const elementPosition = firstVisibleElement.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - offset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
     }
 
     // Schließen des Dropdowns, wenn man außerhalb klickt
