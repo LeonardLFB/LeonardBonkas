@@ -356,7 +356,7 @@ h5 {
         top: 0 !important;
         left: 0 !important;  /* Verhindert horizontales Abschneiden */
         right: 0 !important; /* Sicherstellen, dass es sich an der rechten Seite des Bildschirms ausrichtet */
-        z-index: 100 !important;
+        z-index: 1000 !important;
         opacity: 1 !important;
         visibility: visible !important;
     }
@@ -956,7 +956,7 @@ h3 {
         top: 0;
         left: 0;  /* Verhindert horizontales Abschneiden */
         right: 0; /* Sicherstellen, dass es sich an der rechten Seite des Bildschirms ausrichtet */
-        z-index: 100;
+        z-index: 1000;
     }
 
     /* Links im Dropdown */
@@ -2371,4 +2371,123 @@ figcaption {
 
 .cookie-settings-popup button:hover {
     background-color: #555555;
+}
+
+
+/* Filter-Button Container */
+.filter-container {
+    position: fixed;
+    top: 85px; /* Direkt unter der Navbar */
+    right: 125px; /* Links orientiert */
+    display: flex;
+    justify-content: flex-start;
+    z-index: 100; /* Über anderen Inhalten */
+}
+
+/* Filter-Button */
+.filter-button {
+    background-color: rgba(255, 255, 255, 0.7); /* Schwarzer Hintergrund mit Transparenz */
+    color: #002366;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #002366; /* Weißer Hintergrund mit Transparenz */
+    color: #ffffff;
+}
+
+/* Dropdown-Menü */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 63px;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.dropdown-content label {
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+
+.dropdown-content label:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-content input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Verstecke die Radio-Buttons */
+.dropdown-content input[type="radio"] {
+    display: none;
+}
+
+.gallery.single-image figcaption {
+    text-align: center !important;
+    margin-top: 10px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    color: #ffffff !important;
+}
+
+/* Mobile Ansicht */
+@media (max-width: 768px) {
+    .filter-container {
+        top: 80px; /* Direkt unter der Navbar */
+        left: 0;
+        right: 0;
+        width: 100%; /* Volle Breite */
+        justify-content: center; /* Zentriert den Button */
+    }
+
+    .filter-button {
+        width: 100%; /* Volle Breite */
+        text-align: center; /* Text zentrieren */
+        font-size: 30px; /* Kleinere Schriftgröße für mobile Ansicht */
+        border-radius: 0px;
+        background-color:  rgba(0, 0, 0, 0.7);
+        color: white;
+    }
+
+    .filter-button:hover {
+        background-color: rgba(0, 0, 0, 0.9);
+        color: #ffffff;
+    }
+
+    .dropdown-content {
+        top: 55px; /* Abstand von der Navbar */
+        left: 0;
+        right: 0;
+        width: 100%; /* Volle Breite */
+        height: calc(100vh - 80px);
+        border-radius: 0; /* Keine abgerundeten Ecken */
+    }
+
+    .dropdown-content.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .dropdown-content label {
+        text-align: center; /* Text zentrieren */
+    }
+    
 }
