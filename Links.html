@@ -1,0 +1,253 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboutme - Leonard Bonkas</title>
+    <link rel="stylesheet" href="style.css">
+        <!-- Für Apple-Geräte -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/Favicons/apple-touch-icon-180x180.png">
+        <!-- Für Browser -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/Favicons/favicon-32x32.ico">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/Favicons/favicon-96x96.png">
+        <!-- Für Windows -->
+        <meta name="msapplication-square310x310logo" content="assets/Favicons/mstile-310x310.png">
+        <meta name="msapplication-TileColor" content="#0c0c24">
+
+        <link rel="icon" type="image/png" sizes="48x48" href="assets/Favicons/favicon.png">
+        <link rel="icon" type="image/x-icon" href="assets/Favicons/favicon.ico">
+    <style>
+        /* Container für die unteren Boxen */
+        .profile-container {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            justify-content: space-between !important;
+        }
+
+        /* Boxen nebeneinander in der Desktop-Ansicht */
+        .bio-box {
+            flex: 1 1 calc(45% - 20px) !important; /* Zwei Boxen nebeneinander mit Abstand */
+            margin: 10px !important;
+        }
+
+        /* Anpassungen für mobile Geräte */
+        @media (max-width: 768px) {
+            .profile-container {
+                flex-direction: column !important;
+                padding: 0 20px; /* Außenabstand zum Bildschirmrand */
+            }
+            .bio-box {
+                flex: 1 1 100% !important; /* Volle Breite in der mobilen Ansicht */
+                margin: 10px 0 !important;
+                padding: 0 20px; /* Außenabstand zum Bildschirmrand */
+            }
+            .gallery.single-image {
+                padding: 0 5px; /* Außenabstand zum Bildschirmrand */
+            }
+            .gallery.single-image img {
+                width: 100% !important; /* Bilder in der mobilen Ansicht größer machen */
+                height: auto !important;
+            }
+            .grid-container {
+                grid-template-columns: 1fr;
+                padding: 0 20px; /* Außenabstand zum Bildschirmrand */
+            }
+            .bio-box-top {
+                padding: 0 20px; /* Außenabstand zum Bildschirmrand für die About me Box */
+            }
+            .grid-item:nth-child(2) {
+                order: 1; /* Bild 2023_07_01 nach oben rücken */
+            }
+            .grid-item:nth-child(1) {
+                order: 2; /* "When I think about what fuels my passion" Box */
+            }
+            .grid-item:nth-child(3) {
+                order: 3; /* Bild 2022_20_01 */
+            }
+            .grid-item:nth-child(4) {
+                order: 4; /* "Ready to see the world through my lens" Box */
+            }
+        }
+
+        h5 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 1.25em !important; /* Etwas größer als der restliche Text */
+            font-weight: bold !important;
+            margin-top: 20px !important;
+            margin-bottom: 10px !important;
+        }
+/* Grid-Container für die Desktop-Ansicht */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    margin: 20px; /* Außenabstand auf mindestens 20px gesetzt */
+    max-width: 1200px; /* Maximale Breite des Grids */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Grid-Items */
+.grid-item {
+    position: relative;
+    max-width: 100%; /* Maximale Breite der Grid-Items */
+}
+
+/* Anpassungen für mobile Geräte */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Innenabstand über den Überschriften verkleinern */
+.bio-box h5 {
+    margin-top: 10px !important; /* Innenabstand über den Überschriften verkleinert */
+}
+
+/* Grid-Container für die Desktop-Ansicht */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    margin: 20px; /* Außenabstand auf mindestens 20px gesetzt */
+    max-width: 1200px; /* Maximale Breite des Grids */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Grid-Items */
+.grid-item {
+    position: relative;
+    max-width: 100%; /* Maximale Breite der Grid-Items */
+}
+
+/* Anpassungen für mobile Geräte */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Innenabstand über den Überschriften verkleinern */
+.bio-box h5 {
+    margin-top: 10px !important; /* Innenabstand über den Überschriften verkleinert */
+}
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="navbar">
+            <!-- Linke Seite: Dropdown-Menü & Contact -->
+
+    
+            <!-- Mitte: Titel (Bild) -->
+            <div class="title">
+                
+                    <img src="assets/Banner/TitleLeonardBonkas.png" alt="Leonard Bonkas" />
+                
+            </div>
+    
+            <!-- Rechte Seite: Logo -->
+            <div class="logo">
+              
+                    <img src="assets/used/LFBLogo.png" alt="Logo" />
+              
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner-Bild -->
+    <div class="hero-banner">
+       
+        <img src="assets/Banner/Banner7.webp" alt="Panorama Banner" style="object-fit: cover; object-position: 50% 65%;">
+    
+    </div>
+
+<!-- Profilbild und About Me Section -->
+<section class="about-me">
+    <div class="profile-container">
+        <a href="index.html">
+            <img src="assets/used/Profilbild.png" alt="Leonard Bonkas" class="profile-pic">
+        </a>
+    </div>
+</section>
+
+<!-- Social Box Container -->
+<div class="social-box-container">
+
+        <!-- Website Box -->
+        <div class="social-box">
+            <h3>
+            <a href="index.html" target="_blank">Website</a></h3>
+        </div>
+
+    <!-- TikTok Box -->
+    <div class="social-box">
+        <h3>
+        <a href="https://www.tiktok.com/@leonard_lfb/" target="_blank">TikTok</a></h3>
+    </div>
+
+    <!-- YouTube Box -->
+    <div class="social-box">
+        <h3>
+        <a href="https://www.youtube.com/@LeonardLFB/" target="_blank">YouTube</a></h3>
+    </div>
+
+    <!-- Instagram Box -->
+    <div class="social-box">
+        <h3><a href="https://www.instagram.com/leonard_lfb/" target="_blank">Instagram</a></h3>
+    </div>
+            <!-- YouTube Box -->
+    <div class="social-box">
+        <h3>
+        <a href="https://www.instagram.com/bohr.visuals?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Bohr.Visuals</a></h3>
+    </div>
+</div>
+<br>
+<br>
+    
+   <footer>
+        <!-- Social Media Icons bleiben im schwarzen Bereich -->
+        <div class="footer">
+            <div class="socials">
+              
+            </div>        
+        </div>
+      
+
+
+    <script>
+        window.addEventListener("scroll", function () {
+            let scrollPos = window.scrollY * 0.5; // Geschwindigkeit des Effekts
+            document.querySelector(".hero-banner img").style.transform = `translateY(${scrollPos}px)`;
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburgerIcon = document.querySelector(".hamburger-icon");
+            const dropdownMenu = document.querySelector(".dropdown-menu");
+            const closeBtn = document.querySelector(".close-btn");
+
+            hamburgerIcon.addEventListener("click", function (event) {
+                event.stopPropagation(); // Verhindert das Schließen, wenn das Icon erneut geklickt wird
+                dropdownMenu.classList.toggle("active");
+            });
+
+            closeBtn.addEventListener("click", function (event) {
+                event.stopPropagation(); // Verhindert das Schließen des Menüs durch das Klicken auf das "X"
+                dropdownMenu.classList.remove("active");
+            });
+
+            // Schließen des Menüs, wenn man irgendwo anders klickt/toucht
+            document.addEventListener("click", function (event) {
+                if (!hamburgerIcon.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.remove("active");
+                }
+            });
+        });
+
+
+    </script>
+</body>
+</html>
