@@ -136,15 +136,16 @@
 
 /* Titel-Bild */
 .title img {
-    width: 60%;
+    width: 55%;
+    margin-top: 5px;
     height: auto;
 }
 
 /* Anpassungen für mobile Geräte */
 @media (max-width: 768px) {
     .title {
-        width: 100%;
-        margin-top: 15px; /* Abstand nach oben in der mobilen Ansicht */
+        width: 110%;
+        margin-top: 11px; /* Abstand nach oben in der mobilen Ansicht */
     }
 }
     </style>
@@ -196,7 +197,7 @@
         <!-- Website Box -->
         <div class="social-box">
             <h3>
-            <a href="index.html" target="_blank">Website</a></h3>
+            <a href="index.html">Website</a></h3>
         </div>
 
     <!-- TikTok Box -->
@@ -247,31 +248,6 @@
             let scrollPos = window.scrollY * 0.5; // Geschwindigkeit des Effekts
             document.querySelector(".hero-banner img").style.transform = `translateY(${scrollPos}px)`;
         });
-
-        document.addEventListener("DOMContentLoaded", function () {
-            const hamburgerIcon = document.querySelector(".hamburger-icon");
-            const dropdownMenu = document.querySelector(".dropdown-menu");
-            const closeBtn = document.querySelector(".close-btn");
-
-            hamburgerIcon.addEventListener("click", function (event) {
-                event.stopPropagation(); // Verhindert das Schließen, wenn das Icon erneut geklickt wird
-                dropdownMenu.classList.toggle("active");
-            });
-
-            closeBtn.addEventListener("click", function (event) {
-                event.stopPropagation(); // Verhindert das Schließen des Menüs durch das Klicken auf das "X"
-                dropdownMenu.classList.remove("active");
-            });
-
-            // Schließen des Menüs, wenn man irgendwo anders klickt/toucht
-            document.addEventListener("click", function (event) {
-                if (!hamburgerIcon.contains(event.target) && !dropdownMenu.contains(event.target)) {
-                    dropdownMenu.classList.remove("active");
-                }
-            });
-        });
-
-
     </script>
 </body>
 </html>
