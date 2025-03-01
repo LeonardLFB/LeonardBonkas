@@ -133,6 +133,20 @@
 .bio-box h5 {
     margin-top: 10px !important; /* Innenabstand über den Überschriften verkleinert */
 }
+
+/* Titel-Bild */
+.title img {
+    width: 60%;
+    height: auto;
+}
+
+/* Anpassungen für mobile Geräte */
+@media (max-width: 768px) {
+    .title {
+        width: 100%;
+        margin-top: 15px; /* Abstand nach oben in der mobilen Ansicht */
+    }
+}
     </style>
 </head>
 <body>
@@ -145,7 +159,7 @@
             <!-- Mitte: Titel (Bild) -->
             <div class="title">
                 
-                    <img src="assets/Banner/TitleLeonardBonkas.png" alt="Leonard Bonkas" />
+                    <img src="assets/Banner/TitleLeonardBonkas.png" alt="Leonard Bonkas">
                 
             </div>
     
@@ -159,10 +173,12 @@
     </nav>
 
     <!-- Banner-Bild -->
-    <div class="hero-banner">
-       
-        <img src="assets/Banner/Banner7.webp" alt="Panorama Banner" style="object-fit: cover; object-position: 50% 65%;">
-    
+    <div class="hero-banner" style="width: 100vw !important; height: auto !important; max-height: 50vh !important; overflow: hidden !important;">
+        <a href="photography.html">
+            <img src="assets/Banner/Banner7.webp" 
+                 alt="Panorama Banner" 
+                 style="width: 100vw !important; height: auto !important; object-fit: cover !important; object-position: 50% 80% !important;"> <!-- object-position angepasst -->
+        </a>
     </div>
 
 <!-- Profilbild und About Me Section -->
@@ -212,7 +228,10 @@
         <!-- Social Media Icons bleiben im schwarzen Bereich -->
         <div class="footer">
             <div class="socials">
-              
+                <p>
+                    <a href="Impressum.html" class="Impressum-link" style="font-family: 'Barlow Condensed', sans-serif; font-weight: bold; font-size: 18px; color: white;">Impressum</a> | 
+                    <a href="datenschutz.html" style="font-family: 'Barlow Condensed', sans-serif; font-weight: bold; font-size: 18px; color: white;">Datenschutzerklärung</a>
+                </p>
             </div>        
         </div>
       
