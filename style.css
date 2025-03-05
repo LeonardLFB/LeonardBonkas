@@ -2613,10 +2613,10 @@ figcaption {
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
     position: fixed !important;
-    top: 87px; /* Abstand nach oben */
-    left: 7px; /* Abstand nach links */
-    right: 7px; /* Abstand nach rechts */
-    bottom: 7px; /* Abstand nach unten */
+    top: 90px; /* Abstand nach oben */
+    left: 10px; /* Abstand nach links */
+    right: 10px; /* Abstand nach rechts */
+    bottom: 10px; /* Abstand nach unten */
     background-color: white;
     color: black;
     overflow-y: auto;
