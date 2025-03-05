@@ -2238,6 +2238,8 @@ figcaption {
 
 }
 
+
+
 /* Container für Profilbild & Bio */
 .profile-container {
     max-width: 1200px !important; /* Erhöhen Sie die maximale Breite, um Platz für zwei Boxen nebeneinander zu schaffen */
@@ -2532,4 +2534,258 @@ figcaption {
     font-size: 40px; /* Kleinere Schriftgröße */
     color: #002366; /* Dunkelblaue Farbe */
     text-decoration: none;
+}
+
+
+
+/* Box für Hinweis */
+.notice-box {
+    position: absolute;
+    right: 20px;
+    background-color: white;
+    color: #002366; /* Dunkelblaue Farbe */
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* Sicherstellen, dass die Box über anderen Elementen liegt */
+}
+
+/* Mobile Anpassungen */
+@media (max-width: 768px) {
+    .notice-box {
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+        width: 80%; /* Breiter machen */
+        padding: 10px 20px; /* Weniger Innenabstände */
+    }
+}
+
+/* Blog Posts Section */
+.blog-posts {
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    position: relative;
+}
+
+.blog-post {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    transition: none !important; /* Entfernt Übergänge */
+    transform: none !important;  /* Entfernt Transformationen */
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+.caption {
+    padding: 10px;
+    background-color: rgba(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+}
+
+.blog-content {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    position: fixed !important;
+    top: 87px; /* Abstand nach oben */
+    left: 7px; /* Abstand nach links */
+    right: 7px; /* Abstand nach rechts */
+    bottom: 7px; /* Abstand nach unten */
+    background-color: white;
+    color: black;
+    overflow-y: auto;
+    z-index: 100 !important;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    pointer-events: auto !important;
+}
+
+.blog-content.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Schließen-Button */
+.blog-content .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Hero-Banner innerhalb des Blog-Contents */
+.blog-content .hero-banner {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px; /* Abstand zwischen Hero-Banner und Titel */
+}
+
+.blog-content .hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+    object-position: 50% 65%;
+}
+
+
+/* Titel mit Linie darunter */
+.blog-content h3 {
+    position: relative;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #002366;
+}
+
+.blog-content h3::after {
+    content: "";
+    display: block;
+    width: 50%; /* Linie ist 50% der Breite */
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: -5px;
+    left: 50%; /* Zentriert die Linie */
+    transform: translateX(-50%); /* Zentriert die Linie */
+}
+
+.blog-content h4 {
+    font-family: "Barlow Condensed", sans-serif;
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: -25px;
+    color: #002366;
+}
+
+/* Text innerhalb der Box */
+.blog-content p {
+    margin: 50px;
+    text-align: justify;
+}
+
+/* Mobile Anpassungen */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Verkleinern der Abstände nach rechts und links für p-Elemente in der mobilen Ansicht */
+    .blog-content p {
+        margin: 30px; /* Kleinere Abstände nach rechts und links */
+    }
+}
+
+.blog-content .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px; /* Gleiche Breite und Höhe */
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    padding: 0; /* Entferne Padding, falls nötig */
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+}
+
+
+/* Vorschau-Bild Hover-Effekt */
+.blog-post img {
+    transition: transform 0.3s ease; /* Übergangseffekt für Vergrößerung */
+}
+
+
+/* Caption Hintergrundfarbe anpassen und Lücke schließen */
+.caption {
+    padding: 5px; /* Kleinere Innenabstände */
+    background-color: rgba(255, 255, 255, 0.9); /* Leicht transparentes Weiß */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    margin-top: -30px; /* Lücke zwischen Bild und Caption verringern, aber Abstand oben bewahren */
+}
+
+/* Titel in der Vorschau */
+.caption h3 {
+    font-size: 22px; /* Kleinere Schriftgröße */
+    color: #002366; /* Dunkelblaue Farbe */
+    margin: 0px 0px -20px 0px; /* Kein Abstand oben und unten, aber kleiner Abstand unten */
+}
+
+/* Short Description in der Vorschau */
+.caption p {
+    margin: 5px 0; /* Kleinere Innenabstände */
+    padding-bottom: 10px;
+}
+
+
+/* Button "Mehr Bilder anschauen" */
+.more-images-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff; /* Dunkelblaue Farbe */
+    color: #002366;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1001; /* Sicherstellen, dass der Button über anderen Elementen liegt */
+}
+
+.more-images-btn:hover {
+    background-color: #001a4d; /* Etwas dunklerer Blau-Ton */
+    color: white;
+    transform: translateX(-50%) scale(1.05); /* Button wird leicht vergrößert */
 }

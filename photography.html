@@ -32,6 +32,7 @@
                         <a href="Aboutme.html">About Me</a>
                         <a href="photography.html">Photography</a>
                         <a href="videography.html">Videography</a>
+                        <a href="Blog.html">Blog</a>
                         <a href="mailto:leonard.bonkas@gmail.com?subject=Shoot%20Enquiry" class="contact-item">Contact</a> 
                     </div>
                 </div>
@@ -2822,6 +2823,91 @@
       }
     });
   });
+
+  
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Abrufen des Filter-Werts aus der URL (falls vorhanden)
+    const urlParams = new URLSearchParams(window.location.search);
+    const filterValue = urlParams.get('filter'); // Beispiel: "Goodwood FoS"
+
+    // Wenn der Filter-Wert aus der URL vorhanden ist, setze den entsprechenden Radio-Button
+    if (filterValue) {
+        const radioButton = document.querySelector(`input[name="filter"][value="${filterValue}"]`);
+        if (radioButton) {
+            radioButton.checked = true;
+            filterGallery(filterValue); // Wende den Filter an, sobald der Radio-Button gesetzt ist
+            scrollToFirstVisibleElement(); // Scrolle zum ersten sichtbaren Bild
+        }
+    }
+
+    // Funktion, um die Galerie anhand des Filters zu filtern
+    function filterGallery(filter) {
+        const gallerySections = document.querySelectorAll('.gallery');
+        const yearHeaders = document.querySelectorAll('section > h3');
+
+        gallerySections.forEach(section => {
+            const figures = section.querySelectorAll('figure');
+            figures.forEach(figure => {
+                const caption = figure.querySelector('figcaption').textContent;
+                if (filter === "" || caption.includes(filter)) {
+                    figure.style.display = 'block';
+                } else {
+                    figure.style.display = 'none';
+                }
+            });
+        });
+
+        yearHeaders.forEach(header => {
+            header.style.display = 'none'; // Entfernt alle Jahr-Header, wenn ein Filter angewendet wird
+        });
+    }
+
+    // Funktion zum Scrollen zum ersten sichtbaren Element
+    function scrollToFirstVisibleElement() {
+        const firstVisibleElement = document.querySelector('.gallery figure[style*="display: block;"]');
+        if (firstVisibleElement) {
+            const offset = 150; // Platz nach oben
+            const elementPosition = firstVisibleElement.getBoundingClientRect().top + window.pageYOffset;
+            const offsetPosition = elementPosition - offset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    // Event-Listener für das Dropdown-Menü (sobald ein Filter im Dropdown ausgewählt wird)
+    const filterDropdown = document.getElementById('filterDropdown');
+    filterDropdown.addEventListener('change', function () {
+        const selectedFilter = filterDropdown.querySelector('input:checked').value;
+        if (selectedFilter === "") {
+            clearFilters(); // Wenn "Clear all Filters", dann alle Filter zurücksetzen
+        } else {
+            filterGallery(selectedFilter); // Wende den ausgewählten Filter an
+            scrollToFirstVisibleElement(); // Scrolle zum ersten sichtbaren Bild
+        }
+    });
+
+    // Funktion um alle Filter zurückzusetzen
+    function clearFilters() {
+        // Alle Filter zurücksetzen
+        const radioButtons = document.querySelectorAll('input[name="filter"]');
+        radioButtons.forEach(button => button.checked = false);
+
+        // Alle Bilder anzeigen und Seite neu laden
+        window.location.href = 'photography.html'; // Neu laden der Photography-Seite ohne Filter
+    }
+
+    // Optional: Schließen des Dropdowns, wenn man außerhalb klickt
+    document.addEventListener('click', function (event) {
+        if (!filterDropdown.contains(event.target)) {
+            filterDropdown.style.display = 'none';
+        }
+    });
+});
+
 </script>
 </body>
 </html>
