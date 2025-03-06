@@ -450,6 +450,73 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const blogLinks = document.querySelectorAll(".blog-link");
+    const closeButtons = document.querySelectorAll(".close-btn");
+
+    blogLinks.forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            const gridItem = this.closest(".grid-item");
+            if (!gridItem) return console.error("Kein Grid-Item gefunden!");
+
+            const blogContent = gridItem.querySelector(".blog-content");
+            if (!blogContent) return console.error("Kein Blog-Content gefunden!");
+
+            // Schließe alle anderen Posts
+            document.querySelectorAll(".blog-content").forEach(content => {
+                content.classList.remove("active");
+                content.style.display = "none";
+            });
+
+            // Öffne den aktuellen Blog-Post
+            blogContent.classList.add("active");
+            blogContent.style.display = "block";
+            blogContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+            // **Scrollen der Hauptseite deaktivieren**
+            document.body.style.overflow = "hidden";
+        });
+    });
+
+    closeButtons.forEach(button => {
+        button.addEventListener("click", function (event) {
+            event.stopPropagation();
+
+            const blogContent = this.closest(".blog-content");
+            if (!blogContent) return console.error("Kein Blog-Content gefunden!");
+
+            // Schließe den aktuellen Blog-Post
+            blogContent.classList.remove("active");
+            setTimeout(() => {
+                blogContent.style.display = "none";
+
+                // **Scrollen der Hauptseite wieder aktivieren**
+                document.body.style.overflow = "auto";
+            }, 300);
+        });
+    });
+
+    // Falls der User außerhalb des Blog-Posts klickt, schließen
+    document.addEventListener("click", function (event) {
+        document.querySelectorAll(".blog-content.active").forEach(content => {
+            if (!content.contains(event.target)) {
+                content.classList.remove("active");
+                setTimeout(() => {
+                    content.style.display = "none";
+
+                    // **Scrollen der Hauptseite wieder aktivieren**
+                    document.body.style.overflow = "auto";
+                }, 300);
+            }
+        });
+    });
+});
+
 </script>
 </body>
 </html>

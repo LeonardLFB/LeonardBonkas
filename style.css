@@ -2615,8 +2615,8 @@ figcaption {
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
     position: fixed !important;
     top: 90px; /* Abstand nach oben */
-    left: 10px; /* Abstand nach links */
-    right: 10px; /* Abstand nach rechts */
+    left: 35px; /* Abstand nach links */
+    right: 35px; /* Abstand nach rechts */
     bottom: 10px; /* Abstand nach unten */
     background-color: white;
     color: black;
@@ -2700,32 +2700,19 @@ figcaption {
 
 /* Text innerhalb der Box */
 .blog-content p {
-    margin: 50px;
+    margin: 65px;
     text-align: justify;
 }
 
-/* Mobile Anpassungen */
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
 
-    /* Verkleinern der Abstände nach rechts und links für p-Elemente in der mobilen Ansicht */
-    .blog-content p {
-        margin: 30px; /* Kleinere Abstände nach rechts und links */
-    }
-}
 
 .blog-content .close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    position: fixed;
+    top: 100px;
+    right: 50px;
     width: 40px; /* Gleiche Breite und Höhe */
     height: 40px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     font-size: 24px;
     padding: 0; /* Entferne Padding, falls nötig */
@@ -2789,4 +2776,30 @@ figcaption {
     background-color: #001a4d; /* Etwas dunklerer Blau-Ton */
     color: white;
     transform: translateX(-50%) scale(1.05); /* Button wird leicht vergrößert */
+}
+
+/* Mobile Anpassungen */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Verkleinern der Abstände nach rechts und links für p-Elemente in der mobilen Ansicht */
+    .blog-content p {
+        margin: 30px; /* Kleinere Abstände nach rechts und links */
+    }
+
+    .blog-content {
+        top: 90px; /* Abstand nach oben */
+        left: 10px; /* Abstand nach links */
+        right: 10px; /* Abstand nach rechts */
+        bottom: 20px;
+    }
+
+    .blog-content .close-btn {
+        right: 20px;
+    }
 }
