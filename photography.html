@@ -2824,6 +2824,33 @@
     });
   });
 
+
+
+
+
+  function prioritizeVisibleImages() {
+    const visibleImages = document.querySelectorAll('.gallery figure[style*="display: block;"] img');
+    visibleImages.forEach(img => {
+        if (img.getAttribute("loading") === "lazy") {
+            img.removeAttribute("loading"); // Direktes Laden auslösen
+        }
+    });
+}
+
+// Rufe die Funktion nach dem Filtern auf:
+function filterGallery(filter) {
+    const gallerySections = document.querySelectorAll('.gallery');
+    gallerySections.forEach(section => {
+        const figures = section.querySelectorAll('figure');
+        figures.forEach(figure => {
+            const caption = figure.querySelector('figcaption').textContent;
+            figure.style.display = caption.includes(filter) ? 'block' : 'none';
+        });
+    });
+
+    prioritizeVisibleImages(); // Nach dem Filtern direkt laden
+}
+
   
 </script>
 <script>
@@ -2906,6 +2933,17 @@
             filterDropdown.style.display = 'none';
         }
     });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const filterValue = urlParams.get("filter");
+
+    if (filterValue) {
+        filterGallery(filterValue); // Lade zuerst gefilterte Bilder
+    }
 });
 
 </script>
