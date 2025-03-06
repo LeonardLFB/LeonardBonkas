@@ -1778,7 +1778,8 @@ figcaption {
 
 /* Hover-Effekt für den Button */
 .about-me-btn:hover {
-    background-color: #e7e7f6; /* Etwas dunklerer Blau-Ton */
+    background-color: #002366; /* Etwas dunklerer Blau-Ton */
+    color: white;
     transform: translateX(-50%) scale(1.05); /* Button wird leicht vergrößert */
 }
 
