@@ -439,15 +439,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Schließen des Posts, wenn irgendwo anders geklickt wird
-    document.addEventListener("click", function () {
-        document.querySelectorAll(".blog-content").forEach(content => {
-            content.classList.remove("active");
-            setTimeout(() => {
-                content.style.display = "none";
-            }, 300);
-        });
-    });
+
 });
 
 
@@ -501,20 +493,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Falls der User außerhalb des Blog-Posts klickt, schließen
-    document.addEventListener("click", function (event) {
-        document.querySelectorAll(".blog-content.active").forEach(content => {
-            if (!content.contains(event.target)) {
-                content.classList.remove("active");
-                setTimeout(() => {
-                    content.style.display = "none";
 
-                    // **Scrollen der Hauptseite wieder aktivieren**
-                    document.body.style.overflow = "auto";
-                }, 300);
-            }
-        });
-    });
 });
 
 </script>
