@@ -2673,6 +2673,8 @@ figcaption {
     text-align: center;
     margin-top: 15px;
     margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     color: #002366;
 }
 
@@ -2695,6 +2697,8 @@ figcaption {
     text-align: center;
     margin-top: -5px;
     margin-bottom: -25px;
+    margin-left: 50px;
+    margin-right: 50px;
     color: #002366;
 }
 
