@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leonard Bonkas Blog</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Für Apple-Geräte -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/Favicons/apple-touch-icon-180x180.png">
-    <!-- Für Browser -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/Favicons/favicon-32x32.ico">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/Favicons/favicon-96x96.png">
-    <!-- Für Windows -->
-    <meta name="msapplication-square310x310logo" content="assets/Favicons/mstile-310x310.png">
-    <meta name="msapplication-TileColor" content="#0c0c24">
-    <link rel="icon" type="image/png" sizes="48x48" href="assets/Favicons/favicon.png">
-    <link rel="icon" type="image/x-icon" href="assets/Favicons/favicon.ico">
-    <style>
-        @media screen and (min-width: 769px) { 
-          .responsive-br { display: none !important; } 
-        }
-      </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leonard Bonkas Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+        <!-- Für Apple-Geräte -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/Favicons/apple-touch-icon-180x180.png">
+        <!-- Für Browser -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/Favicons/favicon-32x32.ico">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/Favicons/favicon-96x96.png">
+        <!-- Für Windows -->
+        <meta name="msapplication-square310x310logo" content="assets/Favicons/mstile-310x310.png">
+        <meta name="msapplication-TileColor" content="#0c0c24">
+
+        <link rel="icon" type="image/png" sizes="48x48" href="assets/Favicons/favicon.png">
+        <link rel="icon" type="image/x-icon" href="assets/Favicons/favicon.ico">
 </head>
 <body>
-
+    
     <nav>
         <div class="navbar">
             <!-- Linke Seite: Dropdown-Menü & Contact -->
@@ -58,903 +55,2693 @@
         </div>
     </nav>
 
-    <!-- Banner-Bild -->
-    <div class="hero-banner">
-        <img src="assets/Banner/Banner8.webp" alt="Panorama Banner" style="object-fit: cover; object-position: 50% 65%;">
-    </div>
+        <!-- Filter-Button -->
+        <div class="filter-container">
+          <button id="filterButton" class="filter-button">Filter</button>
+          <div id="filterDropdown" class="dropdown-content">
+              <p>Sometimes you will need to scroll a little :)</p>
+              <br>
+              <label><input type="radio" name="filter" value="Goodwood FoS">Goodwood FoS</label>
+              <label><input type="radio" name="filter" value="The ICE St. Moritz">The ICE St. Moritz</label>
+              <label><input type="radio" name="filter" value="Fuori Concorso">Fuori Concorso</label>
+              <label><input type="radio" name="filter" value="Concorso d'Eleganza">Concorso d'Eleganza</label>
+              <label><input type="radio" name="filter" value="Carage">Carage Luzern</label>
+              <label><input type="radio" name="filter" value="Kiklo Spaces">Kiklo Spaces</label>
+              <label><input type="radio" name="filter" value="Esser Automotive">Esser Automotive</label>
+              <label><input type="radio" name="filter" value="heizr Logistics">heizr Logistics</label>
+              <label><input type="radio" name="filter" value="GG Classics">GG Classics, Melbourne</label>
+              <label><input type="radio" name="filter" value="Supercar Owners Circle">Supercar Owners Circle</label>
+              <br>
+              <label><input type="radio" name="filter" value="Travel">Travel</label>
+              <br>
+              <label><input type="radio" name="filter" value=""> CLEAR ALL FILTERS</label>
+          </div>
+      </div>
+      
+  <!-- Banner-Bild -->
+  <div class="hero-banner">
+    <img src="assets/Banner/Banner2.webp" alt="Panorama Banner" style="object-fit: cover; object-position: 50% 59%;">
+  </div>
 
-<h2>Blog</h2>
-<div class="notice-box">
-    No sponsored content – all posts reflect my own opinion
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+      <h2>Photo Gallery</h2>
+  <h3>2025</h3>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_92_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">heizr Logistics</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_93_01.webp" alt="Image 1">
+      <figcaption>heizr Logistics</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_93_02.webp" alt="Image 2">
+      <figcaption>heizr Logistics</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_93_03.webp" alt="Image 3">
+      <figcaption>heizr Logistics</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_94_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">heizr Logistics</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_95_01.webp" alt="Image 1">
+      <figcaption>heizr Logistics</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_95_02.webp" alt="Image 2">
+      <figcaption>heizr Logistics</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_95_03.webp" alt="Image 3">
+      <figcaption>heizr Logistics</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_96_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">heizr Logistics</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_97_01.webp" alt="Image 1">
+      <figcaption>heizr Logistics</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_97_02.webp" alt="Image 2">
+      <figcaption>heizr Logistics</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_97_03.webp" alt="Image 3">
+      <figcaption>heizr Logistics</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_98_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">heizr Logistics</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_83_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Supercar Owners Circle</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_84_01.webp" alt="Image 1">
+      <figcaption>Supercar Owners Circle</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_84_02.webp" alt="Image 2">
+      <figcaption>Supercar Owners Circle</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_84_03.webp" alt="Image 3">
+      <figcaption>Supercar Owners Circle</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_85_03.webp" alt="Image 1">
+      <figcaption>Supercar Owners Circle</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_85_02.webp" alt="Image 2">
+      <figcaption>Supercar Owners Circle</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_85_01.webp" alt="Image 3">
+      <figcaption>Supercar Owners Circle</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_86_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Dolomites | Travel</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_87_01.webp" alt="Image 1">
+      <figcaption>Dolomites | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_87_02.webp" alt="Image 2">
+      <figcaption>Dolomites | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_87_03.webp" alt="Image 3">
+      <figcaption>Dolomites | Travel</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_88_01.webp" alt="Image 1">
+      <figcaption>Dolomites | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_88_02.webp" alt="Image 2">
+      <figcaption>Dolomites | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_88_03.webp" alt="Image 3">
+      <figcaption>Dolomites | Travel</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_89_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Sardegna | Travel</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_90_01.webp" alt="Image 1">
+      <figcaption>Sardegna | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_90_02.webp" alt="Image 2">
+      <figcaption>Sardegna | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_90_03.webp" alt="Image 3">
+      <figcaption>Sardegna | Travel</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_91_01.webp" alt="Image 1">
+      <figcaption>Croatia | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_91_03.webp" alt="Image 2">
+      <figcaption>Milano | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_91_02.webp" alt="Image 3">
+      <figcaption>Croatia | Travel</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_73_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Goodwood FoS</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_74_03.webp" alt="Image 1">
+      <figcaption>Goodwood FoS</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_74_02.webp" alt="Image 2">
+      <figcaption>Goodwood FoS</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_74_01.webp" alt="Image 3">
+      <figcaption>Goodwood FoS</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_75_03.webp" alt="Image 1">
+      <figcaption>Goodwood FoS</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_75_02.webp" alt="Image 2">
+      <figcaption>Goodwood FoS</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_79_02.webp" alt="Image 2">
+      <figcaption>Goodwood FoS</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_76_03.webp" alt="Image 1">
+      <figcaption>Goodwood FoS</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_76_02.webp" alt="Image 2">
+      <figcaption>Goodwood FoS</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_76_01.webp" alt="Image 3">
+      <figcaption>Goodwood FoS</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_78_01.webp" alt="Image 1">
+      <figcaption>Goodwood FoS</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_78_02.webp" alt="Image 2">
+      <figcaption>Goodwood FoS</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_78_03.webp" alt="Image 3">
+      <figcaption>Goodwood FoS</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_80_01.webp" alt="Image 1">
+      <figcaption>Goodwood FoS</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_80_02.webp" alt="Image 2">
+      <figcaption>Goodwood FoS</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_80_03.webp" alt="Image 3">
+      <figcaption>Goodwood FoS</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_81_03.webp" alt="Image 1">
+      <figcaption>Goodwood FoS</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_81_01.webp" alt="Image 3">
+      <figcaption>Goodwood FoS</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_79_03.webp" alt="Image 3">
+      <figcaption>Goodwood FoS</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_53_01.webp" alt="Image 1">
+      <figcaption>Fuori Concorso</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_53_02.webp" alt="Image 2">
+      <figcaption>Fuori Concorso</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_53_03.webp" alt="Image 3">
+      <figcaption>Fuori Concorso</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_55_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Fuori Concorso</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_56_01.webp" alt="Image 1">
+      <figcaption>Fuori Concorso</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_56_02.webp" alt="Image 2">
+      <figcaption>Fuori Concorso</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_56_03.webp" alt="Image 3">
+      <figcaption>Fuori Concorso</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_57_01.webp" alt="Image 1">
+      <figcaption>Fuori Concorso</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_57_02.webp" alt="Image 2">
+      <figcaption>Fuori Concorso</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_54_02.webp" alt="Image 2">
+      <figcaption>Fuori Concorso</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_58_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Fuori Concorso</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_59_01.webp" alt="Image 1">
+      <figcaption>Fuori Concorso</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_60_02.webp" alt="Image 2">
+      <figcaption>Fuori Concorso</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_59_03.webp" alt="Image 3">
+      <figcaption>Fuori Concorso</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_60_01.webp" alt="Image 1">
+      <figcaption>Fuori Concorso</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_59_02.webp" alt="Image 2">
+      <figcaption>Fuori Concorso</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_60_03.webp" alt="Image 3">
+      <figcaption>Fuori Concorso</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_62_01.webp" alt="Image 1">
+      <figcaption>Varenna | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_64_01.webp" alt="Image 1">
+      <figcaption>Concorso d'Eleganza</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_62_02.webp" alt="Image 2">
+      <figcaption>Varenna | Travel</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+ <section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_63_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Concorso d'Eleganza</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_66_01.webp" alt="Image 1">
+      <figcaption>Concorso d'Eleganza</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_66_02.webp" alt="Image 2">
+      <figcaption>Concorso d'Eleganza</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_66_03.webp" alt="Image 3">
+      <figcaption>Concorso d'Eleganza</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+ <section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_65_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Concorso d'Eleganza</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_68_01.webp" alt="Image 1">
+      <figcaption>Concorso d'Eleganza</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_68_02.webp" alt="Image 2">
+      <figcaption>Concorso d'Eleganza</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_68_03.webp" alt="Image 3">
+      <figcaption>Concorso d'Eleganza</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_69_01.webp" alt="Image 1">
+      <figcaption>Concorso d'Eleganza</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_71_03.webp" alt="Image 3">
+      <figcaption>Concorso d'Eleganza</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_69_02.webp" alt="Image 2">
+      <figcaption>Concorso d'Eleganza</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+ <section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_70_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Concorso d'Eleganza</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_37_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Toronto, Canada | Travel</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_38_01.webp" alt="Image 1">
+      <figcaption>Toronto, Canada | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_38_02.webp" alt="Image 2">
+      <figcaption>Toronto, Canada | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_38_03.webp" alt="Image 3">
+      <figcaption>Toronto, Canada | Travel</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_40_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">New York | Travel</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_41_01.webp" alt="Image 1">
+      <figcaption>New York | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_41_02.webp" alt="Image 2">
+      <figcaption>New York | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_41_03.webp" alt="Image 3">
+      <figcaption>New York | Travel</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_42_01.webp" alt="Image 1">
+      <figcaption>New York | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_42_02.webp" alt="Image 2">
+      <figcaption>New York | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_42_03.webp" alt="Image 3">
+      <figcaption>New York | Travel</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_43_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">New York | Travel</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_43_01_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">New York | Travel</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_43_02_01.webp" alt="Image 1">
+      <figcaption>New York | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_43_02_02.webp" alt="Image 2">
+      <figcaption>New York | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_43_02_03.webp" alt="Image 3">
+      <figcaption>New York | Travel</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_45_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">New York | Travel</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_47_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">New York | Travel</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_48_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">New York | Travel</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_49_01.webp" alt="Image 1">
+      <figcaption>New York | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_44_02.webp" alt="Image 2">
+      <figcaption>New York | Travel</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_49_02.webp" alt="Image 2">
+      <figcaption>New York | Travel</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_50_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">New York | Travel</a></figcaption> 
+    </figure>
+  </div>
+</section>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_02_01.webp" alt="Image 1">
+      <figcaption>Paris</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_04_01.webp" alt="Image 1">
+      <figcaption>Paris</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_02_02.webp" alt="Image 2">
+      <figcaption>RM Sotheby's, Paris</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_04_02.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">The ICE St. Moritz</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_05_01.webp" alt="Image 1">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_05_02.webp" alt="Image 2">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_06_03.webp" alt="Image 3">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_07_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">The ICE St. Moritz</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_08_01.webp" alt="Image 1">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_11_02.webp" alt="Image 2">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_11_03.webp" alt="Image 3">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_12_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">The ICE St. Moritz</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_13_01.webp" alt="Image 1">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_15_01.webp" alt="Image 1">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_13_03.webp" alt="Image 3">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_14_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">The ICE St. Moritz</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_17_01.webp" alt="Image 1">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_17_02.webp" alt="Image 2">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_18_02.webp" alt="Image 2">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_16_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">The ICE St. Moritz</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_19_01.webp" alt="Image 1">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_19_02.webp" alt="Image 2">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_19_03.webp" alt="Image 3">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_23_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">The ICE St. Moritz</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_21_01.webp" alt="Image 1">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_21_03.webp" alt="Image 2">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_24_03.webp" alt="Image 3">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_22_01.webp" alt="Image 1">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_22_02.webp" alt="Image 2">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_22_03.webp" alt="Image 3">
+      <figcaption>The ICE St. Moritz</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_25_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Carage Luzern - Suvretta House</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_26_01.webp" alt="Image 1">
+      <figcaption>Carage Luzern - Suvretta House</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_26_03.webp" alt="Image 3">
+      <figcaption>Carage Luzern - Suvretta House</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_31_03.webp" alt="Image 3">
+      <figcaption>Carage Luzern - Suvretta House</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_30_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Carage Luzern - Suvretta House</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+  <div class="gallery">
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_28_01.webp" alt="Image 1">
+      <figcaption>Carage Luzern - Suvretta House</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_28_02.webp" alt="Image 2">
+      <figcaption>Carage Luzern - Suvretta House</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/2025/Komprimiert/2025_29_03.webp" alt="Image 3">
+      <figcaption>Carage Luzern - Suvretta House</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+  <div class="gallery single-image">
+    <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <img src="pictures/2025/Komprimiert/2025_32_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+      <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Carage Luzern</figcaption>
+    </figure>
+  </div>
+</section>
+<br>
+
+  <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+  <section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2025/Komprimiert/2025_34_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Zürich Airport | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+  
+  <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+  <section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2025/Komprimiert/2025_35_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Zürich Airport | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+
+
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+    <h3>2024</h3>
+    <div class="gallery"> 
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_01_02.webp" alt="Image 2">
+        <figcaption>Retromobile Paris</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_01_03.webp" alt="Image 3">
+        <figcaption>Retromobile Paris</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_05_02.webp" alt="Image 2">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_03_01.webp" alt="Image 1">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_05_01.webp" alt="Image 1">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_03_03.webp" alt="Image 3">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <!--
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_04_01.webp" alt="Image 1">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_04_02.webp" alt="Image 2">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_04_03.webp" alt="Image 3">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br> -->
+
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2024/Komprimiert/2024_07_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Carage Luzern</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_08_01.webp" alt="Image 1">
+        <figcaption>Carage Luzern</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_08_02.webp" alt="Image 2">
+        <figcaption>Carage Luzern</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_08_03.webp" alt="Image 3">
+        <figcaption>Carage Luzern</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_09_01.webp" alt="Image 1">
+        <figcaption>Carage Luzern</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_09_02.webp" alt="Image 2">
+        <figcaption>Carage Luzern</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_09_03.webp" alt="Image 3">
+        <figcaption>Carage Luzern</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_10_01.webp" alt="Image 1">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_10_02.webp" alt="Image 2">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_10_03.webp" alt="Image 3">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_11_02.webp" alt="Image 2">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_11_03.webp" alt="Image 3">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_12_02.webp" alt="Image 2">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2024/Komprimiert/2024_13_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Fuori Concorso</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_14_01.webp" alt="Image 1">
+        <figcaption>Concorso d'Eleganza vdE</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_14_02.webp" alt="Image 2">
+        <figcaption>Concorso d'Eleganza vdE</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_15_02.webp" alt="Image 2">
+        <figcaption>Concorso d'Eleganza vdE</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2024/Komprimiert/2024_17_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Paris | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_19_02.webp" alt="Image 2">
+        <figcaption>Paris | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_19_03.webp" alt="Image 3">
+        <figcaption>Paris | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_18_03.webp" alt="Image 3">
+        <figcaption>Paris | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+    <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2024/Komprimiert/2024_20_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Goodwood FoS</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_21_01.webp" alt="Image 1">
+        <figcaption>Goodwood FoS</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_21_02.webp" alt="Image 2">
+        <figcaption>Goodwood FoS</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_21_03.webp" alt="Image 3">
+        <figcaption>Goodwood FoS</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_22_02.webp" alt="Image 2">
+        <figcaption>Goodwood FoS</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_22_03.webp" alt="Image 3">
+        <figcaption>Goodwood FoS</figcaption>
+      </figure>
+           <figure>
+        <img src="pictures/2024/Komprimiert/2024_16_02.webp" alt="Image 2">
+        <figcaption>Klassikstadt</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_23_01.webp" alt="Image 1">
+        <figcaption>Goodwood FoS</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_23_02.webp" alt="Image 2">
+        <figcaption>Goodwood FoS</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_23_03.webp" alt="Image 3">
+        <figcaption>Goodwood FoS</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+    <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+    <section>
+        <div class="gallery single-image">
+          <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+            <img src="pictures/2024/Komprimiert/2024_24_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+            <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Goodwood FoS</figcaption>
+          </figure>
+        </div>
+      </section>
+      <br>
+
+    <section>
+        <div class="gallery">
+          <figure>
+            <img src="pictures/2024/Komprimiert/2024_25_02.webp" alt="Image 2">
+            <figcaption>Goodwood FoS</figcaption>
+          </figure>
+          <figure>
+            <img src="pictures/2024/Komprimiert/2024_25_03.webp" alt="Image 3">
+            <figcaption>Goodwood FoS</figcaption>
+          </figure>
+          <figure>
+            <img src="pictures/2024/Komprimiert/2024_26_02.webp" alt="Image 2">
+            <figcaption>Goodwood FoS</figcaption>
+          </figure>
+        </div>
+      </section>
+    <br>
+
+    <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+        <div class="gallery single-image">
+          <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+            <img src="pictures/2024/Komprimiert/2024_27_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+            <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Frankfurt | Travel</figcaption>
+          </figure>
+        </div>
+      </section>
+<br>
+
+<section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_28_01.webp" alt="Image 1">
+        <figcaption>Frankfurt | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_28_02.webp" alt="Image 2">
+        <figcaption>Frankfurt | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_28_03.webp" alt="Image 3">
+        <figcaption>Frankfurt | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_29_01.webp" alt="Image 1">
+        <figcaption>Esser Automotive</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_29_02.webp" alt="Image 2">
+        <figcaption>Esser Automotive</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_29_03.webp" alt="Image 3">
+        <figcaption>Esser Automotive</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+      <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2024/Komprimiert/2024_31_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">St. Tropez</figcaption>
+      </figure>
+    </div>
+  </section>
+<br>
+
+<section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_32_01.webp" alt="Image 1">
+        <figcaption>St. Tropez</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_32_02.webp" alt="Image 2">
+        <figcaption>St. Tropez</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_32_03.webp" alt="Image 3">
+        <figcaption>St. Tropez</figcaption>
+      </figure>
+    </div>
+  </section>
+<br> 
+
+<section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_35_02.webp" alt="Image 2">
+        <figcaption>Pagani Raduno - Firenze</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_34_02.webp" alt="Image 2">
+        <figcaption>Pagani Raduno - Firenze</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2024/Komprimiert/2024_35_03.webp" alt="Image 3">
+        <figcaption>Pagani Raduno - Firenze</figcaption>
+      </figure>
+    </div>
+  </section>
+<br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+    <h3>2023</h3>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2023/Komprimiert/2023_01_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">The ICE St. Moritz</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_02_03.webp" alt="Image 3">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_04_01.webp" alt="Image 1">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_04_02.webp" alt="Image 2">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2023/Komprimiert/2023_03_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">The ICE St. Moritz</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+    <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2023/Komprimiert/2023_07_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Fuori Concorso</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_08_01.webp" alt="Image 1">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_08_02.webp" alt="Image 2">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_08_03.webp" alt="Image 3">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_09_01.webp" alt="Image 1">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_09_02.webp" alt="Image 2">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_09_03.webp" alt="Image 3">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+  
+      <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2023/Komprimiert/2023_10_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Fuori Concorso</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_11_01.webp" alt="Image 1">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_11_02.webp" alt="Image 2">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_11_03.webp" alt="Image 3">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_12_01.webp" alt="Image 1">
+        <figcaption>Concorso d'Eleganza vdE</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_12_02.webp" alt="Image 2">
+        <figcaption>Concorso d'Eleganza vdE</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_12_03.webp" alt="Image 3">
+        <figcaption>Concorso d'Eleganza vdE</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_13_01.webp" alt="Image 1">
+        <figcaption>Goodwood FoS</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_13_02.webp" alt="Image 2">
+        <figcaption>Goodwood FoS</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_13_03.webp" alt="Image 3">
+        <figcaption>Goodwood FoS</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_14_01.webp" alt="Image 1">
+        <figcaption>Goodwood FoS</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_14_03.webp" alt="Image 3">
+        <figcaption>Goodwood FoS</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_06_03.webp" alt="Image 3">
+        <figcaption>Klassikstadt Frankfurt</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+      <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+      <section>
+        <div class="gallery single-image">
+          <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+            <img src="pictures/2023/Komprimiert/2023_15_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+            <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Kiklo Spaces</figcaption>
+          </figure>
+        </div>
+      </section>
+      <br>
+
+      <section>
+        <div class="gallery">
+          <figure>
+            <img src="pictures/2023/Komprimiert/2023_16_01.webp" alt="Image 1">
+            <figcaption>Kiklo Spaces</figcaption>
+          </figure>
+          <figure>
+            <img src="pictures/2023/Komprimiert/2023_16_02.webp" alt="Image 2">
+            <figcaption>Kiklo Spaces</figcaption>
+          </figure>
+          <figure>
+            <img src="pictures/2023/Komprimiert/2023_17_03.webp" alt="Image 3">
+            <figcaption>Kiklo Spaces</figcaption>
+          </figure>
+        </div>
+      </section>
+      <br>
+
+<section>
+        <div class="gallery">
+          <figure>
+            <img src="pictures/2023/Komprimiert/2023_17_01.webp" alt="Image 1">
+            <figcaption>Kiklo Spaces</figcaption>
+          </figure>
+          <figure>
+            <img src="pictures/2023/Komprimiert/2023_17_02.webp" alt="Image 2">
+            <figcaption>Kiklo Spaces</figcaption>
+          </figure>
+          <figure>
+        <img src="pictures/2023/Komprimiert/2023_21_02.webp" alt="Image 2">
+        <figcaption>Fuori Concorso - Milano</figcaption>
+      </figure>
+        </div>
+      </section>
+<br>
+
+      <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+        <div class="gallery single-image">
+          <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+            <img src="pictures/2023/Komprimiert/2023_20_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+            <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Fuori Concorso - Milano</figcaption>
+          </figure>
+        </div>
+      </section>
+<br>
+
+<section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_17_01_01.webp" alt="Image 1">
+        <figcaption>Frankfurt | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_17_02_01.webp" alt="Image 2">
+        <figcaption>Frankfurt | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_17_03_01.webp" alt="Image 3">
+        <figcaption>Frankfurt | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+<br>
+
+<section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_18_01.webp" alt="Image 1">
+        <figcaption>Great Ocean Road - Australia | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_18_03.webp" alt="Image 3">
+        <figcaption>Padar Island - Indonesia | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_19_03.webp" alt="Image 3">
+        <figcaption>Padar Island - Indonesia | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+<br>
+
+<section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_22_01.webp" alt="Image 1">
+        <figcaption>Giro Limited</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_22_02.webp" alt="Image 2">
+        <figcaption>Giro Limited</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2023/Komprimiert/2023_21_03.webp" alt="Image 3">
+        <figcaption>Giro Limited</figcaption>
+      </figure>
+    </div>
+  </section>
+<br>
+
+<section>
+  <h3>2022</h3>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_02_01.webp" alt="Image 1">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_02_02.webp" alt="Image 2">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_02_03.webp" alt="Image 3">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_03_01.webp" alt="Image 1">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_03_02.webp" alt="Image 2">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_03_03.webp" alt="Image 3">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_04_02.webp" alt="Image 2">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_04_03.webp" alt="Image 3">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_05_01.webp" alt="Image 1">
+        <figcaption>The ICE St. Moritz</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_06_03.webp" alt="Image 3">
+        <figcaption>Montmatre Paris | Travel</figcaption>
+        </figure>
+        <figure>
+        <img src="pictures/2022/Komprimiert/2022_01_02.webp" alt="Image 2">
+        <figcaption>Frankfurt | Travel</figcaption>
+        </figure>
+        <figure>
+        <img src="pictures/2022/Komprimiert/2022_28_01.webp" alt="Image 1">
+        <figcaption>Melbourne | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+  
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_08_01.webp" alt="Image 1">
+        <figcaption>London</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_08_02.webp" alt="Image 2">
+        <figcaption>London</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_08_03.webp" alt="Image 3">
+        <figcaption>London</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_11_01.webp" alt="Image 1">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_11_03.webp" alt="Image 3">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_13_02.webp" alt="Image 2">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_12_02.webp" alt="Image 2">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_12_03.webp" alt="Image 3">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_13_03.webp" alt="Image 3">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_14_02.webp" alt="Image 2">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_14_03.webp" alt="Image 3">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_15_02.webp" alt="Image 2">
+        <figcaption>Fuori Concorso</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2022/Komprimiert/2022_16_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Madeira | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_17_02.webp" alt="Image 2">
+        <figcaption>Madeira | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_17_03.webp" alt="Image 3">
+        <figcaption>Madeira | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_18_02.webp" alt="Image 2">
+        <figcaption>Madeira | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_19_01.webp" alt="Image 1">
+        <figcaption>Rallye Madeira | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_19_02.webp" alt="Image 2">
+        <figcaption>Madeira | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_19_03.webp" alt="Image 3">
+        <figcaption>Madeira | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2022/Komprimiert/2022_20_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Madeira | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+ <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+ <section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2022/Komprimiert/2022_21_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Melbourne | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+ <section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2022/Komprimiert/2022_23_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Melbourne | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+    <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_25_02.webp" alt="Image 2">
+        <figcaption>Venezia | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_25_03.webp" alt="Image 3">
+        <figcaption>Venezia | Travel</figcaption>
+      </figure>
+            <figure>
+        <img src="pictures/2022/Komprimiert/2022_18_03.webp" alt="Image 3">
+        <figcaption>Madeira | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+ <section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2022/Komprimiert/2022_24_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Lago di Garda | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_29_01.webp" alt="Image 1">
+        <figcaption>Brunei Enzo - GG Classics - Melbourne</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_29_02.webp" alt="Image 2">
+        <figcaption>Brunei Enzo - GG Classics - Melbourne</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_29_03.webp" alt="Image 3">
+        <figcaption>Brunei Enzo - GG Classics - Melbourne</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_30_01.webp" alt="Image 1">
+        <figcaption>Brunei Enzo - GG Classics - Melbourne</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_30_02.webp" alt="Image 2">
+        <figcaption>Brunei Enzo - GG Classics - Melbourne</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2022/Komprimiert/2022_30_03.webp" alt="Image 3">
+        <figcaption>Brunei Enzo - GG Classics - Melbourne</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+
+  <!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+    <h3>2021</h3>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_01_03.webp" alt="Image 3">
+        <figcaption>Lago di Como | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_02_02.webp" alt="Image 2">
+        <figcaption>Lago di Como | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_02_03.webp" alt="Image 3">
+        <figcaption>Lago di Como | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2021/Komprimiert/2021_04_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Carage Luzern</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_06_01.webp" alt="Image 1">
+        <figcaption>Carage Luzern</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_06_02.webp" alt="Image 2">
+        <figcaption>Carage Luzern</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_06_03.webp" alt="Image 3">
+        <figcaption>Carage Luzern</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_07_01.webp" alt="Image 1">
+        <figcaption>Carage Luzern</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_07_02.webp" alt="Image 2">
+        <figcaption>Carage Luzern</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_07_03.webp" alt="Image 3">
+        <figcaption>Carage Luzern</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_09_02.webp" alt="Image 2">
+        <figcaption>Carage Luzern</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_09_03.webp" alt="Image 3">
+        <figcaption>Carage Luzern</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_01_01.webp" alt="Image 1">
+        <figcaption>Klassikstadt Frankfurt</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2021/Komprimiert/2021_10_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Eiger, Mönch, Jungfrau | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_11_01.webp" alt="Image 1">
+        <figcaption>Esser Automotive</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_11_02.webp" alt="Image 2">
+        <figcaption>Esser Automotive</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_12_01.webp" alt="Image 1">
+        <figcaption>Esser Automotive</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2021/Komprimiert/2021_13_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Esser Automotive</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_14_01.webp" alt="Image 1">
+        <figcaption>Esser Automotive</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_14_02.webp" alt="Image 2">
+        <figcaption>Esser Automotive</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_14_03.webp" alt="Image 3">
+        <figcaption>Esser Automotive</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_15_01.webp" alt="Image 1">
+        <figcaption>Esser Automotive</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_15_02.webp" alt="Image 2">
+        <figcaption>Esser Automotive</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_15_03.webp" alt="Image 3">
+        <figcaption>Esser Automotive</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+    <!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2021/Komprimiert/2021_16_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Berchtesgardener Land | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_17_01.webp" alt="Image 1">
+        <figcaption>Rossfeld Panoramastraße | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_17_02.webp" alt="Image 2">
+        <figcaption>Schweiz | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2021/Komprimiert/2021_18_03.webp" alt="Image 3">
+        <figcaption>Berchtesgardener Land | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+
+<!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
+<section>
+    <h3>2020</h3>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2020/Komprimiert/2020_01_01.webp" alt="Image 1">
+        <figcaption>Klassikstadt Frankfurt</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2020/Komprimiert/2020_01_03.webp" alt="Image 3">
+        <figcaption>Lago di Como | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2020/Komprimiert/2020_03_02.webp" alt="Image 2">
+        <figcaption>Venezia | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+
+<!-- Galerie mit einem Bild, das mittig und größer dargestellt wird -->
+<section>
+    <div class="gallery single-image">
+      <figure style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <img src="pictures/2020/Komprimiert/2020_04_01.webp" alt="Large Image" style="width: 80%; height: auto; object-fit: cover; display: block;">
+        <figcaption style="text-align: left; margin-top: 10px; font-size: 16px; font-weight: bold; color: #ffffff;">Lago di Como | Travel</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br> 
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2020/Komprimiert/2020_06_01.webp" alt="Image 1">
+        <figcaption>Supercar Owners Circle Gstaad</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2020/Komprimiert/2020_06_02.webp" alt="Image 2">
+        <figcaption>Supercar Owners Circle Gstaad</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2020/Komprimiert/2020_06_03.webp" alt="Image 3">
+        <figcaption>Supercar Owners Circle Gstaad</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2020/Komprimiert/2020_08_01.webp" alt="Image 1">
+        <figcaption>Supercar Owners Circle Gstaad</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2020/Komprimiert/2020_08_02.webp" alt="Image 2">
+        <figcaption>Supercar Owners Circle Gstaad</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2020/Komprimiert/2020_08_03.webp" alt="Image 3">
+        <figcaption>Supercar Owners Circle Gstaad</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2020/Komprimiert/2020_09_03.webp" alt="Image 3">
+        <figcaption>Supercar Owners Circle Gstaad</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2020/Komprimiert/2020_10_01.webp" alt="Image 1">
+        <figcaption>Supercar Owners Circle Gstaad</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2020/Komprimiert/2020_05_02.webp" alt="Image 2">
+        <figcaption>Aston Martin St. Gallen</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+
+  <!-- Zweiter Gallery-Abschnitt (Beispiel: 3 Bilder pro Zeile) -->
+  <section>
+    <h3>2019</h3>
+    <div class="gallery">
+      <figure>
+        <img src="pictures/2019/Komprimiert/2019_02_01.webp" alt="Image 1">
+        <figcaption>Balmoral Castle | Travel</figcaption>
+      </figure>
+            <figure>
+        <img src="pictures/2019/Komprimiert/2019_04_03.webp" alt="Image 3">
+        <figcaption>Morocco | Travel</figcaption>
+      </figure>
+      <figure>
+        <img src="pictures/2019/Komprimiert/2019_02_02.webp" alt="Image 2">
+        <figcaption>Supercar Oweners Circle Andermatt</figcaption>
+      </figure>
+    </div>
+  </section>
+  <br>
+
+  
+  <!-- Lightbox mit Navigationspfeilen -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-content">
+        <div class="arrow left-arrow" onclick="prevImage()">&#10094;</div>
+        <img id="lightboxImg" src="" alt="">
+        <div class="arrow right-arrow" onclick="nextImage()">&#10095;</div>
+    </div>
 </div>
-<br>
 
-<!-- Blog Posts Section -->
-    <section class="blog-posts">
-         <div class="grid-container">
-            <!-- Blog Post 1 -->
-                    <div class="grid-item">
-                <div class="blog-post">
-                    <div class="blog-link">
-                        <img src="pictures/2025/Komprimiert/2025_84_02.webp" alt="Blog Post 1" style="width: 100%; height: 34.5vh; object-fit: cover; object-position: center;">
-                        <div class="caption">
-                            <h3>Supercar Owners Circle 2025</h3>
-                            <p>Exclusivity on the Roads of Costa Smeralda</p>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <span class="close-btn">&times;</span>
-                        <div class="hero-banner">
-                            <img src="pictures/2025/Komprimiert/2025_84_02.webp" style="object-position: 50% 60%;" alt="Blog Post 1">
-                            <a href="photography.html?filter=Supercar%20Owners%20Circle" class="more-images-btn">More images</a>
-                        </div>
-                        <h3>Supercar Owners Circle 2025 – Exclusivity on the Roads of Costa Smeralda</h3>
-                        <br>
-                        <h4>A Unique Event in a Stunning Setting</h4>
-                        <p>The Costa Smeralda in northern Sardinia is known as one of Italy’s most breathtaking destinations. But this year, it also became the stage for something truly extraordinary: the Supercar Owners Circle. When around 50 to 60 of the world’s rarest and most exclusive cars take over Sardinia’s winding roads, it’s clear that this is more than just a gathering of car enthusiasts.
-                        <h4>The Magic is in the Mix</h4>
-                        <p>What makes SOC so special isn’t only the spectacular backdrop of turquoise waters, rugged cliffs, and charming seaside towns. It’s the incredible lineup of cars that turns the event into pure automotive theatre.
-                        Among the participants this year:<ul style="display: table; margin: 0 auto; text-align: left; margin-left: 60px; padding-left: 20px; text-align: left;">
-                                <li>McLaren Senna GTR <br>usually reserved for the racetrack</li>
-                                <li>Mercedes-AMG One <br>Formula 1 technology brought to the road</li>
-                                <li>Koenigsegg Jeskos <br>multiple examples of Sweden’s engineering marvel</li>
-                                <li>Pagani Huayra BC Tempesta <br>the very latest creation from Modena</li>
-                                <li>Zonda R and Zonda Revolución <br>extreme machines, here road-converted</li>
-                                <li>Porsche 911 Dakar <br>perhaps the most suited car for these roads</li>
-                            </ul>
-                            <p>Each car added its own character to the convoy, from the track-focused monsters to rally-bred specials.</p>
-                        <h4>Driving Through Northern Sardinia</h4>
-                        <p>This year’s journey took participants across the scenic roads of northern Sardinia. The contrast was striking: multi-million-euro hypercars navigating quiet villages, coastal switchbacks, and tranquil countryside.
-                            One highlight was the drive down to the Vesper Beach Club. Following ocean-side routes with panoramic sea views, it was the perfect backdrop to capture the spectacle of these rare machines in motion.</p>
-                        <h4>Respect and Discretion</h4>
-                        <p>The Supercar Owners Circle is a private event with a strong emphasis on privacy, respect, and exclusivity. For that reason, photography is done with care: while it’s a privilege to witness and capture these cars in such a setting, the spirit of SOC is about celebrating the passion for driving, not publicity.
-                        Also a huge thank you to Esser Automotive. It was a truly special event.</p>
-                        
-                        <br>
-                        </p>
-                        <p style="font-size: 12px;">Published: 21th September 2025 - 12:05pm | No sponsored content – all posts reflect my own opinion | <a href="Impressum.html" class="Impressum-link" style="color: black">Impressum</a> - <a href="datenschutz.html" style="color: black">Datenschutzerklärung</a></p>
-                    </div>
-                </div>
-            </div>
-                <!-- Blog Post 1 -->
-                    <div class="grid-item">
-                <div class="blog-post">
-                    <div class="blog-link">
-                        <img src="pictures/2025/Komprimiert/2025_92_01.webp" alt="Blog Post 1" style="width: 100%; height: 34.5vh; object-fit: cover; object-position: center;">
-                        <div class="caption">
-                            <h3>Heizr Logistics 2.0</h3>
-                            <p>A Legendary Meet in an Unlikely Setting</p>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <span class="close-btn">&times;</span>
-                        <div class="hero-banner">
-                            <img src="pictures/2025/Komprimiert/2025_92_01.webp" style="object-position: 50% 60%;" alt="Blog Post 1">
-                            <a href="photography.html?filter=heizr Logistics" class="more-images-btn">More images</a>
-                        </div>
-                        <h3>Heizr Logistics 2.0 – Automotive Culture with Character</h3>
-                        <p>After hearing so much about heizr’s legendary car meets, I finally had the chance to attend one myself. This time, the event took place at the Wolff & Müller industrial park near Stuttgart, and the location couldn’t have been more fitting. The raw, functional backdrop of warehouses, machinery, and cars in between Caterpillar excavators created an atmosphere that felt authentic rather than polished – the perfect stage for a gathering rooted in passion rather than glamour.
-                        <h4>A Different Kind of Lineup</h4>
-                        <p>What made this meet truly special was its curated selection of cars. Unlike so many events where the spotlight is stolen by the latest hypercars and glossy exotics, Heizr focused on patina, history, and stories on wheels. Every car looked like it had lived a life worth telling – weathered finishes, unique modifications, and decades of character. The attendees matched the vibe as well – approachable, relaxed, sometimes even with their dogs matching the vibe as well.</p>
-                        <h4>Turning Up the Heat – Mechatronik’s Unicorns</h4>
-                        <p>Still, if there was a single jaw-dropping highlight, it was Mechatronik’s contribution. Inside a vast industrial hall, while a DJ set the mood with tech house and melodic house, they didn’t just show up with one automotive unicorn – they brought two Mercedes-Benz CLK GTRs. One was a pure race car, a machine that once tore up circuits. Next to it stood something even rarer: the only blue road-going CLK GTR in existence. A true unicorn.
-                            <br>
-                            To see one of these icons in person is extraordinary. To see both side by side, framed by industrial architecture and pulsing electronic beats, was nothing short of surreal.</p>
-                        <h4>More than Cars</h4>
-                        <p>Events like Heizr Logistics 2.0 prove that automotive culture isn’t only about horsepower or price tags. It’s about stories, atmosphere, and the people who share the passion. Walking through the industrial park, surrounded by machinery and metal, watching enthusiasts connect over machines full of history – it felt raw, genuine, and unforgettable.</p>
-                        
-                        <br>
-                        </p>
-                        <p style="font-size: 12px;">Published: 22nd September 2025 - 12:10pm | No sponsored content – all posts reflect my own opinion | <a href="Impressum.html" class="Impressum-link" style="color: black">Impressum</a> - <a href="datenschutz.html" style="color: black">Datenschutzerklärung</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-<!-- Blog Posts Section 
-<section class="blog-posts">
-    <div class="grid-container">
-   
-        <div class="grid-item">
-            <div class="blog-post">
-                <div class="blog-link">
-                    <img src="pictures/2024/Komprimiert/2024_20_01.webp" alt="Blog Post 1" style="width: 100%; height: 34.5vh; object-fit: cover; object-position: center;">
-                    <div class="caption">
-                        <h3>Formula Student</h3>
-                        <p>The best car event in Europe?</p>
-                    </div>
-                </div>
-                <div class="blog-content">
-                    <span class="close-btn">&times;</span>
-                    <div class="hero-banner">
-                        <img src="pictures/2024/Komprimiert/2024_20_01.webp" style="object-position: 50% 60%;" alt="Blog Post 1">
-                        <a href="photography.html?filter=Goodwood%20FoS" class="more-images-btn">More images</a>
-                    </div>
-                    <h3>Goodwood Festival of Speed</h3>
-                    <p>The ultimate bucket-list event for every car enthusiast!  
-                    <br>Located in the picturesque South-Western part of England, near Chichester, this magnificent event truly has it all! From classic cars to futuristic concepts, and everything in between. Hypercars, race cars, F1 cars, and motorcycles – the list goes on and on.  
-                    <br>
-                    <br>I've been fortunate enough to attend this event for several years now, and every year it continues to amaze me with something new.  
-                    <br>The Duke of Richmond is the gracious host of this spectacular event, which takes place right in his backyard at the iconic Goodwood House. The house stands as the centerpiece, surrounded by lush green lawns where all the stunning cars are displayed. And the best part? Most of the cars race up the famous Goodwood Hillclimb, aka the driveway, adding an exhilarating element to the event.  
-                    <br>Every year I attend, the event seems to grow bigger and better. My first experience was in 2018, when I was still relatively new to this part of the car scene. Since then, I’ve made it a point to attend whenever possible, and in my opinion, the last two years have been the best ones so far.  
-                    <br>I love the blend of familiar cars and the excitement of new models and brands joining each year. For me, this event is not only about the cars but also about connecting with people, creating new contacts, and catching up with friends from all over the world. It's the perfect combination of automotive passion and community.  
-                    <br>It’s not just the cars that make this event special; it’s the people who bring it to life.</p>
-                    
-                    <h4>Attending the Event</h4>
-                    <p>It has always been, and most likely always will be, an exhausting event. But it’s one of those experiences that leaves you thinking, “How did I even manage to see all of that?”  
-                    <br>I’ve never attended the full four days in a row. In my first year, for example, I only attended on Thursday – which, as I’ve come to learn, is the quietest day of the event. However, even Thursday has gotten busier over the years.  
-                    <br>While it’s possible to experience the entire event in a single day, it will require sacrifices in terms of what you can see and do. That’s why I would highly recommend attending for at least two days to fully enjoy the event without feeling rushed. It makes the experience far more enjoyable and manageable.</p>
-                    
-                    <h4>Photography at the Event</h4>
-                    <p>One of the things I truly love about documenting the Goodwood Festival of Speed is that it’s not just a static event. I’m passionate about capturing cars in motion, and this event offers endless opportunities for that. On the other hand, taking pictures of cars in the paddocks or on the lawns can be tricky. It’s hard to get a clean shot without either resorting to Photoshop or waiting for long periods for the perfect moment.  
-                    <br>One crucial tip I’d offer: Try to arrive as early as possible to capture some great static shots before the crowds gather.</p>
-                    
-                    <h4>Would I Recommend the Goodwood FoS?</h4>
-                    <p>Short answer: Absolutely!  
-                    <br>Long answer: If you're a car enthusiast and have been considering attending the Festival of Speed, I would wholeheartedly recommend it. Yes, the event has become more expensive over the years, but it has also grown in size and quality. I’ve been attending for several years now, and I’ll continue to make it a priority to go every year. It’s not just the incredible cars – it’s the people you meet along the way that make the event unforgettable.
-                    <br> <br>For me personally: As I have attended the Goodwood FoS several times now, I would also love to attend the Goodwood Revival one day...</p>                            
-                    <br>
-                    </p>
-                    <p style="font-size: 12px;">Published: 5th March 2025 - 03:00pm | No sponsored content – all posts reflect my own opinion | <a href="Impressum.html" class="Impressum-link" style="color: black">Impressum</a> - <a href="datenschutz.html" style="color: black">Datenschutzerklärung</a></p>
-                </div>
-            </div>
-        </div>
+  <!-- Footer -->
+  <footer>
+    <!-- Schwarzer Bereich mit Social Media Icons -->
+    <div class="footer">
+      <div class="socials">
+        <div><a target="_blank" href="https://www.instagram.com/leonard_lfb/"><img src="assets/used/InstagramLogo.svg" alt="Instagram"></a></div>
+        <div><a target="_blank" href="https://www.youtube.com/@LeonardLFB/"><img src="assets/used/YouTubeLogo.png" alt="YouTube"></a></div>
+        <div><a target="_blank" href="https://www.tiktok.com/@leonard_lfb/"><img src="assets/used/TikTokLogo.png" alt="TikTok"></a></div>
+      </div>        
     </div>
-</section>
--->
+  
+    <!-- Abgerundete Kontakt-Box -->
+    <div class="contact-box">
+      <a href="Aboutme.html"><img src="assets/used/Profilbild.png" alt="Leonard Bonkas" class="profile-pic"></a>
+      <div class="contact-info">
+        <h4>Contact</h4>
+        <p><strong>E-Mail:</strong> <a href="mailto:leonard.bonkas@gmail.com">leonard.bonkas@gmail.com</a></p>
+        <p><strong>Telephone:</strong> 0152 05344311</p>
+        <p ><a href="Impressum.html" class="Impressum-link" style="font-family: 'Barlow Condensed', sans-serif; font-weight: bold; font-size: 18px;">Impressum</a> | <a href="datenschutz.html" style="font-family: 'Barlow Condensed', sans-serif; font-weight: bold; font-size: 18px;">Datenschutzerklärung</a></p>
+      </div>
+    </div>
+    <div class="legal">&copy; Leonard LFB</div>
+  </footer>
 
-  <!-- Blog Posts Section -->
-    <section class="blog-posts">
-         <div class="grid-container">
-            <!-- Blog Post 1 -->
-                    <div class="grid-item">
-                <div class="blog-post">
-                    <div class="blog-link">
-                        <img src="pictures/2025/Komprimiert/2025_73_01.webp" alt="Blog Post 1" style="width: 100%; height: 34.5vh; object-fit: cover; object-position: center;">
-                        <div class="caption">
-                            <h3>Goodwood Festival of Speed 2025</h3>
-                            <p>Gordon Murray Design Celebration</p>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <span class="close-btn">&times;</span>
-                        <div class="hero-banner">
-                            <img src="pictures/2025/Komprimiert/2025_73_01.webp" style="object-position: 50% 60%;" alt="Blog Post 1">
-                            <a href="photography.html?filter=Goodwood%20FoS" class="more-images-btn">More images</a>
-                        </div>
-                        <h3>Goodwood Festival of Speed 2025 – Hypercar heaven</h3>
-                        <p>Each summer, the grounds of Goodwood House transform into a paradise for automotive enthusiasts, as a remarkable selection of rare and special cars gathers for the Goodwood Festival of Speed.
-                            <br>This year was no exception. As a truly dynamic event, the FoS engages all the senses – you see, hear, and even smell the cars charging up the legendary Goodwood driveway, better known as the Hillclimb. In 2025, the spotlight fell on the Koenigsegg Jesko Sadairs Spear, which claimed a new record time.
-                        <h4>British finesse meets rare icons</h4>
-                        <p>Among my personal highlights were the ’90s homologation specials, which appeared in impressive numbers this year. From several McLaren F1s celebrating Gordon Murray’s 60 years in design, to Lanzante’s road-converted 996 Evo, the lineup was stunning. Lanzante also unveiled their first self-developed hypercar – the 95-59 – a modern three-seater reinterpretation of the iconic F1. And if that wasn’t enough, the event was swarming with T.50s, proof that modern tributes to legends are alive and well.
-                            <br>Pro tip: never skip the car parks – you’ll be surprised what treasures are hiding there.</p>
-                        <h4>Hypercars in full force</h4>
-                        <p>The Supercar Paddock overflowed with the latest and greatest. From the dynamic debut of the Ferrari F80 to a road-legal Lamborghini Sesto Elemento, there was something for everyone. Even Dua Lipa’s Rennstall 992 GT3 RS made an appearance on the hill.</p>
-                        <h4>Photography</h4>
-                        <p>Capturing the action at FoS is always a challenge. While panning shots of cars flying up the hillclimb are often the easiest way to get dynamic images, I also made a point of photographing the static displays. This year I experimented with long exposures and unusual angles – and was rewarded with some unique shots.</p>
-                        
-                        <br>
-                        </p>
-                        <p style="font-size: 12px;">Published: 10th August 2025 - 1:45pm | No sponsored content – all posts reflect my own opinion | <a href="Impressum.html" class="Impressum-link" style="color: black">Impressum</a> - <a href="datenschutz.html" style="color: black">Datenschutzerklärung</a></p>
-                    </div>
-                </div>
-            </div>
+  <!-- JavaScript für Lightbox & Navigation -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Dropdown-Menü
+        const hamburgerIcon = document.querySelector(".hamburger-icon");
+        const dropdownMenu = document.querySelector(".dropdown-menu");
+        const closeBtn = document.querySelector(".close-btn");
 
-            <div class="grid-item">
-                <div class="blog-post">
-                    <div class="blog-link">
-                        <img src="pictures/2025/Komprimiert/2025_61_01.webp" alt="Blog Post 1" style="width: 100%; height: 34.5vh; object-fit: cover; object-position: center;">
-                        <div class="caption">
-                            <h3>Fuori Concorso - Velocissimo</h3>
-                            <p>Where Elegance Meets Horsepower on Lake Como</p>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <span class="close-btn">&times;</span>
-                        <div class="hero-banner">
-                            <img src="pictures/2025/Komprimiert/2025_61_01.webp" style="object-position: 50% 60%;" alt="Blog Post 1">
-                            <a href="photography.html?filter=Fuori%20Concorso" class="more-images-btn">More images</a>
-                        </div>
-                        <h3>Fuori Concorso Velocissimo – Where Elegance Meets Horsepower on Lake Como</h3>
-                        <p>Once a year, the tranquil shores of Lago di Como shed their quiet charm for something altogether more visceral. The linen stays, the villas remain timeless – but the air fills with the scent of fuel, polished leather, and anticipation. That’s when Fuori Concorso arrives.
-                        <h4>Lakeshore Villas</h4>
-                        <p>Set across stunning locations like Hotel Villa Flori and Villa Sucota, and culminating at the beautifully situated Villa del Grumello, this year’s edition was a masterclass in curated elegance. Fuori isn’t just an event – it’s a state of mind. A collision of heritage and futurism, where automotive dreams are framed by cypress trees and reflected in deep blue water.</p>
-                        <h4>The lineup</h4>
-                        <p>The lineup was nothing short of extraordinary. The Mercedes-Benz CLK GTR Straßenversion Prototype, flown in from the Loh Collection in Germany, stood in perfect contrast to the raw theatricality of Esser’s Apollo IE “Blue Dragon.” And then, of course, there was Casa Alfa Romeo, proudly presenting the all-new 33 Stradale – a modern tribute to one of the most beautiful cars ever built.
-                        Fuori brings together the rare and the radical, the nostalgic and the visionary – and yet everything feels effortlessly cohesive. It’s where collectors, designers, and admirers gather not just to see, but to feel what makes automotive culture truly timeless.</p>
-                        <h4>VIP</h4>
-                        <p>This year, I was lucky enough to receive VIP access, and I’m genuinely grateful. The experience felt intimate, exclusive, and still effortlessly cool – you are to marvel at how the light dances between tree canopies and carbon curves.</p>
-                        <h4>Photography</h4>
-                        <p>Capturing Fuori Concorso is its own kind of art — a delicate balance between soaking in the moment and stealing just enough of it to take home in a frame. Taking photos at Fuori feels like chasing postcards in real time.</p>
-                        <h4>Rivas on the lake</h4>
-                        <p>At the end of it all, cruising across the water in a Riva towards the Concorso d’Eleganza wrapped the weekend in pure cinematic magic – linen fluttering, wood gleaming, the golden hour fading, and a handful of impossibly elegant Italians making it all feel like a scene from a fe film.</p>
-                        
-                        <br>
-                        </p>
-                        <p style="font-size: 12px;">Published: 5th June 2025 - 8:30pm | No sponsored content – all posts reflect my own opinion | <a href="Impressum.html" class="Impressum-link" style="color: black">Impressum</a> - <a href="datenschutz.html" style="color: black">Datenschutzerklärung</a></p>
-                    </div>
-                </div>
-            </div>
+        hamburgerIcon.addEventListener("click", function (event) {
+            event.stopPropagation(); // Verhindert das Schließen, wenn das Icon erneut geklickt wird
+            dropdownMenu.classList.toggle("active");
+        });
 
-                
-            <div class="grid-item">
-                <div class="blog-post">
-                    <div class="blog-link">
-                        <img src="pictures/2025/Komprimiert/2025_65_01.webp" alt="Blog Post 1" style="width: 100%; height: 34.5vh; object-fit: cover; object-position: center;">
-                        <div class="caption">
-                            <h3>Concorso d'Eleganza 2025</h3>
-                            <p> Where Time Races in Style</p>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <span class="close-btn">&times;</span>
-                        <div class="hero-banner">
-                            <img src="pictures/2025/Komprimiert/2025_65_01.webp" style="object-position: 50% 60%;" alt="Blog Post 1">
-                            <a href="photography.html?filter=Concorso%20d'Eleganza" class="more-images-btn">More images</a>
-                        </div>
-                        <h3>A Morning at Concorso d’Eleganza Villa Erba — Where Time Races in Style</h3>
-                        <p>At 7:30 in the morning, the sleepy village of Cernobbio slowly stirs awake, as a parade of extraordinary machines winds its way through its narrow streets — race cars, hypercars, vintage beauties, and prototypes, all making their way from Villa d’Este to the iconic Villa Erba.</p>
-                        <h4>The Lineup</h4>
-                        <p>The lineup was nothing short of breathtaking. From the legendary Coppa d’Oro-winning BMW 507 to the fresh Alfa Romeo Zagato 8C DoppiaCoda, and topping the scale, the mind-blowing Pagani Huayra Epitome. But for me, the highlight was the celebration of 1990s GT1 legends. Among them, the F1 GTR from SCI Collectable and the MC12 Corsa, but one car truly stood out: the only right-hand-drive CLK GTR Roadster — in a stunning shade of grey.</p>
-                        <h4>Media Access</h4>
-                        <p>This year, I had the privilege of attending Villa Erba with media accreditation, which added a new layer of intimacy to the experience. The atmosphere was heightened by the seamless shuttle service in the latest BMWs to the Fuori Concorso, and of course, the iconic Riva taxis whisking guests away to Villa d’Este. Pure Italian glamour at its finest.</p>
-                        <h4>A one of a kind Cat Walk of Cars</h4>
-                        <p>As the day progressed, the excitement culminated in the public referendum and a kind of catwalk for the best cars on display, elegantly hosted by none other than Simon Kidston — a man whose passion for automotive history brings a special magic to the event.</p>
+        closeBtn.addEventListener("click", function (event) {
+            event.stopPropagation(); // Verhindert das Schließen des Menüs durch das Klicken auf das "X"
+            dropdownMenu.classList.remove("active");
+        });
 
-                        </p>
-                        <p style="font-size: 12px;">Published: 5th June 2025 - 8:30pm | No sponsored content – all posts reflect my own opinion | <a href="Impressum.html" class="Impressum-link" style="color: black">Impressum</a> - <a href="datenschutz.html" style="color: black">Datenschutzerklärung</a></p>
-                    </div>
-                </div>
-            </div>
+        // Schließen des Menüs, wenn man irgendwo anders klickt/toucht
+        document.addEventListener("click", function (event) {
+            if (!hamburgerIcon.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.remove("active");
+            }
+        });
 
-        </section>
-
-
-    <!-- Blog Posts Section -->
-    <section class="blog-posts">
-        <div class="grid-container">
-            <!-- Blog Post 1 -->
-            <div class="grid-item">
-                <div class="blog-post">
-                    <div class="blog-link">
-                        <img src="pictures/2024/Komprimiert/2024_20_01.webp" alt="Blog Post 1" style="width: 100%; height: 34.5vh; object-fit: cover; object-position: center;">
-                        <div class="caption">
-                            <h3>Goodwood Festival of Speed</h3>
-                            <p>The best car event in Europe?</p>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <span class="close-btn">&times;</span>
-                        <div class="hero-banner">
-                            <img src="pictures/2024/Komprimiert/2024_20_01.webp" style="object-position: 50% 60%;" alt="Blog Post 1">
-                            <a href="photography.html?filter=Goodwood%20FoS" class="more-images-btn">More images</a>
-                        </div>
-                        <h3>Goodwood Festival of Speed</h3>
-                        <p>The ultimate bucket-list event for every car enthusiast!  
-                        <br>Located in the picturesque South-Western part of England, near Chichester, this magnificent event truly has it all! From classic cars to futuristic concepts, and everything in between. Hypercars, race cars, F1 cars, and motorcycles – the list goes on and on.  
-                        <br>
-                        <br>I've been fortunate enough to attend this event for several years now, and every year it continues to amaze me with something new.  
-                        <br>The Duke of Richmond is the gracious host of this spectacular event, which takes place right in his backyard at the iconic Goodwood House. The house stands as the centerpiece, surrounded by lush green lawns where all the stunning cars are displayed. And the best part? Most of the cars race up the famous Goodwood Hillclimb, aka the driveway, adding an exhilarating element to the event.  
-                        <br>Every year I attend, the event seems to grow bigger and better. My first experience was in 2018, when I was still relatively new to this part of the car scene. Since then, I’ve made it a point to attend whenever possible, and in my opinion, the last two years have been the best ones so far.  
-                        <br>I love the blend of familiar cars and the excitement of new models and brands joining each year. For me, this event is not only about the cars but also about connecting with people, creating new contacts, and catching up with friends from all over the world. It's the perfect combination of automotive passion and community.  
-                        <br>It’s not just the cars that make this event special; it’s the people who bring it to life.</p>
-                        
-                        <h4>Attending the Event</h4>
-                        <p>It has always been, and most likely always will be, an exhausting event. But it’s one of those experiences that leaves you thinking, “How did I even manage to see all of that?”  
-                        <br>I’ve never attended the full four days in a row. In my first year, for example, I only attended on Thursday – which, as I’ve come to learn, is the quietest day of the event. However, even Thursday has gotten busier over the years.  
-                        <br>While it’s possible to experience the entire event in a single day, it will require sacrifices in terms of what you can see and do. That’s why I would highly recommend attending for at least two days to fully enjoy the event without feeling rushed. It makes the experience far more enjoyable and manageable.</p>
-                        
-                        <h4>Photography at the Event</h4>
-                        <p>One of the things I truly love about documenting the Goodwood Festival of Speed is that it’s not just a static event. I’m passionate about capturing cars in motion, and this event offers endless opportunities for that. On the other hand, taking pictures of cars in the paddocks or on the lawns can be tricky. It’s hard to get a clean shot without either resorting to Photoshop or waiting for long periods for the perfect moment.  
-                        <br>One crucial tip I’d offer: Try to arrive as early as possible to capture some great static shots before the crowds gather.</p>
-                        
-                        <h4>Would I Recommend the Goodwood FoS?</h4>
-                        <p>Short answer: Absolutely!  
-                        <br>Long answer: If you're a car enthusiast and have been considering attending the Festival of Speed, I would wholeheartedly recommend it. Yes, the event has become more expensive over the years, but it has also grown in size and quality. I’ve been attending for several years now, and I’ll continue to make it a priority to go every year. It’s not just the incredible cars – it’s the people you meet along the way that make the event unforgettable.
-                        <br> <br>For me personally: As I have attended the Goodwood FoS several times now, I would also love to attend the Goodwood Revival one day...</p>                            
-                        <br>
-                        </p>
-                        <p style="font-size: 12px;">Published: 5th March 2025 - 03:00pm | No sponsored content – all posts reflect my own opinion | <a href="Impressum.html" class="Impressum-link" style="color: black">Impressum</a> - <a href="datenschutz.html" style="color: black">Datenschutzerklärung</a></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Blog Post 2 -->
-            <div class="grid-item">
-                <div class="blog-post">
-                    <div class="blog-link">
-                        <img src="pictures/2023/Komprimiert/2023_01_01.webp" alt="Blog Post 1" style="width: 100%; height: 34.5vh; object-fit: cover; object-position: center;">
-                        <div class="caption">
-                            <h3>The ICE St. Moritz</h3>
-                            <p>A car event on a frozen lake?</p>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <span class="close-btn">&times;</span>
-                        <div class="hero-banner">
-                            <img src="pictures/2023/Komprimiert/2023_01_01.webp" style="object-position: 50% 51%;" alt="Blog Post 1">
-                            <a href="photography.html?filter=The%20ICE%20St.%20Moritz" class="more-images-btn">More images</a>
-                        </div>
-                        <h3>The ICE St. Moritz</h3>
-                        <p>Yes, this extraordinary event takes place on a frozen lake! <br>Set in the breathtaking Engadine Valley in Switzerland, the International Concours of Elegance St. Moritz is one of the most iconic automotive events in the world! 
-                            <br>It's all about classy cars, timeless beauties and having fun drifting around on the Lake. 
-                            <h4>A Lifestyle Event?</h4> 
-                            <p> In many ways, yes – but it’s an event for everyone. Whether you're a passionate car enthusiast or simply someone who enjoys the atmosphere, this event has something for you! 
-                                <br>It caters to a wide range of attendees, no matter the reason for your visit. 
-                                <br>I've been fortunate enough to attend this magnificent event several times. My first experience was in 2022, when it was still a smaller gathering and actually free of charge. 
-                                <br>Watching a Ferrari 250 GTO and a Pagani Zonda HP Barchetta drifting on the frozen lake was something I will never forget! 
-                                <br>Since then, the event has gained tremendous recognition and has become a must-see for anyone who not only loves cars but also wants to immerse themselves in the lifestyle surrounding them. 
-                                <h4>Photography at the Event</h4> 
-                                <p> The ICE is one of the best events for capturing both cars and lifestyle photography. As the cars glide (and sometimes drift) across the lake on the Saturday of the event, it offers the perfect opportunity to take stunning photographs against the backdrop of the Engadine mountains. 
-                                    <br>While the paddock can sometimes be tricky for capturing the cars, it’s an ideal setting for capturing the lifestyle and vibrant energy of the event as well. 
-                                </p> 
-                                <h4>Would I Recommend the ICE?</h4> 
-                                <p> The event has certainly become more expensive compared to previous years, especially considering my first time attending was free. Does that mean you should skip it? Absolutely not! I would still highly recommend attending. It’s such a unique experience, and it's well worth it. However, be quick to secure your accommodation, as it fills up fast. </p>
-                        </p>
-
-                        <div>
-                            <div class="video-box" style="text-align: center;">
-                                <!-- Link zum YouTube Video -->
-                                <a href="https://www.youtube.com/watch?v=BAaRjT5EQ6w" target="_blank">
-                                    <!-- Thumbnail-Bild mit festgelegter Breite von 800px -->
-                                    
-                                    <img src="video/Thumbnail-St-Moritz2025.png" alt="Thumbnail" width="800" style="display: block; margin-left: auto; margin-right: auto; height: auto; border-radius: 0px;"/>
-                                </a>
-                                <a href="https://www.youtube.com/watch?v=BAaRjT5EQ6w" class="more-images-btn">Discover the Video by Max Behr</a>
-                                <div class="Video-Caption">
-                                    <h3 style="padding-top: 15px; padding-bottom: 15px;">The ICE - St. Moritz 2025 - Aftermovie</h3>
-                                    <p style="text-align: center;">
-                                        Amidst the snow-capped peaks and shimmering lakes of St. Moritz, where luxury meets untamed beauty, this short film unveils a world of elegance, exclusivity, and timeless allure
-                                        <br>
-                                        <br>Filmed, Edited & Scripted by: Max Behr</p>
-                                        <br class="responsive-br" style="display: block;">
-                                        <br class="responsive-br" style="display: block;">
-                                        <br class="responsive-br" style="display: block;">
-                                        
-                                </div>
-                            </div>
-                        </div>
-                        
-
-                        <br>
-                        <p style="font-size: 12px;">Published: 5th March 2025 - 03:00pm | No sponsored content – all posts reflect my own opinion | <a href="Impressum.html" class="Impressum-link" style="color: black">Impressum</a> - <a href="datenschutz.html" style="color: black">Datenschutzerklärung</a></p>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Blog Post 3 -->
-            <div class="grid-item">
-                <div class="blog-post">
-                    <div class="blog-link">
-                        <img src="pictures/2022/Komprimiert/2022_11_01.webp" alt="Blog Post 1" style="width: 100%; height: 34.5vh; object-fit: cover; object-position: center;">
-
-
-                        <div class="caption">
-                            <h3>Fuori Concorso</h3>
-                            <p>Lago di Como, villas and cars</p>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <span class="close-btn">&times;</span>
-                        <div class="hero-banner">
-                            <img src="pictures/2022/Komprimiert/2022_11_01.webp" 
-                            style="width: 100vw !important; height: 170%; object-fit: cover; object-position: center; display: block; padding-bottom: 200px;" 
-                            alt="Blog Post 1">
-                       
-                            <a href="photography.html?filter=Fuori%20Concorso" class="more-images-btn">More images</a>
-                        </div>
-                        <h3>Fuori Concorso by Larusmiani</h3>
-                        <p>Picturesque villas, the breathtaking Lago di Como, and extraordinary cars – that’s what Fuori Concorso is all about.
-                            <br>Next to the shores of Lago di Como, a remarkable event has taken shape over the past few years, coming close to perfection. <br> Fuori Concorso is an event alongside the prestigious Concorso d’Eleganza Villa d’Este.</p>  
-                        
-                        <h4>Tranquility at Its Finest</h4>  
-                        
-                        <p>This magnificent event is all about the cars, the people, and the lifestyle. Each year, a new theme is introduced, adding a unique touch to the experience.  
-                        <br>The first time I attended was for "Porsche – Sonderwunsch and Concept Cars" in 2022. It was one of my more spontaneous adventures, as I received an invitation just two days before the event.  
-                        <br>Since then, I’ve attended every year, witnessing the event grow and evolve. It is a static event, with the cars displayed in the gardens of historic villas, creating a truly unique atmosphere. The villas include the public Villa Olmo and the private Villa del Grumello and Villa Sucota.</p>  
-                        
-                        <h4>Photography at the Event</h4>  
-                        
-                        <p>First of all, Fuori offers a unique way of attending – by applying for a photography accreditation, which grants free access. It is also possible to buy normal tickets. 
-                        <br>Although capturing clean shots of the static cars can sometimes be challenging, the presence of people often adds a unique touch, bringing the scene to life in an authentic way.</p>  
-                        
-                        <h4>Would I Recommend Fuori Concorso?</h4>  
-                        
-                        <p>Absolutely. Whether you are passionate about cars, love photographing them, or simply want to experience the refined lifestyle, this event has something for you.  
-                        <br>I would also highly recommend planning an extra day to explore Lago di Como – one of my all-time favorite lakes in Italy.</p>
-
-                        <h4>Fuori has more to offer</h4>
-                        <p>
-                            The Fuori Concorso is the main event, at the Lago di Como, however Fuori also offers further events.
-                            In 2023 I got invited to one of these events in Milano, celebrating 50 years of the Ferrari Berlinetta Boxer.
-                            And in 2025 there will be a Fuori Rallye through Italy... 
-                        </p>
-                        
-                        <br>
-                        <p style="font-size: 12px;">Published: 5th March 2025 - 03:00pm | No sponsored content – all posts reflect my own opinion | <a href="Impressum.html" class="Impressum-link" style="color: black">Impressum</a> - <a href="datenschutz.html" style="color: black">Datenschutzerklärung</a></p>
-                        </p>
-                    </div>
-                </div>
-            </div>
-    </section>
-
- <!-- Blog Posts Section -->
- <section class="blog-posts">
-    <div class="grid-container">
-        <!-- Blog Post 1 -->
-        <div class="grid-item">
-            <div class="blog-post">
-                <div class="blog-link">
-                    <img src="pictures/2024/Komprimiert/2024_34_01.webp" alt="Blog Post 1" style="width: 100%; height: 34.5vh; object-fit: cover; object-position: 50% 70%;">
-                    <div class="caption">
-                        <h3>Pagani Raduno</h3>
-                        <p>The most expensive and private car rallye</p>
-                    </div>
-                </div>
-                <div class="blog-content">
-                    <span class="close-btn">&times;</span>
-                    <div class="hero-banner">
-                        <img src="pictures/2024/Komprimiert/2024_34_01.webp" style="object-position: 50% 65%;" alt="Blog Post 1">
-                    </div>
-                    <h3>Pagani Raduno</h3>
-
-                    <p>The Pagani Raduno is an annual rally held somewhere in the breathtaking landscapes of Italy. Over the course of several days, participants drive along picturesque roads, stopping at historical landmarks and staying in stunning hotels along the way. It’s an exclusive gathering of Pagani owners and enthusiasts from all over the world.</p>
-
-                    <p>In 2024, I had the privilege of experiencing one day of the Raduno. I was in Italy on holiday with friends when, by coincidence, the event was taking place at the same time. Attending a Raduno had always been a dream of mine, but with reliable information being hard to come by, it took us a few days to figure out how to catch a glimpse of it. In the end, we managed to join in when the rally stopped in Florence. The highlight? Seeing the breathtaking red Pagani Zonda Cinque Roadster up close. A friendly member of the Pagani crew went out of his way to entertain my non-car-enthusiast friends, even inviting us inside the villa where the cars were staying for a closer look. Shortly after, the convoy set off on their drive—an unforgettable sight.</p>
-
-                    <h4>Photography at the Raduno</h4>
-
-                    <p>Photography is certainly possible, but it’s important to respect the owners' privacy. That being said, what more could you ask for than the perfect combination of the Italian countryside, winding roads, and some of the most spectacular cars in the world?</p>
-
-                    <h4>Attending the Raduno</h4>
-
-                    <p>The event is private and highly exclusive.</p>
-
-                    <section>
-                        <div class="gallery">
-                          <figure>
-                            <img src="pictures/2024/Komprimiert/2024_34_01.webp" alt="Image 1" style="border-radius: 15px;">
-                          </figure>
-                          <figure>
-                            <img src="pictures/2024/Komprimiert/2024_34_02.webp" alt="Image 2" style="border-radius: 15px;">
-                          </figure>
-                          <figure>
-                            <img src="pictures/2024/Komprimiert/2024_34_03.webp" alt="Image 3" style="border-radius: 15px;">
-                          </figure>
-                        </div>
-                      </section>
-                    <br>
-                    
-                    <section>
-                        <div class="gallery">
-                          <figure>
-                            <img src="pictures/2024/Komprimiert/2024_35_01.webp" alt="Image 1" style="border-radius: 15px;">
-                          </figure>
-                          <figure>
-                            <img src="pictures/2024/Komprimiert/2024_35_02.webp" alt="Image 2" style="border-radius: 15px;">
-                          </figure>
-                          <figure>
-                            <img src="pictures/2024/Komprimiert/2024_35_03.webp" alt="Image 3" style="border-radius: 15px;">
-                          </figure>
-                        </div>
-                      </section>
-                    
-
-                    <p style="font-size: 12px;">Published: 7th March 2025 - 02:00pm | No sponsored content – all posts reflect my own opinion | <a href="Impressum.html" class="Impressum-link" style="color: black">Impressum</a> - <a href="datenschutz.html" style="color: black">Datenschutzerklärung</a></p>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-                <!-- Blog Post 1 -->
-                <div class="grid-item">
-                    <div class="blog-post">
-                        <div class="blog-link">
-                            <img src="pictures/2024/Komprimiert/2024_14_02.webp" alt="Blog Post 1" style="width: 100%; height: 34.5vh; object-fit: cover; object-position: center;">
-                            <div class="caption">
-                                <h3>Concorso d'Eleganza vdE</h3>
-                                <p>The most private car event?</p>
-                            </div>
-                        </div>
-                        <div class="blog-content">
-                            <span class="close-btn">&times;</span>
-                            <div class="hero-banner">
-                                <img src="pictures/2024/Komprimiert/2024_14_02.webp" style="object-position: 50% 60%;" alt="Blog Post 1">
-                                <a href="photography.html?filter=Concorso%20d'Eleganza" class="more-images-btn">More images</a>
-                            </div>
-                            <h3>Concorso d'Eleganza vdE</h3>
-                            <p>An event that every true car enthusiast dreams of attending.
-                                <br>Held across two stunning villas on the shores of <strong>Lago di Como</strong>, the <strong>Concorso d'Eleganza</strong> might just be the most exclusive car event in the world. Securing tickets for <strong>Villa d’Este</strong> is notoriously difficult, but there is still a way to experience its magic.
-                                <br>
-                                <br>On the final day of the event, early in the morning, most of the cars make their way from <strong>Villa d’Este to Villa Erba</strong>, navigating through the narrow streets of <strong>Cernobbio</strong> in a breathtaking parade.
-                                <br>Once they arrive at <strong>Villa Erba</strong>, the cars are displayed on the picturesque lawns surrounding the villa. Unlike Villa d’Este, this part of the event is open to the public and surprisingly affordable.
-                                <br>I have attended this event twice now, and each time has been an unforgettable experience. However, my ultimate dream is to one day witness the event inside <strong>Villa d’Este</strong> itself.
-                            </p>
-                            
-                            <h4>Photography at the Event</h4>
-                            <p>Be sure to arrive <strong>early on Sunday morning</strong>, as this is a rare opportunity to experience and photograph the cars in motion as they drive from <strong>Villa d’Este to Villa Erba</strong>.
-                                <br>Later, the cars will be displayed statically at Villa Erba. Since this part of the event is open to the public, capturing clean, unobstructed shots can be challenging. However, you can use the crowd to your advantage—incorporating people into your frames can result in dynamic and extraordinary images.</p>
-                            
-                            <h4>Would I Recommend the Concorso d'Eleganza?</h4>
-                            <p>If you have the chance to attend <strong>Villa d’Este</strong>, absolutely—it's a once-in-a-lifetime experience.
-                                <br>If you attend <strong>Villa Erba</strong>, be prepared for crowds, but rest assured—the selection of cars is always spectacular.
-                            </p>
-                            <p style="font-size: 12px;">Published: 5th March 2025 - 03:00pm | No sponsored content – all posts reflect my own opinion | <a href="Impressum.html" class="Impressum-link" style="color: black">Impressum</a> - <a href="datenschutz.html" style="color: black">Datenschutzerklärung</a></p>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-        <!-- Blog Post 2 -->
-        <div class="grid-item">
-            <div class="blog-post">
-                <div class="blog-link">
-                    <img src="pictures/2022/Komprimiert/2022_29_02.webp" alt="Blog Post 1" style="width: 100%; height: 34.5vh; object-fit: cover; object-position: center;">
-                    <div class="caption">
-                        <h3>Brunei Enzo in Melbourne</h3>
-                        <p>Shooting at GG Classics</p>
-                    </div>
-                </div>
-                <div class="blog-content">
-                    <span class="close-btn">&times;</span>
-                    <div class="hero-banner">
-                        <img src="pictures/2022/Komprimiert/2022_29_02.webp" style="object-position: 50% 51%;" alt="Blog Post 1">
-                        <a href="photography.html?filter=GG%20Classics" class="more-images-btn">More images</a>
-                    </div>
-                    <h3>Brunei Enzo in Melbourne</h3>
-                    <p>Yes, this Ferrari Enzo is a one-off in stunning Matte Nero Opaco, formerly owned by the infamous <strong>royal family of Brunei</strong>.
-                        <br>During my first trip to Australia in 2022, I had the incredible opportunity to visit what was then <strong>Dutton Garage</strong>, now known as <strong>GG Classics</strong>. There, I had an unforgettable photoshoot with this very Enzo.
-                        <br><strong>GG Classics</strong> is an absolutely phenomenal showroom and dealership in <strong>Melbourne</strong>—arguably the only truly remarkable dealership in Australia. When I visited, they had some utterly mind-blowing cars, many of which, unfortunately, I am not able to share.
-                    </p>
-                    
-                    <h4>Would I Recommend Visiting GG Classics?</h4>
-                    <p>If you ever find yourself in Australia, make sure to visit this showroom—it's an absolute must for any car enthusiast.</p>
-                    
-                    <br>
-                    <p style="font-size: 12px;">Published: 5th March 2025 - 03:00pm | No sponsored content – all posts reflect my own opinion | <a href="Impressum.html" class="Impressum-link" style="color: black">Impressum</a> - <a href="datenschutz.html" style="color: black">Datenschutzerklärung</a></p>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Blog Post 3 -->
-        <div class="grid-item">
-            <div class="blog-post">
-                <div class="blog-link">
-                    <img src="pictures/2025/Komprimiert/2025_01_01.webp" alt="Blog Post 1" style="width: 100%; height: 34.5vh; object-fit: cover; object-position: center;">
-
-
-                    <div class="caption">
-                        <h3>RM Sotheby's Paris</h3>
-                        <p>Ferrari 250LM for 34,880,000€</p>
-                    </div>
-                </div>
-                <div class="blog-content">
-                    <span class="close-btn">&times;</span>
-                    <div class="hero-banner">
-                        <img src="pictures/2025/Komprimiert/2025_01_01.webp" 
-                        style="object-position: 50% 60% !important;"
-                        alt="Blog Post 1">
-                    </div>
-                    <h3>RM Sotheby's Paris 2025</h3>
-                    <p>The world’s most renowned exclusive car auction house, RM Sotheby’s, has done it again! In Paris 2025, they hosted one of their major auctions, with the legendary Ferrari 250 LM stealing the spotlight—fetching an astonishing €35 million before fees.</p>
-
-                        <p>Beneath the historic Musée du Louvre, this prestigious auction took place. Surrounded by one of the world's most celebrated art museums, a different kind of art changed ownership—some of the finest automobiles ever built.</p>
-                        
-                        <p>But that’s not all…
-                        This year’s auction also featured a one-of-ten Bugatti Centodieci, the unique Koenigsegg Agera "X", and a track-focused Pagani Huayra R—an incredible lineup that made the event even more special.
-                        
-                        My Experience at the Auctions
-                        This was my first time attending the auctions around Retromobile Paris (more on that in another blog post), and it was truly phenomenal. In addition to RM Sotheby’s, I also visited the Bonhams auction at the Grand Palais—a surreal venue for yet another breathtaking sale.</p>
-                        
-                        <h4>Photography at RM Sotheby’s and Bonhams Paris</h4>
-                        <p>Capturing photos at both auctions is possible, but it can be quite challenging due to the crowds. The Grand Palais offers a more spacious setting, making it slightly easier to get clean shots of the cars.</p>
-                        
-                        <h4>Attending the Event</h4>
-                        <p>Keep an eye out for the public viewing days when both auctions allow visitors to attend for free. If you happen to be in Paris during Retromobile, I highly recommend visiting both auctions—it’s an unforgettable experience for any car enthusiast!</p></p>
-                    <!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
-                    <section>
-                        <div class="gallery">
-                            <figure>
-                                <img src="pictures/2025/Komprimiert/2025_01_01.webp" alt="Image 1" style="border-radius: 15px;">
-                            </figure>
-                            <figure>
-                                <img src="pictures/2025/Komprimiert/2025_02_02.webp" alt="Image 2" style="border-radius: 15px;">
-                            </figure>
-                        <figure>
-                            <img src="pictures/2025/Komprimiert/2025_04_01.webp" alt="Image 3" style="border-radius: 15px;">
-                        </figure>
-                        </div>
-                    </section>
-                    <br>
-                    <p style="font-size: 12px;">Published: 7th March 2025 - 04:30pm | No sponsored content – all posts reflect my own opinion | <a href="Impressum.html" class="Impressum-link" style="color: black">Impressum</a> - <a href="datenschutz.html" style="color: black">Datenschutzerklärung</a></p>
-                    
-                </div>
-            </div>
-        </div>
-
-        <!-- Blog Post 3 -->
-        <div class="grid-item">
-            <div class="blog-post">
-                <div class="blog-link">
-                    <img src="pictures/2024/Komprimiert/2024_01_02.webp" alt="Blog Post 1" style="width: 100%; height: 34.5vh; object-fit: cover; object-position: center;">
-
-
-                    <div class="caption">
-                        <h3>Retromobile Paris</h3>
-                        <p>All major Car Dealerships in one place!</p>
-                    </div>
-                </div>
-                <div class="blog-content">
-                    <span class="close-btn">&times;</span>
-                    <div class="hero-banner">
-                        <img src="pictures/2024/Komprimiert/2024_01_02.webp" 
-                        style="object-position: 50% 60% !important;"
-                        alt="Blog Post 1">
-                    </div>
-                    <h3>Retromobile Paris</h3>
-                    <p>If you don’t want to travel all over Europe to visit the best car dealerships and showrooms, then Retromobile is the event for you. Most of the major and renowned dealers make their way to Paris for this show, showcasing their finest stock of classic and exotic cars.</p>
-
-                    <p>It’s the only indoor show I attend on a yearly basis, simply because the quality of cars on display is surreal. Unlike traditional auto shows that focus on modern cars from major OEMs, Retromobile highlights what the world’s top dealerships have to offer—a fascinating blend of vintage, classic, and contemporary automobiles. It’s also a great place to find rare memorabilia. My first visit to Retromobile was one of the most spontaneous trips I’ve ever taken. I saw on Instagram that my all-time favorite car—one I had never seen in person before—would be at the event. The very next day, I booked my tickets, and the day after that, I hopped on a train to Paris with a friend. That year, the show was impressive, but not necessarily mind-blowing—except for one stand: Simon Kidston’s incredible display celebrating 20 years of the McLaren F1. But for me, the true star of the event was the McLaren F1 GT—XPGT!</p>
-
-                    <p>Over the years, I’ve watched Retromobile grow and evolve. More and more top-tier dealerships, such as Joe Macari, Fiskens Cars, Girardo & Co., and Messina Classics, have joined the event, bringing an ever-increasing selection of exceptional cars.</p>
-
-                    <h4>Photography at the Event</h4>  
-
-                    <p>There’s no sugarcoating it—getting good shots at Retromobile is nearly impossible. The halls are packed, the lighting isn’t great, and the surroundings aren’t particularly photogenic. However, with a bit of creativity, you can still capture some cool motion blur shots of people walking around the cars. While they may not be my best photos, they do manage to capture the unique atmosphere of the event.</p>
-
-                    <h4>Should You Attend Retromobile Paris?</h4>  
-
-                    <p>One thing I haven’t mentioned yet is the auctions (more on that in another blog post). If you can make it to Paris during the week, you’ll have a better chance of enjoying the show without the weekend crowds. But even if you can only attend on the weekend, I’d still say—go for it. It’s an amazing indoor event at a great price.</p>
-
-                    <p>And let’s not forget—<strong>it’s in Paris!</strong> I always use it as an excuse to explore the city. Paris is one of my favorite places (but more on that in another blog post!).</p>
-                    <!-- Erster Gallery-Abschnitt (3 Bilder pro Zeile) -->
-                    <section>
-                        <div class="gallery">
-                            <figure>
-                                <img src="pictures/2022/Komprimiert/2022_06_01.webp" alt="Image 1" style="border-radius: 15px;">
-                            </figure>
-                            <figure>
-                                <img src="pictures/2022/Komprimiert/2022_06_02.webp" alt="Image 2" style="border-radius: 15px;">
-                            </figure>
-                        <figure>
-                            <img src="pictures/2025/Komprimiert/2025_02_03.webp" alt="Image 3" style="border-radius: 15px;">
-                        </figure>
-                        </div>
-                    </section>
-                    <br>
-                    <br>
-                    <section>
-                        <div class="gallery">
-                        <figure>
-                            <img src="pictures/2024/Komprimiert/2024_01_02.webp" alt="Image 2" style="border-radius: 15px;">
-                        </figure>
-                        <figure>
-                            <img src="pictures/2024/Komprimiert/2024_01_03.webp" alt="Image 3" style="border-radius: 15px;">
-                        </figure>
-                        </div>
-                    </section>
-                    <br>
-                    <p style="font-size: 12px;">Published: 7th March 2025 - 02:00pm | No sponsored content – all posts reflect my own opinion | <a href="Impressum.html" class="Impressum-link" style="color: black">Impressum</a> - <a href="datenschutz.html" style="color: black">Datenschutzerklärung</a></p>
-                    
-                </div>
-            </div>
-        </div>
-
-         <!-- Blog Post 3 -->
-         <div class="grid-item">
-            <div class="blog-post">
-                <div class="blog-link">
-                    <img src="pictures/2020/Komprimiert/2020_06_03.webp" alt="Blog Post 1" style="width: 100%; height: 34.5vh; object-fit: cover; object-position: center;">
-
-
-                    <div class="caption">
-                        <h3>Supercar Ownwes Circle</h3>
-                        <p>The most prestigeous owners club</p>
-                    </div>
-                </div>
-                <div class="blog-content">
-                    <span class="close-btn">&times;</span>
-                    <div class="hero-banner">
-                        <img src="pictures/2020/Komprimiert/2020_06_03.webp" 
-                        style="object-position: 50% 60% !important;"
-                        alt="Blog Post 1">
-                   
-                        <a href="photography.html?filter=Supercar%20Owners%20Circle" class="more-images-btn">More images</a>
-                    </div>
-                    <h3>Supercar Owners Circle</h3>
-                    <p>The most exclusive supercar owners club in the world. <strong>The SOC</strong> hosts events across the globe, with one standout gathering serving as the main event each year. 
-                        <br>Since the main event’s location changes almost annually, I have had the privilege of attending two SOC weekends so far—<strong>Andermatt in 2019</strong> and <strong>Gstaad in 2020</strong>.
-                    </p>  
-                    
-                    <h4>Should You Attend?</h4>  
-                    
-                    <p>If you ever get the chance, don't hesitate to take part in this extraordinary event. The two times I attended were absolutely mind-blowing—an insane concentration of hypercars in one place. 
-                        <br>Following the events in Switzerland, the SOC has also hosted editions in <strong>Croatia</strong> and <strong>Italy</strong>. If possible, I will definitely try to attend another SOC Weekend in the future.
-                    </p>
-                    
-                    <h4>Photography at the Event</h4>  
-                    
-                    <p>Since this is a dynamic event, it's a fantastic opportunity to capture high-energy, action-packed shots of the cars. However, you’ll need to be familiar with the planned driving routes to get the best shots.</p>
-                    
-                    
-                    </p>
-                    
-                    <br>
-                    <p style="font-size: 12px;">Published: 5th March 2025 - 03:00pm | No sponsored content – all posts reflect my own opinion | <a href="Impressum.html" class="Impressum-link" style="color: black">Impressum</a> - <a href="datenschutz.html" style="color: black">Datenschutzerklärung</a></p>
-                    </p>
-                </div>
-            </div>
-        </div>
-</section>
-
-
-<br>
-<br>
-    <footer>
-        <div class="footer">
-            <div class="socials">
-                <div><a target="_blank" href="https://www.instagram.com/leonard_lfb/"><img src="assets/used/InstagramLogo.svg"></a></div>
-                <div><a target="_blank" href="https://www.youtube.com/@LeonardLFB/"><img src="assets/used/YouTubeLogo.png"></a></div>
-                <div><a target="_blank" href="https://www.tiktok.com/@leonard_lfb/"><img src="assets/used/TikTokLogo.png"></a></div>
-            </div>        
-        </div>
-        <div class="contact-box">
-            <a href="Aboutme.html"><img src="assets/used/Profilbild.png" alt="Leonard Bonkas" class="profile-pic"></a>
-            <div class="contact-info">
-                <h4>Contact</h4>
-                <p><strong>E-Mail:</strong> <a href="mailto:leonard.bonkas@gmail.com">leonard.bonkas@gmail.com</a></p>
-                <p><strong>Telephone:</strong> 0152 05344311</p>
-                <p ><a href="Impressum.html" class="Impressum-link" style="font-family: 'Barlow Condensed', sans-serif; font-weight: bold; font-size: 18px;">Impressum</a> | <a href="datenschutz.html" style="font-family: 'Barlow Condensed', sans-serif; font-weight: bold; font-size: 18px;">Datenschutzerklärung</a></p>
-            </div>
-        </div>
-        <div class="legal">&copy; Leonard LFB</div>
-    </footer>
-    
-    <script>
-
-window.addEventListener("scroll", function () {
-            let scrollPos = window.scrollY * 0.5; // Geschwindigkeit des Effekts
+        // Optionaler Parallax-Effekt für das Bannerbild
+        window.addEventListener("scroll", function () {
+            let scrollPos = window.scrollY * 0.5;
             document.querySelector(".hero-banner img").style.transform = `translateY(${scrollPos}px)`;
         });
-        
-        document.addEventListener("DOMContentLoaded", function () {
-            const hamburgerIcon = document.querySelector(".hamburger-icon");
-            const dropdownMenu = document.querySelector(".dropdown-menu");
-            const closeBtn = document.querySelector(".close-btn");
 
-            hamburgerIcon.addEventListener("click", function (event) {
-                event.stopPropagation(); // Verhindert das Schließen, wenn das Icon erneut geklickt wird
-                dropdownMenu.classList.toggle("active");
+        // Lightbox-Funktionen
+        const gallery = document.querySelectorAll('.gallery img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        let currentImageIndex = 0;
+
+        const lightboxCaption = document.createElement("figcaption");
+        lightboxCaption.classList.add("lightbox-caption");
+        document.querySelector(".lightbox-content").appendChild(lightboxCaption);
+
+        gallery.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                currentImageIndex = index;
+                openLightbox();
             });
+        });
 
-            closeBtn.addEventListener("click", function (event) {
-                event.stopPropagation(); // Verhindert das Schließen des Menüs durch das Klicken auf das "X"
-                dropdownMenu.classList.remove("active");
-            });
+        function openLightbox() {
+            lightbox.classList.add('active');
+            updateLightbox();
+        }
 
-            // Schließen des Menüs, wenn man irgendwo anders klickt/toucht
-            document.addEventListener("click", function (event) {
-                if (!hamburgerIcon.contains(event.target) && !dropdownMenu.contains(event.target)) {
-                    dropdownMenu.classList.remove("active");
+        function updateLightbox() {
+            const currentImg = gallery[currentImageIndex];
+            lightboxImg.src = currentImg.src;
+            lightboxCaption.textContent = currentImg.nextElementSibling.textContent;
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % gallery.length;
+            updateLightbox();
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + gallery.length) % gallery.length;
+            updateLightbox();
+        }
+
+        // Event-Listener für Tastatursteuerung
+        document.addEventListener("keydown", function (event) {
+            if (lightbox.classList.contains("active")) {
+                if (event.key === "ArrowRight") {
+                    nextImage();
+                } else if (event.key === "ArrowLeft") {
+                    prevImage();
+                } else if (event.key === "Escape") {
+                    closeLightbox();
+                }
+            }
+        });
+
+        // Event-Listener für die mobilen Pfeiltasten
+        document.querySelector('.lightbox .left-arrow').addEventListener('click', prevImage);
+        document.querySelector('.lightbox .right-arrow').addEventListener('click', nextImage);
+
+        // Hinzufügen der Swipe-Funktionalität auf mobilen Geräten
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        lightboxImg.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        lightboxImg.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            if (touchEndX < touchStartX) {
+                // Swipe nach links -> Nächstes Bild
+                nextImage();
+            } else if (touchEndX > touchStartX) {
+                // Swipe nach rechts -> Vorheriges Bild
+                prevImage();
+            }
+        }
+    });
+
+    function closeLightbox() {
+        document.getElementById('lightbox').classList.remove('active');
+    }
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const filterButton = document.getElementById('filterButton');
+    const filterDropdown = document.getElementById('filterDropdown');
+    const gallerySections = document.querySelectorAll('.gallery');
+    const yearHeaders = document.querySelectorAll('section > h3');
+
+    filterButton.addEventListener('click', function (event) {
+      event.stopPropagation();
+      filterDropdown.style.display = filterDropdown.style.display === 'block' ? 'none' : 'block';
+    });
+
+    filterDropdown.addEventListener('change', function () {
+      const selectedFilter = filterDropdown.querySelector('input:checked').value;
+      if (selectedFilter === "") {
+        window.scrollTo(0, 0); // Nach oben scrollen
+        location.reload(); // Seite neu laden
+      } else {
+        filterGallery(selectedFilter);
+        filterDropdown.style.display = 'none'; // Schließt das Dropdown-Menü nach Auswahl
+        scrollToFirstVisibleElement(); // Scrollt zum ersten sichtbaren Element
+      }
+    });
+
+    function filterGallery(filter) {
+      gallerySections.forEach(section => {
+        const figures = section.querySelectorAll('figure');
+        figures.forEach(figure => {
+          const caption = figure.querySelector('figcaption').textContent;
+          if (filter === "" || caption.includes(filter)) {
+            figure.style.display = 'block';
+          } else {
+            figure.style.display = 'none';
+          }
+        });
+      });
+
+      yearHeaders.forEach(header => {
+        header.style.display = 'none';
+      });
+
+      // Entferne die Lücken zwischen den gefilterten Bildern
+      const filteredFigures = document.querySelectorAll('.gallery figure[style="display: block;"]');
+      filteredFigures.forEach(figure => {
+        figure.parentElement.appendChild(figure);
+      });
+    }
+
+    function scrollToFirstVisibleElement() {
+      const firstVisibleElement = document.querySelector('.gallery figure[style*="display: block;"]');
+      if (firstVisibleElement) {
+        const offset = 150; // Platz nach oben
+        const elementPosition = firstVisibleElement.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - offset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
+
+    // Schließen des Dropdowns, wenn man außerhalb klickt
+    document.addEventListener('click', function (event) {
+      if (!filterButton.contains(event.target) && !filterDropdown.contains(event.target)) {
+        filterDropdown.style.display = 'none';
+      }
+    });
+  });
+
+
+
+
+
+  function prioritizeVisibleImages() {
+    const visibleImages = document.querySelectorAll('.gallery figure[style*="display: block;"] img');
+    visibleImages.forEach(img => {
+        if (img.getAttribute("loading") === "lazy") {
+            img.removeAttribute("loading"); // Direktes Laden auslösen
+        }
+    });
+}
+
+// Rufe die Funktion nach dem Filtern auf:
+function filterGallery(filter) {
+    const gallerySections = document.querySelectorAll('.gallery');
+    gallerySections.forEach(section => {
+        const figures = section.querySelectorAll('figure');
+        figures.forEach(figure => {
+            const caption = figure.querySelector('figcaption').textContent;
+            figure.style.display = caption.includes(filter) ? 'block' : 'none';
+        });
+    });
+
+    prioritizeVisibleImages(); // Nach dem Filtern direkt laden
+}
+
+  
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Abrufen des Filter-Werts aus der URL (falls vorhanden)
+    const urlParams = new URLSearchParams(window.location.search);
+    const filterValue = urlParams.get('filter'); // Beispiel: "Goodwood FoS"
+
+    // Wenn der Filter-Wert aus der URL vorhanden ist, setze den entsprechenden Radio-Button
+    if (filterValue) {
+        const radioButton = document.querySelector(`input[name="filter"][value="${filterValue}"]`);
+        if (radioButton) {
+            radioButton.checked = true;
+            filterGallery(filterValue); // Wende den Filter an, sobald der Radio-Button gesetzt ist
+            scrollToFirstVisibleElement(); // Scrolle zum ersten sichtbaren Bild
+        }
+    }
+
+    // Funktion, um die Galerie anhand des Filters zu filtern
+    function filterGallery(filter) {
+        const gallerySections = document.querySelectorAll('.gallery');
+        const yearHeaders = document.querySelectorAll('section > h3');
+
+        gallerySections.forEach(section => {
+            const figures = section.querySelectorAll('figure');
+            figures.forEach(figure => {
+                const caption = figure.querySelector('figcaption').textContent;
+                if (filter === "" || caption.includes(filter)) {
+                    figure.style.display = 'block';
+                } else {
+                    figure.style.display = 'none';
                 }
             });
         });
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const hamburger = document.querySelector(".hamburger-container");
-            const dropdownMenu = document.querySelector(".dropdown-menu");
-
-            hamburger.addEventListener("click", function (event) {
-                event.stopPropagation(); // Verhindert, dass das Klicken auf das Menü es sofort wieder schließt
-                dropdownMenu.classList.toggle("active");
-            });
-
-            // Schließt das Menü, wenn irgendwo außerhalb geklickt wird
-            document.addEventListener("click", function (event) {
-                if (!hamburger.contains(event.target) && !dropdownMenu.contains(event.target)) {
-                    dropdownMenu.classList.remove("active");
-                }
-            });
+        yearHeaders.forEach(header => {
+            header.style.display = 'none'; // Entfernt alle Jahr-Header, wenn ein Filter angewendet wird
         });
+    }
 
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const blogLinks = document.querySelectorAll(".blog-link");
-    const closeButtons = document.querySelectorAll(".close-btn");
-
-    blogLinks.forEach(link => {
-        link.addEventListener("click", function (event) {
-            event.preventDefault();
-            event.stopPropagation(); // Verhindert ungewollte Klick-Propagation
-
-            const gridItem = this.closest(".grid-item");
-            if (!gridItem) return console.error("Kein Grid-Item gefunden!");
-
-            const blogContent = gridItem.querySelector(".blog-content");
-            if (!blogContent) return console.error("Kein Blog-Content gefunden!");
-
-            // Stelle sicher, dass der Blog-Content immer sichtbar bleibt
-            document.querySelectorAll(".blog-content").forEach(content => {
-                content.classList.remove("active");
-                content.style.display = "none"; // Schließe andere Posts
+    // Funktion zum Scrollen zum ersten sichtbaren Element
+    function scrollToFirstVisibleElement() {
+        const firstVisibleElement = document.querySelector('.gallery figure[style*="display: block;"]');
+        if (firstVisibleElement) {
+            const offset = 150; // Platz nach oben
+            const elementPosition = firstVisibleElement.getBoundingClientRect().top + window.pageYOffset;
+            const offsetPosition = elementPosition - offset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
             });
+        }
+    }
 
-            // Öffne den aktuellen Blog-Post
-            blogContent.classList.add("active");
-            blogContent.style.display = "block";
-            blogContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
+    // Event-Listener für das Dropdown-Menü (sobald ein Filter im Dropdown ausgewählt wird)
+    const filterDropdown = document.getElementById('filterDropdown');
+    filterDropdown.addEventListener('change', function () {
+        const selectedFilter = filterDropdown.querySelector('input:checked').value;
+        if (selectedFilter === "") {
+            clearFilters(); // Wenn "Clear all Filters", dann alle Filter zurücksetzen
+        } else {
+            filterGallery(selectedFilter); // Wende den ausgewählten Filter an
+            scrollToFirstVisibleElement(); // Scrolle zum ersten sichtbaren Bild
+        }
     });
 
-    closeButtons.forEach(button => {
-        button.addEventListener("click", function (event) {
-            event.stopPropagation(); // Verhindert ungewollte Klick-Propagation
+    // Funktion um alle Filter zurückzusetzen
+    function clearFilters() {
+        // Alle Filter zurücksetzen
+        const radioButtons = document.querySelectorAll('input[name="filter"]');
+        radioButtons.forEach(button => button.checked = false);
 
-            const blogContent = this.closest(".blog-content");
-            if (!blogContent) return console.error("Kein Blog-Content gefunden!");
+        // Alle Bilder anzeigen und Seite neu laden
+        window.location.href = 'photography.html'; // Neu laden der Photography-Seite ohne Filter
+    }
 
-            // Schließe den aktuellen Blog-Post
-            blogContent.classList.remove("active");
-            setTimeout(() => {
-                blogContent.style.display = "none";
-            }, 300);
-        });
+    // Optional: Schließen des Dropdowns, wenn man außerhalb klickt
+    document.addEventListener('click', function (event) {
+        if (!filterDropdown.contains(event.target)) {
+            filterDropdown.style.display = 'none';
+        }
     });
-
-
 });
 
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const blogLinks = document.querySelectorAll(".blog-link");
-    const closeButtons = document.querySelectorAll(".close-btn");
+    const urlParams = new URLSearchParams(window.location.search);
+    const filterValue = urlParams.get("filter");
 
-    blogLinks.forEach(link => {
-        link.addEventListener("click", function (event) {
-            event.preventDefault();
-            event.stopPropagation();
-
-            const gridItem = this.closest(".grid-item");
-            if (!gridItem) return console.error("Kein Grid-Item gefunden!");
-
-            const blogContent = gridItem.querySelector(".blog-content");
-            if (!blogContent) return console.error("Kein Blog-Content gefunden!");
-
-            // Schließe alle anderen Posts
-            document.querySelectorAll(".blog-content").forEach(content => {
-                content.classList.remove("active");
-                content.style.display = "none";
-            });
-
-            // Öffne den aktuellen Blog-Post
-            blogContent.classList.add("active");
-            blogContent.style.display = "block";
-            blogContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-            // **Scrollen der Hauptseite deaktivieren**
-            document.body.style.overflow = "hidden";
-        });
-    });
-
-    closeButtons.forEach(button => {
-        button.addEventListener("click", function (event) {
-            event.stopPropagation();
-
-            const blogContent = this.closest(".blog-content");
-            if (!blogContent) return console.error("Kein Blog-Content gefunden!");
-
-            // Schließe den aktuellen Blog-Post
-            blogContent.classList.remove("active");
-            setTimeout(() => {
-                blogContent.style.display = "none";
-
-                // **Scrollen der Hauptseite wieder aktivieren**
-                document.body.style.overflow = "auto";
-            }, 300);
-        });
-    });
-
-
+    if (filterValue) {
+        filterGallery(filterValue); // Lade zuerst gefilterte Bilder
+    }
 });
 
 </script>
